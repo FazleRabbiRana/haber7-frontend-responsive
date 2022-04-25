@@ -1,0 +1,2398 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Haber 7 - Haber - Haberler - Son Dakika Haberleri</title>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <meta http-equiv="Refresh" content="180">
+    <meta property="fb:app_id" content="121750831288720">
+    <meta property="twitter:account_id" content="120840897">
+
+    <!-- LINK -->
+    <link rel="preload" as="style" href="../s.haber7.net/assets/v3/common/css/home.critical.min7e49.css">
+    <link rel="stylesheet" href="../s.haber7.net/assets/v3/common/css/home.mina2b0.css">
+    <link rel="stylesheet" href="https://s.haber7.net/assets/v3/common/css/main.min.css">
+
+    <!-- Mobile Control -->
+    <script src="../s.haber7.net/assets/v3/common/js/mobile-control.min.js"></script>
+    <script src="../s.haber7.net/assets/v3/common/js/libs/b_klibs.js"></script>
+    <script async="async" src="../makroo.haber7.net/creative/makroo-hb.js"></script>
+    <style>
+        .isFixed {
+            margin-top: 15px;
+            margin-bottom: 0px !important;
+            position: fixed;
+            top: -15px;
+            z-index: 9999;
+            overflow: visible !important;
+        }
+
+        .isFixed:after {
+            position: absolute;
+            background: rgba(234, 237, 245, 0.75);
+            content: '';
+            top: 0;
+            left: -100%;
+            width: 100000px;
+            height: 108%;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+        }
+
+        .dummy-mast {
+            width: 960px;
+            height: 250px;
+            margin-top: 15px;
+            padding-top: 18px;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+
+        <!-- Header - Top -->
+        <div class="site-header-top">
+            <div class="container">
+
+                <!-- Logo -->
+                <h1 class="site-logo">
+                    <a href="index.html" title="Haber7">
+                        <img src="https://s.haber7.net/assets/v3/common/images/haber7-logo.svg?1"
+                            data-svg-fallback="https://s.haber7.net/assets/v3/common//assets/home/images/haber7-logo.png"
+                            alt="Haber7">
+                    </a>
+                </h1>
+
+                <!-- Header Widgets -->
+                <div class="header-widgets">
+
+                    <!-- BIP Subscribe -->
+                    <span class="whatsapp bip" href="#" title="BİP" rel="nofollow">
+
+                        <!-- Whatsapp - Icon -->
+                        <i class="icon"></i>
+
+                        <!-- Whatsapp - Title -->
+                        <div class="whatsapp_title">
+                            <span class="title"></span>
+                            <span class="number"></span>
+                        </div>
+                    </span>
+
+                    <style>
+                        .telegram .whatsapp_title .title:before {
+                            content: 'Telegram' !important;
+                            animation: none;
+                        }
+
+                        .telegram .whatsapp_title .number:before {
+                            content: 'Haber7 Kanalı';
+                            -webkit-animation: telegramAnimation 10s linear 5s infinite forwards;
+                            animation: telegramAnimation 10s linear 5s infinite forwards
+                        }
+
+                        @-webkit-keyframes telegramAnimation {
+                            50% {
+                                content: 'Abone Ol';
+                            }
+
+                            100% {
+                                content: 'Haber7 Kanalı';
+                            }
+                        }
+
+                        @keyframes telegramAnimation {
+                            50% {
+                                content: 'Abone Ol';
+                            }
+
+                            100% {
+                                content: 'Haber7 Kanalı';
+                            }
+                        }
+
+                        .telegram .icon {
+                            background: url('https://s.haber7.net/assets/v3/common/images/telegram-icon.svg') center no-repeat !important;
+                            animation: none;
+                        }
+
+                        .bip .whatsapp_title .title:before {
+                            content: 'BİP' !important;
+                            animation: none;
+                        }
+
+                        .bip .whatsapp_title .number:before {
+                            content: '0552 073 07 07';
+                        }
+
+                        .bip .icon {
+                            background: url('https://s.haber7.net/assets/v3/common/images/bip-icon.svg') center no-repeat !important;
+                            animation: none;
+                        }
+                    </style>
+
+                    <!-- Weather -->
+                    <div class="weather">
+
+                        <!-- Weather - Icon -->
+                        <i class="icon wi-default wi-parcali-bulutlu"></i>
+
+                        <!-- Weather - Name -->
+                        <span class="weather-name">
+
+                            <!-- Selected City Name -->
+                            <span class="city-name">
+                                <div class="dummy-load w-name"></div>
+                            </span>
+
+                            <!-- City Name List -->
+                            <div class="city-name-list"></div>
+
+                            <!-- Weather - Status -->
+                            <span class="status">
+                                <span class="status-degree">
+                                    <div class="dummy-load w-status"></div>
+                                </span>
+                                <span class="status-text"></span>
+                            </span>
+                        </span>
+                    </div>
+
+                    <!-- Prayer -->
+                    <div class="prayer ramadan">
+                        <!-- Prayer - Left Time -->
+                        <span class="prayer_time">-:-</span>
+
+                        <!-- Prayer - Name -->
+                        <span class="prayer_name">
+                            <span class="name">
+                                <div class="dummy-load p-name"></div>
+                            </span>
+                            <span class="text">
+                                <div class="dummy-load p-text"></div>
+                            </span>
+                        </span>
+
+                        <!-- Prayer List -->
+                        <div class="prayer-list">
+                            <span class="prayer-list_item_secondary">
+                                <span>16 Nisan 2022</span>
+                            </span>
+                            <span class="prayer-list_item_secondary">
+                                <span>15 Ramazan 1443</span>
+                            </span>
+                            <span class="prayer-list_item">
+                                <span class="time-name">İmsak:</span> <span class="time-value">-:-</span>
+                            </span>
+                            <span class="prayer-list_item">
+                                <span class="time-name">Güneş:</span> <span class="time-value">-:-</span>
+                            </span>
+                            <span class="prayer-list_item">
+                                <span class="time-name">Öğle:</span> <span class="time-value">-:-</span>
+                            </span>
+                            <span class="prayer-list_item">
+                                <span class="time-name">İkindi:</span> <span class="time-value">-:-</span>
+                            </span>
+                            <span class="prayer-list_item">
+                                <span class="time-name">Akşam:</span> <span class="time-value">-:-</span>
+                            </span>
+                            <span class="prayer-list_item">
+                                <span class="time-name">Yatsı:</span> <span class="time-value">-:-</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Header - Bottom -->
+        <div class="site-header-bottom">
+            <div class="container">
+
+                <!-- Main Menu -->
+                <ul class="main-menu">
+                    <li class="main-menu-item">
+                        <a href="sondakika.html" title="Son Dakika Haberleri" target="_blank">Son Dakika</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="guncel.html" title="Gündem Haberleri" target="_blank">Gündem</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="siyaset.html" title="Siyaset Haberleri" target="_blank" rel="noopener">Siyaset</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="https://spor.haber7.com/" title="Spor Haberleri" target="_blank"
+                            rel="noopener">Spor</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="https://ekonomi.haber7.com/" title="Ekonomi Haberleri" target="_blank"
+                            rel="noopener">Ekonomi</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="https://ekonomi.haber7.com/kobi" target="_blank" title="Halkbank" rel="noopener">
+                            <img width="122"
+                                src="../i.haber7.net/sondakika/halkbank/pageskin/kobi/logo-small-2xc4ca.png?1"
+                                alt="Halkbank Kobi">
+                        </a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="dunya.html" title="Dünya Haberleri" target="_blank">Dünya</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="otomobil-haberleri.html" title="Otomobil Haberleri" target="_blank"
+                            rel="noopener">Otomobil</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="seyahat.html" title="Seyahat Haberleri" target="_blank">Seyahat</a>
+                    </li>
+                </ul>
+
+                <!-- Search / Menu -->
+                <div class="right-widgets">
+                    <!-- Search Button -->
+                    <button class="site-search-button">
+                        <span class="text-hide">ARAMA YAP</span>
+                        <i class="zmdi zmdi-search"></i>
+                    </button>
+
+                    <!-- Search Form -->
+                    <form class="site-search" action="https://www.haber7.com/arama" method="get">
+
+                        <!-- Search -->
+                        <div class="search">
+                            <!-- Input -->
+                            <input type="text" id="q" name="q" placeholder="Site İçinde Ara..." autofocus="off">
+
+                            <!-- Submit -->
+                            <button type="submit">
+                                <i class="zmdi zmdi-search"></i>
+                            </button>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="tags">
+                            <!-- Icon -->
+                            <i class="icon zmdi zmdi-tag-more"></i>
+
+                            <!-- Tags -->
+                            <span class="tags-item">#<span>Erdoğan</span></span>
+                            <span class="tags-item">#<span>Binali Yıldırım</span></span>
+                            <span class="tags-item">#<span>Bahçeli</span></span>
+                            <span class="tags-item">#<span>Kılıçdaroğlu</span></span>
+                        </div>
+                    </form>
+
+                    <!-- Menu - Button -->
+                    <button class="site-menu-button">
+                        <span>MENÜ</span>
+                        <i class="menu-icon"></i>
+                    </button>
+
+                    <!-- Site Menu -->
+                    <div class="site-menu">
+
+                        <!-- Menu - List -->
+                        <nav class="site-menu-list">
+                            <div class="items">
+                                <a href="emlak-haberleri.html" title="Emlak Haberleri" class="site-category"
+                                    target="_blank">Emlak</a>
+                                <a href="teknoloji.html" title="Teknoloji Haberleri" class="site-category"
+                                    target="_blank">Teknoloji</a>
+                                <a href="yasam.html" title="Yaşam Haberleri" class="site-category"
+                                    target="_blank">Yaşam</a>
+                                <a href="memur.html" title="Memur Haberleri" class="site-category"
+                                    target="_blank">Memur</a>
+                                <a href="egitim.html" title="Eğitim Haberleri" class="site-category"
+                                    target="_blank">Eğitim</a>
+                                <a href="medya.html" title="Medya Haberleri" class="site-category"
+                                    target="_blank">Medya</a>
+                                <a href="saglik.html" title="Sağlık Haberleri" class="site-category"
+                                    target="_blank">Sağlık</a>
+                                <a href="3sayfa.html" title="3.Sayfa Haberleri" class="site-category"
+                                    target="_blank">3.Sayfa</a>
+                                <a href="kitap.html" title="Kitap Haberleri" class="site-category"
+                                    target="_blank">Kitap</a>
+                                <a href="kultur.html" title="Kültür Haberleri" class="site-category"
+                                    target="_blank">Kültür</a>
+                                <a href="biyografi.html" title="Biyografi Haberleri" class="site-category"
+                                    target="_blank">Biyografi</a>
+                            </div>
+                        </nav>
+
+                        <!-- Menu - Sites -->
+                        <nav class="site-menu-sites">
+
+                            <!-- Spor -->
+                            <div class="items spor">
+                                <!-- Site Name -->
+                                <a title="TÜMSPOR" class="site-name">TÜMSPOR</a>
+
+                                <!-- Site Menu List -->
+                                <a href="https://spor.haber7.com/galatasaray" title="Galatasaray" class="site-category"
+                                    target="_blank" rel="noopener">Galatasaray</a>
+                                <a href="https://spor.haber7.com/fenerbahce" title="Fenerbahçe" class="site-category"
+                                    target="_blank" rel="noopener">Fenerbahçe</a>
+                                <a href="https://spor.haber7.com/besiktas" title="Beşiktaş" class="site-category"
+                                    target="_blank" rel="noopener">Beşiktaş</a>
+                                <a href="https://spor.haber7.com/trabzonspor" title="Trabzonspor" class="site-category"
+                                    target="_blank" rel="noopener">Trabzonspor</a>
+
+                                <!-- Site Link -->
+                                <a class="site-link" href="https://spor.haber7.com/" title="Spor Haberleri"
+                                    target="_blank" rel="noopener">Spor Haberleri</a>
+                            </div>
+
+                            <!-- Ekonomi -->
+                            <div class="items ekonomi">
+                                <!-- Site Name -->
+                                <a title="EKOTRENT" class="site-name">EKOTRENT</a>
+
+                                <!-- Site Menu List -->
+                                <a href="https://ekonomi.haber7.com/kobi" title="Kobi" class="site-category"
+                                    target="_blank" rel="noopener">Kobi</a>
+
+                                <!-- Site Link -->
+                                <a class="site-link" href="https://ekonomi.haber7.com/" title="Ekonomi Haberleri"
+                                    target="_blank" rel="noopener">Ekonomi Haberleri</a>
+                            </div>
+
+                            <!-- Gezelim -->
+                            <div class="items gezelim">
+                                <!-- Site Name -->
+                                <a title="GEZELİM" class="site-name">GEZELİM</a>
+
+                                <!-- Site Menu List -->
+                                <a href="rotalar.html" title="Rotalar" class="site-category" target="_blank"
+                                    rel="noopener">Rotalar</a>
+                                <a href="dunyayi-geziyorum.html" title="Dünyayı Geziyorum " class="site-category"
+                                    target="_blank" rel="noopener">Dünyayı Geziyorum </a>
+                                <a href="gezi-rehberi.html" title="Gezi Rehberi" class="site-category" target="_blank"
+                                    rel="noopener">Gezi Rehberi</a>
+
+                                <!-- Site Link -->
+                                <a class="site-link" href="seyahat.html" title="Gezelim" target="_blank"
+                                    rel="noopener">Seyahat Haberleri</a>
+                            </div>
+
+                            <!-- Yasemin -->
+                            <div class="items yasemin">
+                                <!-- Site Name -->
+                                <a title="YASEMİN" class="site-name">YASEMİN</a>
+
+                                <!-- Site Menu List -->
+                                <a href="https://www.yasemin.com/annecocuk" title="Anne-Çocuk" class="site-category"
+                                    target="_blank" rel="noopener">Anne-Çocuk</a>
+                                <a href="https://www.yasemin.com/masiva" title="Masiva" class="site-category"
+                                    target="_blank" rel="noopener">Masiva</a>
+                                <a href="https://www.yasemin.com/saglik" title="Sağlık" class="site-category"
+                                    target="_blank" rel="noopener">Sağlık</a>
+                                <a href="https://www.yasemin.com/guzellik" title="Güzellik" class="site-category"
+                                    target="_blank" rel="noopener">Güzellik</a>
+
+                                <!-- Site Link -->
+                                <a class="site-link" href="https://www.yasemin.com/" title="Yasemin" target="_blank"
+                                    rel="noopener">Yasemin.com</a>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <div id="dfp-oop" style="width: 0; height: 0;">
+        <script>  googletag.cmd.push(function () { googletag.display('dfp-oop'); }); </script>
+    </div>
+    <div id="dfp-oop-2" style="width: 0; height: 0;">
+        <script>  googletag.cmd.push(function () { googletag.display('dfp-oop-2'); }); </script>
+    </div>
+
+
+    <style>
+        .category-spot {
+            border-radius: 3px;
+            line-height: 25px;
+            padding: 10px 10px;
+            background: #efefef;
+            border: 1px solid #eaeaea;
+            font-size: 14px;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            background: -moz-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250, 248, 248, 1)), color-stop(100%, rgba(231, 230, 231, 1)));
+            background: -webkit-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
+            background: -o-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
+            background: linear-gradient(to bottom, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
+        }
+
+        .category-spot:after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            right: -18px;
+            width: 90px;
+            height: 90px;
+            opacity: .4;
+            z-index: -1;
+            background: url('https://i.haber7.net/assets/v3/common/images/haber7-logo.svg') -170px 0px no-repeat;
+            background-size: 426%;
+        }
+
+        .refresh-countdown-number {
+            font-size: 16px;
+        }
+
+        /* RESPONSIVE GRID */
+        .container {
+            width: auto;
+        }
+
+        @media (min-width:960px) {
+            .container {
+                width: 960px
+            }
+        }
+
+        @media (min-width:960px) {
+
+            .col-md-1,
+            .col-md-10,
+            .col-md-11,
+            .col-md-12,
+            .col-md-2,
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6,
+            .col-md-7,
+            .col-md-8,
+            .col-md-9 {
+                float: left
+            }
+
+            .col-md-12 {
+                width: 100%
+            }
+
+            .col-md-11 {
+                width: 91.66666667%
+            }
+
+            .col-md-10 {
+                width: 83.33333333%
+            }
+
+            .col-md-9 {
+                width: 75%
+            }
+
+            .col-md-8 {
+                width: 66.66666667%
+            }
+
+            .col-md-7 {
+                width: 58.33333333%
+            }
+
+            .col-md-6 {
+                width: 50%
+            }
+
+            .col-md-5 {
+                width: 41.66666667%
+            }
+
+            .col-md-4 {
+                width: 33.33333333%
+            }
+
+            .col-md-3 {
+                width: 25%
+            }
+
+            .col-md-2 {
+                width: 16.66666667%
+            }
+
+            .col-md-1 {
+                width: 8.33333333%
+            }
+
+            .col-md-pull-12 {
+                right: 100%
+            }
+
+            .col-md-pull-11 {
+                right: 91.66666667%
+            }
+
+            .col-md-pull-10 {
+                right: 83.33333333%
+            }
+
+            .col-md-pull-9 {
+                right: 75%
+            }
+
+            .col-md-pull-8 {
+                right: 66.66666667%
+            }
+
+            .col-md-pull-7 {
+                right: 58.33333333%
+            }
+
+            .col-md-pull-6 {
+                right: 50%
+            }
+
+            .col-md-pull-5 {
+                right: 41.66666667%
+            }
+
+            .col-md-pull-4 {
+                right: 33.33333333%
+            }
+
+            .col-md-pull-3 {
+                right: 25%
+            }
+
+            .col-md-pull-2 {
+                right: 16.66666667%
+            }
+
+            .col-md-pull-1 {
+                right: 8.33333333%
+            }
+
+            .col-md-pull-0 {
+                right: auto
+            }
+
+            .col-md-push-12 {
+                left: 100%
+            }
+
+            .col-md-push-11 {
+                left: 91.66666667%
+            }
+
+            .col-md-push-10 {
+                left: 83.33333333%
+            }
+
+            .col-md-push-9 {
+                left: 75%
+            }
+
+            .col-md-push-8 {
+                left: 66.66666667%
+            }
+
+            .col-md-push-7 {
+                left: 58.33333333%
+            }
+
+            .col-md-push-6 {
+                left: 50%
+            }
+
+            .col-md-push-5 {
+                left: 41.66666667%
+            }
+
+            .col-md-push-4 {
+                left: 33.33333333%
+            }
+
+            .col-md-push-3 {
+                left: 25%
+            }
+
+            .col-md-push-2 {
+                left: 16.66666667%
+            }
+
+            .col-md-push-1 {
+                left: 8.33333333%
+            }
+
+            .col-md-push-0 {
+                left: auto
+            }
+
+            .col-md-offset-12 {
+                margin-left: 100%
+            }
+
+            .col-md-offset-11 {
+                margin-left: 91.66666667%
+            }
+
+            .col-md-offset-10 {
+                margin-left: 83.33333333%
+            }
+
+            .col-md-offset-9 {
+                margin-left: 75%
+            }
+
+            .col-md-offset-8 {
+                margin-left: 66.66666667%
+            }
+
+            .col-md-offset-7 {
+                margin-left: 58.33333333%
+            }
+
+            .col-md-offset-6 {
+                margin-left: 50%
+            }
+
+            .col-md-offset-5 {
+                margin-left: 41.66666667%
+            }
+
+            .col-md-offset-4 {
+                margin-left: 33.33333333%
+            }
+
+            .col-md-offset-3 {
+                margin-left: 25%
+            }
+
+            .col-md-offset-2 {
+                margin-left: 16.66666667%
+            }
+
+            .col-md-offset-1 {
+                margin-left: 8.33333333%
+            }
+
+            .col-md-offset-0 {
+                margin-left: 0
+            }
+        }
+
+        @media (max-width:959px) {
+
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-8 {
+                width: auto !important;
+                float: none
+            }
+        }
+
+        .visible-lg,
+        .visible-md,
+        .visible-sm,
+        .visible-xs {
+            display: none
+        }
+
+        .visible-lg-block,
+        .visible-lg-inline,
+        .visible-lg-inline-block,
+        .visible-md-block,
+        .visible-md-inline,
+        .visible-md-inline-block,
+        .visible-xs-block,
+        .visible-xs-inline,
+        .visible-xs-inline-block {
+            display: none
+        }
+
+        @media (max-width:959px) {
+            .visible-xs {
+                display: block
+            }
+        }
+
+        @media (max-width:959px) {
+            .visible-xs-block {
+                display: block
+            }
+        }
+
+        @media (max-width:959px) {
+            .visible-xs-inline {
+                display: inline
+            }
+        }
+
+        @media (max-width:959px) {
+            .visible-xs-inline-block {
+                display: inline-block
+            }
+        }
+
+        @media (min-width:960px) and (max-width:1119px) {
+            .visible-md {
+                display: block
+            }
+        }
+
+        @media (min-width:960px) and (max-width:1119px) {
+            .visible-md-block {
+                display: block
+            }
+        }
+
+        @media (min-width:960px) and (max-width:1119px) {
+            .visible-md-inline {
+                display: inline
+            }
+        }
+
+        @media (min-width:960px) and (max-width:1119px) {
+            .visible-md-inline-block {
+                display: inline-block
+            }
+        }
+
+        @media (min-width:1120px) {
+            .visible-lg {
+                display: block
+            }
+        }
+
+        @media (min-width:1120px) {
+            .visible-lg-block {
+                display: block
+            }
+        }
+
+        @media (min-width:1120px) {
+            .visible-lg-inline {
+                display: inline
+            }
+        }
+
+        @media (min-width:1120px) {
+            .visible-lg-inline-block {
+                display: inline-block
+            }
+        }
+
+        @media (min-width:320px) and (max-width:959px) {
+            .hidden-xs {
+                display: none
+            }
+        }
+
+        @media (min-width:960px) and (max-width:1119px) {
+            .hidden-md {
+                display: none
+            }
+        }
+
+        @media (min-width:1120px) {
+            .hidden-lg {
+                display: none
+            }
+        }
+
+        /* PAGE */
+        .site-header,
+        .site-footer {
+            width: auto !important;
+        }
+
+        @media (max-width:959px) {
+            .site-header .site-logo {
+                float: none;
+                text-align: center
+            }
+
+            .site-header-bottom {
+                position: relative
+            }
+
+            .site-header-bottom:after {
+                width: 100px;
+                height: 90%;
+                top: 2px;
+                right: 140px;
+                content: '';
+                pointer-events: none;
+                position: absolute;
+                background-image: linear-gradient(90deg, rgba(243, 243, 243, 0) 0, #fff 100%)
+            }
+
+            .main-menu {
+                display: flex;
+                padding-right: 40px;
+                width: calc(100% - 138px);
+                overflow: auto hidden
+            }
+
+            .site-menu,
+            .site-search {
+                width: 100vw;
+                right: -10px
+            }
+
+            .site-search:before {
+                right: 104px
+            }
+
+            .site-menu .items {
+                height: auto;
+                font-size: 15px;
+                line-height: 43px;
+                text-align: center
+            }
+
+            .site-menu .items .site-link {
+                display: none
+            }
+
+            .site-menu-list {
+                padding-top: 8px;
+                padding-bottom: 5px;
+                text-align: center
+            }
+
+            .breaking-news-box .image {
+                float: none;
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .breaking-news-box .content .title {
+                font-size: 18px;
+                line-height: 22px
+            }
+
+            .breaking-news-box .content .summary {
+                font-size: 15px;
+            }
+
+            .category-title .title {
+                font-size: 22px;
+                text-transform: uppercase
+            }
+
+            .category-title .title:before {
+                width: 65px
+            }
+
+            .category-title.relative .title {
+                font-size: 20px;
+                color: #b34062
+            }
+
+            .category-title.relative .title:before {
+                width: 25px;
+                background: #df6e8f
+            }
+
+            .category-title.relative .title:after {
+                background: #b34062
+            }
+
+            .breaking-news-content .category-news-item .image {
+                height: auto
+            }
+
+            .site-footer {
+                margin-top: 20px;
+            }
+
+            .copyright {
+                text-align: center
+            }
+
+            .site-footer .footer-content-left {
+                padding-left: 25px
+            }
+
+            .site-footer .footer-content-right {
+                padding-right: 25px
+            }
+
+            .site-footer-logo {
+                margin-top: 0;
+                margin-left: auto;
+                margin-bottom: 30px
+            }
+
+            .footer-content {
+                overflow: hidden;
+                margin-bottom: 30px
+            }
+
+            .site-footer-brands {
+                height: auto;
+                margin-top: 30px;
+                padding: 15px 0 5px
+            }
+
+            .site-footer .mobile-buttons {
+                overflow: hidden;
+                padding-left: 0
+            }
+
+            .site-footer .mobile-buttons-item.appstore {
+                margin-bottom: 0
+            }
+
+            .cookie-message {
+                height: auto;
+                line-height: 17px;
+                padding-top: 10px;
+            }
+
+            .cookie-message-close {
+                position: absolute;
+                bottom: 8px;
+                right: 18px;
+                background: none;
+            }
+        }
+    </style>
+
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Page Title -->
+            <h1 class="category-title relative">
+                <div class="title">SON DAKİKA HABERLERİ</div>
+
+                <!-- Countdown -->
+                <div class="refresh-countdown">
+                    <div class="refresh-countdown-number"></div>
+                    <svg>
+                        <circle r="15" cx="16" cy="16"></circle>
+                    </svg>
+                </div>
+            </h1>
+
+            <!-- Breaking News - Box -->
+
+            <!-- Breaking News - Spot -->
+            <span class="category-spot">
+                Türkiye’nin en etkin haber sitesi Haber7'nin son dakika haberleri sayfasına hoş geldiniz.
+                En güncel haberleri ve son dakika gelişmelerini Haber 7 üzerinden takip edebilir; mobil
+                uygulamalarımızla anında haberdar
+                olabilirsiniz. Gündem, Spor, Ekonomi ve onlarca kategoride en önemli haberler ve son gelişmeler Haber7
+                SonDakika servisinde!
+            </span>
+
+            <!-- Content -->
+            <div class="row mb30">
+
+                <!-- Left Block -->
+                <div class="col-md-8">
+
+                    <div class="breaking-news-content">
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 18:03 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="siyaset/haber/3213809-chpnin-ucuz-mizanseni-ak-parti-uyeligi-yalan-cikti.html"
+                            title="CHP&#039;nin ucuz mizanseni: AK Parti &uuml;yeliği yalan &ccedil;ıktı!"
+                            target="_blank" class="category-news-item" id=" ">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/chpnin_ucuz_mizanseni_ak_parti_uyeligi_yalan_cikti_1650122337_4981.jpg"
+                                    alt="CHP&#039;nin ucuz mizanseni: AK Parti &uuml;yeliği yalan &ccedil;ıktı!">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">SİYASET</div>
+                                    <div class="date">18:03</div>
+                                </div>
+                                <div class="title">CHP&#039;nin ucuz mizanseni: AK Parti &uuml;yeliği yalan
+                                    &ccedil;ıktı!</div>
+                                <div class="summary">CHP&#039;nin bir tiyatro oyunu daha kısa s&uuml;rd&uuml;.
+                                    Sultanbeyli&#039;de AK Parti&#039;den ayrılıp CHP&#039;ye katılacağını s&ouml;yleyen
+                                    kişinin ger&ccedil;ek adının başka olduğu ve AK Parti&#039;ye hi&ccedil; &uuml;ye
+                                    olmadığı ortaya &ccedil;ıktı. </div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 17:54 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="guncel/haber/3213806-chpli-beylikduzu-belediyesinden-skandal-engelli-dernegine-tahliye-karari.html"
+                            title="CHP&#039;li Beylikd&uuml;z&uuml; Belediyesi&#039;nden skandal: Engelli derneğine tahliye kararı"
+                            target="_blank" class="category-news-item" id="?sayfa=1">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/chpli_beylikduzu_belediyesinden_skandal_engelli_dernegine_tahliye_karari_1650120853_1968.jpg"
+                                    alt="CHP&#039;li Beylikd&uuml;z&uuml; Belediyesi&#039;nden skandal: Engelli derneğine tahliye kararı">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">G&Uuml;NCEL</div>
+                                    <div class="date">17:54</div>
+                                </div>
+                                <div class="title">CHP&#039;li Beylikd&uuml;z&uuml; Belediyesi&#039;nden skandal:
+                                    Engelli derneğine tahliye kararı</div>
+                                <div class="summary">CHP&#039;li Beylikd&uuml;z&uuml; Belediyesi, 2007 yılından bu yana
+                                    faaliyet g&ouml;steren B&uuml;t&uuml;n Engellileri Destekleme Derneği&rsquo;ni
+                                    (BEDEL) iddiaya g&ouml;re herhangi bir gerek&ccedil;e g&ouml;stermeden dernek
+                                    binasından &ccedil;ıkarmaya &ccedil;alıştı. </div>
+                            </div>
+                        </a>
+
+                        <a href="guncel/haber/3213790-nevsin-mengu-ak-partinin-sahur-programina-sahip-cikti-acayip-bir-sey-yok"
+                            title="Nevşin Meng&uuml;, AK Parti&#039;nin sahur programına sahip &ccedil;ıktı: Acayip bir şey yok"
+                            target="_blank" class="category-news-item" id="?sayfa=2">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/nevsin_mengu_ak_partinin_sahur_programina_sahip_cikti_acayip_bir_sey_yok_1650120364_2708.jpg"
+                                    alt="Nevşin Meng&uuml;, AK Parti&#039;nin sahur programına sahip &ccedil;ıktı: Acayip bir şey yok">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">G&Uuml;NCEL</div>
+                                    <div class="date">17:46</div>
+                                </div>
+                                <div class="title">Nevşin Meng&uuml;, AK Parti&#039;nin sahur programına sahip
+                                    &ccedil;ıktı: Acayip bir şey yok</div>
+                                <div class="summary">Nevşin Meng&uuml;, AK Parti&#039;nin Ağrı&#039;daki sahuruna
+                                    y&ouml;nelik yapılan yorumları eleştirdi. Meng&uuml;, &quot;Orada acayip bir şey yok
+                                    ya. Ciddi s&ouml;yl&uuml;yorum. Vay &ccedil;algılı &ccedil;engili diye eleştirilmiş.
+                                    Bir şey yok ki tef &ccedil;alıyor gen&ccedil;ler, t&uuml;rk&uuml;
+                                    s&ouml;yl&uuml;yorlar&quot; dedi.</div>
+                            </div>
+                        </a>
+
+                        <a href="https://ekonomi.haber7.com/ekonomi/haber/3213781-rusya-turkiyeden-bazi-tarim-urunlerine-kisitlamayi-kaldirdi"
+                            title="Rusya, T&uuml;rkiye&#039;den bazı tarım &uuml;r&uuml;nlerine kısıtlamayı kaldırdı"
+                            target="_blank" class="category-news-item" id="?sayfa=3">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/rusya_turkiyeden_bazi_tarim_urunlerine_kisitlamayi_kaldirdi_1650118815_1166.jpg"
+                                    alt="Rusya, T&uuml;rkiye&#039;den bazı tarım &uuml;r&uuml;nlerine kısıtlamayı kaldırdı">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">EKONOMİ</div>
+                                    <div class="date">17:20</div>
+                                </div>
+                                <div class="title">Rusya, T&uuml;rkiye&#039;den bazı tarım &uuml;r&uuml;nlerine
+                                    kısıtlamayı kaldırdı</div>
+                                <div class="summary">Rusya&#039;dan yapılan a&ccedil;ıklamada T&uuml;rkiye&rsquo;den
+                                    biber, nar, &uuml;z&uuml;m, portakal ve greyfurt ithalatına y&ouml;nelik
+                                    kısıtlamaların kaldırıldığı belirtildi.
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 16:27 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="https://video.haber7.com/video-galeri/209005-temel-karamollaoglunun-3-ittifak-teklifine-ali-babacandan-cevap"
+                            title="Temel Karamollaoğlu&rsquo;nun 3. ittifak teklifine Ali Babacan&#039;dan cevap"
+                            target="_blank" class="category-news-item" id="?sayfa=4">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/temel_karamollaoglunun_3_ittifak_teklifine_ali_babacandan_cevap_1650119173_2335.jpg"
+                                    alt="Temel Karamollaoğlu&rsquo;nun 3. ittifak teklifine Ali Babacan&#039;dan cevap">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">SİYASET</div>
+                                    <div class="date">16:27</div>
+                                </div>
+                                <div class="title">Temel Karamollaoğlu&rsquo;nun 3. ittifak teklifine Ali
+                                    Babacan&#039;dan cevap</div>
+                                <div class="summary">AK Parti &uuml;yesiyken eski Cumhurbaşkanı Abdullah
+                                    G&uuml;l&#039;&uuml;n muhalefetin ortak Cumhurbaşkanı adayı olması i&ccedil;in
+                                    &ccedil;alışmalar y&uuml;r&uuml;ten Ali Babacan, &ldquo;Altılı masada otururken
+                                    başka alternatifi konuşmayı etik bulmayız.&rdquo; dedi.</div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 17:07 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="https://video.haber7.com/video-galeri/209006-bill-gates-gemileri-yakti-pandemi-ordusu-kuracak-16-nisan-2022-gunun-onemli-gelismeleri"
+                            title="Gates gemileri yaktı! Pandemi ordusu kuracak (16 Nisan 2022 G&uuml;n&uuml;n &Ouml;nemli Gelişmeleri)"
+                            target="_blank" class="category-news-item" id="?sayfa=5">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/gates_gemileri_yakti_pandemi_ordusu_kuracak_16_nisan_2022_gunun_onemli_gelismeleri_1650118009_597.jpg"
+                                    alt="Gates gemileri yaktı! Pandemi ordusu kuracak (16 Nisan 2022 G&uuml;n&uuml;n &Ouml;nemli Gelişmeleri)">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">G&Uuml;NCEL</div>
+                                    <div class="date">17:07</div>
+                                </div>
+                                <div class="title">Gates gemileri yaktı! Pandemi ordusu kuracak (16 Nisan 2022
+                                    G&uuml;n&uuml;n &Ouml;nemli Gelişmeleri)</div>
+                                <div class="summary">16 Nisan 2022 Cumartesi &uuml;lke ve d&uuml;nya g&uuml;ndeminde
+                                    dikkat &ccedil;eken gelişmeleri Haber7.com okuyucuları i&ccedil;in derledik.</div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 15:53 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="guncel/haber/3213768-ankarada-indirimli-iphone-izdihami-birbirlerini-ezdiler"
+                            title="Ankara&#039;da indirimli iPhone izdihamı! Birbirlerini ezdiler" target="_blank"
+                            class="category-news-item" id="?sayfa=6">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/ankarada_indirimli_iphone_izdihami_birbirlerini_ezdiler_1650113562_6805.jpg"
+                                    alt="Ankara&#039;da indirimli iPhone izdihamı! Birbirlerini ezdiler">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">G&Uuml;NCEL</div>
+                                    <div class="date">15:53</div>
+                                </div>
+                                <div class="title">Ankara&#039;da indirimli iPhone izdihamı! Birbirlerini ezdiler</div>
+                                <div class="summary">Ankara&#039;da mağaza a&ccedil;ılışında oluşan izdihamda
+                                    vatandaşlar, buldukları indirimli &uuml;r&uuml;nlere h&uuml;cum etti.</div>
+                            </div>
+                        </a>
+
+                        <a href="guncel/haber/3213755-umre-turlari-ramazan-bayrami-sonrasi-basliyor.html"
+                            title="Umre turları Ramazan Bayramı sonrası başlıyor" target="_blank"
+                            class="category-news-item" id="?sayfa=7">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/umre_turlari_ramazan_bayrami_sonrasi_basliyor_1650115455_1878.jpg"
+                                    alt="Umre turları Ramazan Bayramı sonrası başlıyor">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">G&Uuml;NCEL</div>
+                                    <div class="date">15:37</div>
+                                </div>
+                                <div class="title">Umre turları Ramazan Bayramı sonrası başlıyor</div>
+                                <div class="summary">Diyanet İşleri Başkanı Ali Erbaş, Covid-19 salgını nedeniyle 2
+                                    yıldır yapılamayan umre turlarının Ramazan Bayramı&#039;nın ardından yeniden
+                                    başlayacağını duyurdu. </div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 16:14 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="foto-galeri/73649-700-yillik-camide-sasirtan-gelenek-her-yil-camurla-yenileniyor.html"
+                            title="700 yıllık camide şaşırtan gelenek! Her yıl &ccedil;amurla yenileniyor"
+                            target="_blank" class="category-news-item" id="?sayfa=8">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/700_yillik_camide_sasirtan_gelenek_her_yil_camurla_yenileniyor_1650114831_5165.jpg"
+                                    alt="700 yıllık camide şaşırtan gelenek! Her yıl &ccedil;amurla yenileniyor">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">D&Uuml;NYA</div>
+                                    <div class="date">16:14</div>
+                                </div>
+                                <div class="title">700 yıllık camide şaşırtan gelenek! Her yıl &ccedil;amurla
+                                    yenileniyor</div>
+                                <div class="summary">Tarihte her medeniyetin kendi mimarisiyle harmanlayarak ortaya
+                                    koyduğu camiler, zamanla ilgin&ccedil; tasarımlara sahip mimari dehası yapılar
+                                    haline geldi.</div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 15:28 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="https://ekonomi.haber7.com/ekonomi/haber/3213754-50-kurusa-alip-5-liradan-satiyorlar-curumesine-engel-olamadilar"
+                            title="50 kuruşa alıp 5 liradan satıyorlar! &Ccedil;&uuml;r&uuml;mesine engel olamadılar"
+                            target="_blank" class="category-news-item" id="?sayfa=9">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/50_kurusa_alip_5_liradan_satiyorlar_curumesine_engel_olamadilar_1650112094_837.jpg"
+                                    alt="50 kuruşa alıp 5 liradan satıyorlar! &Ccedil;&uuml;r&uuml;mesine engel olamadılar">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">EKONOMİ</div>
+                                    <div class="date">15:28</div>
+                                </div>
+                                <div class="title">50 kuruşa alıp 5 liradan satıyorlar! &Ccedil;&uuml;r&uuml;mesine
+                                    engel olamadılar</div>
+                                <div class="summary">Market ve &uuml;retici arasındaki fiyat farkı g&uuml;n
+                                    ge&ccedil;tik&ccedil;e daha da artıyor. &Uuml;rettikleri soğanın kilosunun 50
+                                    kuruştan ellerinden &ccedil;ıkmasına rağmen halde 5 liradan satılmasına karşı
+                                    &ccedil;ıkan &ccedil;ift&ccedil;iler, aradaki komisyonculara isyan etti.
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 12:36 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="dunya/haber/3213711-yunanistan-turkiyeye-iade-etmedigi-8-darbeci-askeri-3-avrupa-ulkesine-gonderdi.html"
+                            title="Yunanistan T&uuml;rkiye&#039;ye iade etmediği 8 darbeci askeri 3 Avrupa &uuml;lkesine g&ouml;nderdi"
+                            target="_blank" class="category-news-item" id="?sayfa=10">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/yunanistan_turkiyeye_iade_etmedigi_8_darbeci_askeri_3_avrupa_ulkesine_gonderdi_1650110950_1929.jpg"
+                                    alt="Yunanistan T&uuml;rkiye&#039;ye iade etmediği 8 darbeci askeri 3 Avrupa &uuml;lkesine g&ouml;nderdi">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">D&Uuml;NYA</div>
+                                    <div class="date">12:36</div>
+                                </div>
+                                <div class="title">Yunanistan T&uuml;rkiye&#039;ye iade etmediği 8 darbeci askeri 3
+                                    Avrupa &uuml;lkesine g&ouml;nderdi</div>
+                                <div class="summary">Son dakika haberi... Yunanistan&rsquo;ın Ta Nea gazetesinin
+                                    haberine g&ouml;re, &uuml;lkedeki 8 Fetullah&ccedil;ı Ter&ouml;r
+                                    &Ouml;rg&uuml;t&uuml; (FET&Ouml;) &uuml;yesi Kanada, Almanya ve
+                                    Bel&ccedil;ika&rsquo;ya gitti.</div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 14:07 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="https://ekonomi.haber7.com/ekonomi/haber/3213741-erdogandan-phaselis-tuneli-acilisinda-net-mesaj-hicbir-sikintimiz-kalmayacak"
+                            title="Erdoğan&#039;dan Phaselis T&uuml;neli a&ccedil;ılışında net mesaj: Hi&ccedil;bir sıkıntımız kalmayacak"
+                            target="_blank" class="category-news-item" id="?sayfa=11">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/erdogandan_phaselis_tuneli_acilisinda_net_mesaj_hicbir_sikintimiz_kalmayacak_1650110330_0723.jpg"
+                                    alt="Erdoğan&#039;dan Phaselis T&uuml;neli a&ccedil;ılışında net mesaj: Hi&ccedil;bir sıkıntımız kalmayacak">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">EKONOMİ</div>
+                                    <div class="date">14:07</div>
+                                </div>
+                                <div class="title">Erdoğan&#039;dan Phaselis T&uuml;neli a&ccedil;ılışında net mesaj:
+                                    Hi&ccedil;bir sıkıntımız kalmayacak</div>
+                                <div class="summary">Cumhurbaşkanı Recep Tayyip Erdoğan Kemer &ndash; Kumluca Yolu
+                                    Phaselis T&uuml;neli A&ccedil;ılış T&ouml;reninde ekonomik mesaj vererek
+                                    &quot;Enflasyonun boynunu kırdığımızda hi&ccedil;bir sıkıntımız kalmayacak&quot;
+                                    dedi.
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://video.haber7.com/video-galeri/208997-umit-ozdag-ekrem-imamogluna-guvenmiyoruz-o-tehlikeli-bir-siyasetci"
+                            title="&Uuml;mit &Ouml;zdağ: Ekrem İmamoğlu&#039;na g&uuml;venmiyoruz, o tehlikeli bir siyaset&ccedil;i"
+                            target="_blank" class="category-news-item" id="?sayfa=12">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/umit_ozdag_ekrem_imamogluna_guvenmiyoruz_o_tehlikeli_bir_siyasetci_1650107804_6408.jpg"
+                                    alt="&Uuml;mit &Ouml;zdağ: Ekrem İmamoğlu&#039;na g&uuml;venmiyoruz, o tehlikeli bir siyaset&ccedil;i">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">SİYASET</div>
+                                    <div class="date">14:16</div>
+                                </div>
+                                <div class="title">&Uuml;mit &Ouml;zdağ: Ekrem İmamoğlu&#039;na g&uuml;venmiyoruz, o
+                                    tehlikeli bir siyaset&ccedil;i</div>
+                                <div class="summary">Zafer Partisi Genel Başkanı &Uuml;mit &Ouml;zdağ, İBB Başkanı
+                                    İmamoğlu&#039;nun tehlikeli bir siyaset&ccedil;i olduğunu belirterek,
+                                    &quot;Diyarbakır&#039;da ayrı, Edirne&#039;de ayrı konuşuyor. Bu, T&uuml;rk halkına
+                                    yalan s&ouml;ylemektir&quot; dedi.</div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 15:04 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="foto-galeri/73648-ukrayna-bu-karelerle-duyurdu-ruslardan-sinsi-tuzak.html"
+                            title="Ukrayna bu karelerle duyurdu: Ruslar&#039;dan sinsi tuzak!" target="_blank"
+                            class="category-news-item" id="?sayfa=13">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/ukrayna_bu_karelerle_duyurdu_ruslardan_sinsi_tuzak_1650110467_6462.jpg"
+                                    alt="Ukrayna bu karelerle duyurdu: Ruslar&#039;dan sinsi tuzak!">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">D&Uuml;NYA</div>
+                                    <div class="date">15:04</div>
+                                </div>
+                                <div class="title">Ukrayna bu karelerle duyurdu: Ruslar&#039;dan sinsi tuzak!</div>
+                                <div class="summary">Ukrayna &Ouml;zel İletişim ve Bilgi Koruma Hizmetleri yetkilileri,
+                                    Rus g&uuml;&ccedil;lerinin Kiev b&ouml;lgesini terk ederken geride arabalarda,
+                                    evlerde, ormanda, yollarda patlamamış m&uuml;himmat bıraktıklarını a&ccedil;ıkladı.
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 13:59 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="guncel/haber/3213736-ibbnin-otobus-mezarligi-onlarcasi-curumeye-terk-edildi.html"
+                            title="İBB&#039;nin otob&uuml;s mezarlığı: Onlarcası &ccedil;&uuml;r&uuml;meye terk edildi"
+                            target="_blank" class="category-news-item" id="?sayfa=14">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/ibbnin_otobus_mezarligi_onlarcasi_curumeye_terk_edildi_1650106737_1295.jpg"
+                                    alt="İBB&#039;nin otob&uuml;s mezarlığı: Onlarcası &ccedil;&uuml;r&uuml;meye terk edildi">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">G&Uuml;NCEL</div>
+                                    <div class="date">13:59</div>
+                                </div>
+                                <div class="title">İBB&#039;nin otob&uuml;s mezarlığı: Onlarcası
+                                    &ccedil;&uuml;r&uuml;meye terk edildi</div>
+                                <div class="summary">İstanbul&#039;da yolda kalan otob&uuml;sler ve arızalar vatandaşı
+                                    &ccedil;ileden &ccedil;ıkarırken, tepki &ccedil;eken bir g&ouml;r&uuml;nt&uuml; daha
+                                    ortaya &ccedil;ıktı. İETT&#039;nin, onlarca otob&uuml;s&uuml; boş bir alanda
+                                    &ccedil;&uuml;r&uuml;meye terk ettiğine dair g&ouml;r&uuml;nt&uuml;ler tepki
+                                    &ccedil;ekti. </div>
+                            </div>
+                        </a>
+
+                        <a href="https://ekonomi.haber7.com/ekonomi/haber/3213726-1970-krizini-golgede-birakti-hem-yazin-hem-de-kisin-fiyatlar-yuksek-kalacak"
+                            title="1970 krizini g&ouml;lgede bıraktı: Hem yazın hem de kışın fiyatlar y&uuml;ksek kalacak"
+                            target="_blank" class="category-news-item" id="?sayfa=15">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/1970_krizini_golgede_birakti_hem_yazin_hem_de_kisin_fiyatlar_yuksek_kalacak_1650104933_8736.jpg"
+                                    alt="1970 krizini g&ouml;lgede bıraktı: Hem yazın hem de kışın fiyatlar y&uuml;ksek kalacak">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">EKONOMİ</div>
+                                    <div class="date">13:29</div>
+                                </div>
+                                <div class="title">1970 krizini g&ouml;lgede bıraktı: Hem yazın hem de kışın fiyatlar
+                                    y&uuml;ksek kalacak</div>
+                                <div class="summary">Y&uuml;ksek petrol ve doğalgaz fiyatlarıyla yaşamak zorunda
+                                    kalacağız&quot; diyen Uluslararası Enerji Ajansı Başkanı (IEA) Fatih Birol,
+                                    &quot;Petrolde endişem yaz ayları i&ccedil;in, doğalgazda ise &ouml;zellikle
+                                    Avrupa&rsquo;da &ouml;n&uuml;m&uuml;zdeki kış ayları zor ge&ccedil;ecek&quot; dedi.
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 12:37 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="dunya/haber/3213626-rusyanin-ukrayna-isgali-52-gununde-rusyadan-tocka-u-fuze-sistemi-iddiasi.html"
+                            title="Rusya&#039;nın Ukrayna işgali 52. g&uuml;n&uuml;nde: Rusya&#039;dan To&ccedil;ka-U f&uuml;ze sistemi iddiası"
+                            target="_blank" class="category-news-item" id="?sayfa=16">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/rusyanin_ukrayna_isgali_52_gununde_rusyadan_tocka_u_fuze_sistemi_iddiasi_1650101961_153.jpg"
+                                    alt="Rusya&#039;nın Ukrayna işgali 52. g&uuml;n&uuml;nde: Rusya&#039;dan To&ccedil;ka-U f&uuml;ze sistemi iddiası">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">D&Uuml;NYA</div>
+                                    <div class="date">12:37</div>
+                                </div>
+                                <div class="title">Rusya&#039;nın Ukrayna işgali 52. g&uuml;n&uuml;nde: Rusya&#039;dan
+                                    To&ccedil;ka-U f&uuml;ze sistemi iddiası</div>
+                                <div class="summary">Rusya&#039;nın Ukrayna işgali 52. g&uuml;n&uuml;ne girdi. Rusya
+                                    Savunma Bakanlığı, Ukrayna&#039;nın &quot;To&ccedil;ka-U&quot; f&uuml;ze sisteminin
+                                    kullanımı ile &quot;provokasyonlar&quot; hazırladığını iddia etti. İşte dakika
+                                    dakika yaşananlar...</div>
+                            </div>
+                        </a>
+
+                        <a href="foto-galeri/73646-dikkat-ceken-uyari-kargo-teslim-tutanagi-yerine-senet-imzalamayin.html"
+                            title="Dikkat &ccedil;eken uyarı! Kargo teslim tutanağı yerine senet imzalamayın"
+                            target="_blank" class="category-news-item" id="?sayfa=17">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/dikkat_ceken_uyari_kargo_teslim_tutanagi_yerine_senet_imzalamayin_1650102356_6903.jpg"
+                                    alt="Dikkat &ccedil;eken uyarı! Kargo teslim tutanağı yerine senet imzalamayın">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">G&Uuml;NCEL</div>
+                                    <div class="date">12:47</div>
+                                </div>
+                                <div class="title">Dikkat &ccedil;eken uyarı! Kargo teslim tutanağı yerine senet
+                                    imzalamayın</div>
+                                <div class="summary">Belge inceleme uzman polisleri, son d&ouml;nemde sık karşılaşılan
+                                    imza sahteciliklerinden biri olan &quot;pencere y&ouml;ntemi&quot; dolandırıcılığına
+                                    karşı uyarıda bulundu.</div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 11:55 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="siyaset/haber/3213461-6li-masada-dikis-tutmadi-mi.html"
+                            title="6&#039;lı masada dikiş tutmadı mı?" target="_blank" class="category-news-item"
+                            id="?sayfa=18">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/6li_masada_dikis_tutmadi_mi_1650099285_471.jpg"
+                                    alt="6&#039;lı masada dikiş tutmadı mı?">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">SİYASET</div>
+                                    <div class="date">11:55</div>
+                                </div>
+                                <div class="title">6&#039;lı masada dikiş tutmadı mı?</div>
+                                <div class="summary">Saadet Partisi lideri Karamollaoğlu&#039;nun
+                                    &quot;&uuml;&ccedil;&uuml;nc&uuml; ittifak&quot; &ccedil;ıkışı, altılı masa
+                                    ittifakında &#039;&ccedil;atlak&#039; yorumlarına neden oldu. Haber7&#039;ye konuşan
+                                    uzmanlara g&ouml;re, se&ccedil;menin Millet İttifakı&#039;nı tamamen &quot;kararsız
+                                    ve karmaşık&quot; g&ouml;rd&uuml;ğ&uuml;n&uuml; ifade etti.</div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 10:59 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="https://ekonomi.haber7.com/ekonomi/haber/3213658-nefer-insansiz-kule-sisteminin-testleri-basariyla-suruyor"
+                            title="NEFER insansız kule sisteminin testleri başarıyla s&uuml;r&uuml;yor" target="_blank"
+                            class="category-news-item" id="?sayfa=19">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/nefer_insansiz_kule_sisteminin_testleri_basariyla_suruyor_1650095957_8239.jpg"
+                                    alt="NEFER insansız kule sisteminin testleri başarıyla s&uuml;r&uuml;yor">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">EKONOMİ</div>
+                                    <div class="date">10:59</div>
+                                </div>
+                                <div class="title">NEFER insansız kule sisteminin testleri başarıyla s&uuml;r&uuml;yor
+                                </div>
+                                <div class="summary">Savunma Sanayii Başkanı İsmail Demir, &quot;Modernize ZMA&#039;ya
+                                    entegre ettiğimiz NEFER insansız kule sisteminin testleri başarıyla
+                                    s&uuml;r&uuml;yor&quot; ifadelerini kullandı.</div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 11:04 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="foto-galeri/73643-gecen-yilin-en-goz-alici-sehri-hangisi-oldu-turkiye-listede-var-mi.html"
+                            title="Ge&ccedil;en yılın en g&ouml;z alıcı şehri hangisi oldu? T&uuml;rkiye listede var mı?"
+                            target="_blank" class="category-news-item" id="?sayfa=20">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/gecen_yilin_en_goz_alici_sehri_hangisi_oldu_turkiye_listede_var_mi_1650096168_7305.jpg"
+                                    alt="Ge&ccedil;en yılın en g&ouml;z alıcı şehri hangisi oldu? T&uuml;rkiye listede var mı?">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">G&Uuml;NCEL</div>
+                                    <div class="date">11:04</div>
+                                </div>
+                                <div class="title">Ge&ccedil;en yılın en g&ouml;z alıcı şehri hangisi oldu? T&uuml;rkiye
+                                    listede var mı?</div>
+                                <div class="summary">Ge&ccedil;tiğimiz yılın en g&ouml;zalıcı şehri hangisi oldu?
+                                    &Uuml;lkemiz şehirleri listeye girdi mi? İngiltere merkezli pazar araştırma şirketi
+                                    Euromonitor, 2021 yılının en &ccedil;ekici şehirleri listesini yayımladı.</div>
+                            </div>
+                        </a>
+
+                        <div class="category-title">
+                            <div class="title"><i class="zmdi zmdi-time"></i> 10:21 <span class="date">16 Nisan
+                                    2022</span></div>
+                        </div>
+                        <a href="siyaset/haber/3213654-karamollaoglunun-3-ittifak-formulu-belli-oldu-saadet-partisi-catisi-altinda-3-parti.html"
+                            title="Karamollaoğlu&rsquo;nun 3. ittifak form&uuml;l&uuml; belli oldu... Saadet Partisi &ccedil;atısı altında 3 parti"
+                            target="_blank" class="category-news-item" id="?sayfa=21">
+                            <figure class="image">
+                                <img class="lazy"
+                                    data-original="https://i13.haber7.net/haber/haber7/bigmanset/2022/15/karamollaoglunun_3_ittifak_formulu_belli_oldu_saadet_partisi_catisi_altinda_3_parti_1650093681_9216.jpg"
+                                    alt="Karamollaoğlu&rsquo;nun 3. ittifak form&uuml;l&uuml; belli oldu... Saadet Partisi &ccedil;atısı altında 3 parti">
+                            </figure>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="category">SİYASET</div>
+                                    <div class="date">10:21</div>
+                                </div>
+                                <div class="title">Karamollaoğlu&rsquo;nun 3. ittifak form&uuml;l&uuml; belli oldu...
+                                    Saadet Partisi &ccedil;atısı altında 3 parti</div>
+                                <div class="summary">Yazar Mehmet Acet, Saadet Partisi lideri Karamollaoğlu&rsquo;nun 3.
+                                    ittifak &ccedil;ıkışıyla başlayan tartışmanın arka planında Karamollaoğlu&rsquo;nun
+                                    Saadet &ccedil;atısı altında DEVA ve Gelecek Partisinin katılacağı bir ittifak
+                                    form&uuml;l&uuml; olduğu iddiasını paylaştı.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Right Block -->
+                <div class="col-md-4 hidden-xs">
+
+                    <!-- News Widget -->
+                    <div class="sidebar-news-widget last-news">
+
+                        <!-- News Widget - Title -->
+                        <div class="sidebar-news-widget_title">
+                            <i class="zmdi zmdi-edit"></i> SON EKLENENLER
+
+                            <!-- Dropdown -->
+                            <i class="zmdi zmdi-chevron-down dropdown-button">
+
+                                <ul class="dropdown-list">
+                                    <li>
+                                        <a href="biyografi/haber/3195728-elif-buse-dogan-kimdir-ve-nerelidir-elif-buse-dogan-kac-yasinda-elif-buse-dogan-sarkilari.html"
+                                            title="Elif Buse Doğan kimdir ve nerelidir? Elif Buse Doğan ka&ccedil; yaşında? Elif Buse Doğan şarkıları..."
+                                            target="_blank">Elif Buse Doğan kimdir ve nerelidir? Elif Buse Doğan
+                                            ka&ccedil; yaşında? Elif Buse Doğan şarkıları...</a>
+                                    </li>
+                                    <li>
+                                        <a href="biyografi/haber/3211896-ismail-kucukkaya-kimdir-ve-nerelidir-ismail-kucukkaya-hayati-ve-biyografisi.html"
+                                            title="İsmail K&uuml;&ccedil;&uuml;kkaya kimdir ve nerelidir? İsmail K&uuml;&ccedil;&uuml;kkaya hayatı ve biyografisi..."
+                                            target="_blank">İsmail K&uuml;&ccedil;&uuml;kkaya kimdir ve nerelidir?
+                                            İsmail K&uuml;&ccedil;&uuml;kkaya hayatı ve biyografisi...</a>
+                                    </li>
+                                    <li>
+                                        <a href="hayat/haber/3212911-demet-akbag-turk-halkindan-ozur-diledi-yilmaz-erdogan-adina.html"
+                                            title="Demet Akbağ T&uuml;rk halkından &ouml;z&uuml;r diledi! Yılmaz Erdoğan adına..."
+                                            target="_blank">Demet Akbağ T&uuml;rk halkından &ouml;z&uuml;r diledi!
+                                            Yılmaz Erdoğan adına...</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://spor.haber7.com/spor/haber/3213811-sakaryaspor-turgutluspor-maci-ne-zaman-saat-kacta-ve-hangi-kanalda"
+                                            title="Sakaryaspor Turgutluspor ma&ccedil;ı ne zaman, saat ka&ccedil;ta ve hangi kanalda?"
+                                            target="_blank">Sakaryaspor Turgutluspor ma&ccedil;ı ne zaman, saat
+                                            ka&ccedil;ta ve hangi kanalda?</a>
+                                    </li>
+                                    <li>
+                                        <a href="biyografi/haber/3213808-ugur-aslan-kimdir-ve-aslen-nerelidir-esi-kimdir-ugur-aslan-dizileri"
+                                            title="Uğur Aslan kimdir ve aslen nerelidir? Eşi kimdir? Uğur Aslan dizileri..."
+                                            target="_blank">Uğur Aslan kimdir ve aslen nerelidir? Eşi kimdir? Uğur Aslan
+                                            dizileri...</a>
+                                    </li>
+                                    <li>
+                                        <a href="medya/haber/3213499-trt1-alparslan-buyuk-selcuklunun-evdokyasindan-uzen-haber-tutkunlarinin-keyfini-kaciracak-gelisme.html"
+                                            title="TRT1 Alparslan B&uuml;y&uuml;k Sel&ccedil;uklu&rsquo;nun Evdokya&rsquo;sından &uuml;zen haber! Tutkunlarının keyfini ka&ccedil;ıracak gelişme"
+                                            target="_blank">TRT1 Alparslan B&uuml;y&uuml;k Sel&ccedil;uklu&rsquo;nun
+                                            Evdokya&rsquo;sından &uuml;zen haber! Tutkunlarının keyfini ka&ccedil;ıracak
+                                            gelişme</a>
+                                    </li>
+                                    <li>
+                                        <a href="hayat/haber/3213321-turkiye-guzeline-ve-kizina-dayak-gizem-kocak-hem-hapsedildi-hem-de-siddet-gordu.html"
+                                            title="T&uuml;rkiye g&uuml;zeline ve kızına dayak! Gizem Ko&ccedil;ak hem hapsedildi hem de şiddet g&ouml;rd&uuml;..."
+                                            target="_blank">T&uuml;rkiye g&uuml;zeline ve kızına dayak! Gizem
+                                            Ko&ccedil;ak hem hapsedildi hem de şiddet g&ouml;rd&uuml;...</a>
+                                    </li>
+                                    <li>
+                                        <a href="hayat/haber/3213294-sahan-gokbakardan-multeci-cikisi-hazmedemiyorum.html"
+                                            title="Şahan G&ouml;kbakar&#039;dan m&uuml;lteci &ccedil;ıkışı: Hazmedemiyorum! "
+                                            target="_blank">Şahan G&ouml;kbakar&#039;dan m&uuml;lteci &ccedil;ıkışı:
+                                            Hazmedemiyorum! </a>
+                                    </li>
+                                    <li>
+                                        <a href="memur/haber/3211790-rekabet-kurumu-60-uzman-yardimcisi-alimi-basladi-son-basvuru-ne-zaman-bitecek.html"
+                                            title="Rekabet Kurumu 60 uzman yardımcısı alımı başladı! Son başvuru ne zaman bitecek?"
+                                            target="_blank">Rekabet Kurumu 60 uzman yardımcısı alımı başladı! Son
+                                            başvuru ne zaman bitecek?</a>
+                                    </li>
+                                    <li>
+                                        <a href="memur/haber/3213333-milli-saraylar-idaresi-en-az-lise-mezunu-personel-alimi-basladi-basvurular-ne-zaman-bitecek.html"
+                                            title="Milli Saraylar İdaresi en az lise mezunu personel alımı başladı! Başvurular ne zaman bitecek?"
+                                            target="_blank">Milli Saraylar İdaresi en az lise mezunu personel alımı
+                                            başladı! Başvurular ne zaman bitecek?</a>
+                                    </li>
+                                    <li>
+                                        <a href="memur/haber/3210872-saglik-bilimleri-universitesi-en-az-lise-mezunu-personel-alimi-bitiyor-basvuru-icin-son-6-gun.html"
+                                            title="Sağlık Bilimleri &Uuml;niversitesi en az lise mezunu personel alımı bitiyor! Başvuru i&ccedil;in son 6 g&uuml;n..."
+                                            target="_blank">Sağlık Bilimleri &Uuml;niversitesi en az lise mezunu
+                                            personel alımı bitiyor! Başvuru i&ccedil;in son 6 g&uuml;n...</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://spor.haber7.com/spor/haber/3213767-manchester-city-liverpool-fa-cup-yari-final-maci-sifresiz-izle-m-city-liverpool-tivibu-spor"
+                                            title="Manchester City Liverpool FA Cup Yarı Final Ma&ccedil;ı Şifresiz İzle! M. City Liverpool Tivibu Spor"
+                                            target="_blank">Manchester City Liverpool FA Cup Yarı Final Ma&ccedil;ı
+                                            Şifresiz İzle! M. City Liverpool Tivibu Spor</a>
+                                    </li>
+                                    <li>
+                                        <a href="yasam/haber/3209811-irmikli-gullac-nasil-yapilir-gullac-malzemeleri-nelerdir.html"
+                                            title="İrmikli g&uuml;lla&ccedil; nasıl yapılır? G&uuml;lla&ccedil; malzemeleri nelerdir?"
+                                            target="_blank">İrmikli g&uuml;lla&ccedil; nasıl yapılır? G&uuml;lla&ccedil;
+                                            malzemeleri nelerdir?</a>
+                                    </li>
+                                    <li>
+                                        <a href="hayat/haber/3213075-casillas-bu-kez-aglatti-real-madrid-efsanesinin-son-hali-hayranlarini-huzne-bogdu.html"
+                                            title="Casillas bu kez ağlattı! Real Madrid efsanesinin son hali hayranlarını h&uuml;zne boğdu..."
+                                            target="_blank">Casillas bu kez ağlattı! Real Madrid efsanesinin son hali
+                                            hayranlarını h&uuml;zne boğdu...</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://spor.haber7.com/spor/haber/3213547-fenerbahce-opet-vakifbank-spor-kulubu-kupa-volley-final-maci-ne-zaman-ve-saat-kacta"
+                                            title="Fenerbah&ccedil;e Opet Vakıfbank Spor Kul&uuml;b&uuml; Kupa Volley final ma&ccedil;ı ne zaman ve saat ka&ccedil;ta?"
+                                            target="_blank">Fenerbah&ccedil;e Opet Vakıfbank Spor Kul&uuml;b&uuml; Kupa
+                                            Volley final ma&ccedil;ı ne zaman ve saat ka&ccedil;ta?</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://spor.haber7.com/spor/haber/3212743-fenerbahce-goztepe-maci-ne-zaman-ve-hangi-kanalda-fb-goztepe-mac-bilet-fiyatlari-ne-kadar"
+                                            title="Fenerbah&ccedil;e G&ouml;ztepe ma&ccedil;ı ne zaman ve hangi kanalda? FB G&ouml;ztepe ma&ccedil; bilet fiyatları ne kadar?"
+                                            target="_blank">Fenerbah&ccedil;e G&ouml;ztepe ma&ccedil;ı ne zaman ve hangi
+                                            kanalda? FB G&ouml;ztepe ma&ccedil; bilet fiyatları ne kadar?</a>
+                                    </li>
+                                    <li>
+                                        <a href="dini-bilgiler/haber/3212240-kuran-16-cuz-oku-16-cuz-kacinci-sayfada-kuran-16-cuz-bilgisayar-hatli.html"
+                                            title="Kuran 16. c&uuml;z oku! 16. c&uuml;z ka&ccedil;ıncı sayfada? Kuran 16 c&uuml;z bilgisayar hatlı..."
+                                            target="_blank">Kuran 16. c&uuml;z oku! 16. c&uuml;z ka&ccedil;ıncı sayfada?
+                                            Kuran 16 c&uuml;z bilgisayar hatlı...</a>
+                                    </li>
+                                    <li>
+                                        <a href="memur/haber/3213706-karabuk-universitesi-en-az-lise-mezunu-personel-personel-ariyor-basvuru-sartlari-neler.html"
+                                            title="Karab&uuml;k &Uuml;niversitesi en az lise mezunu personel personel arıyor! Başvuru şartları neler?"
+                                            target="_blank">Karab&uuml;k &Uuml;niversitesi en az lise mezunu personel
+                                            personel arıyor! Başvuru şartları neler?</a>
+                                    </li>
+                                    <li>
+                                        <a href="memur/haber/3210092-bddk-en-az-lise-mezunu-memur-ariyor-basvurular-ne-zaman-sona-eriyor.html"
+                                            title="BDDK en az lise mezunu memur arıyor! Başvurular ne zaman sona eriyor?"
+                                            target="_blank">BDDK en az lise mezunu memur arıyor! Başvurular ne zaman
+                                            sona eriyor?</a>
+                                    </li>
+                                    <li>
+                                        <a href="memur/haber/3212566-afad-en-az-22442-tl-en-fazla-44-884-tl-ile-personel-alimi-yapacak-basvurular-ne-zaman-bitecek.html"
+                                            title="AFAD en az 22.442 TL, en fazla 44. 884 TL ile personel alımı yapacak! Başvurular ne zaman bitecek?"
+                                            target="_blank">AFAD en az 22.442 TL, en fazla 44. 884 TL ile personel alımı
+                                            yapacak! Başvurular ne zaman bitecek?</a>
+                                    </li>
+                                    <li>
+                                        <a href="memur/haber/3212683-kultur-ve-turizm-bakanligi-kpss-55-puan-ile-bahcivan-sofor-ve-temizlik-personeli-alimi.html"
+                                            title="K&uuml;lt&uuml;r ve Turizm Bakanlığı KPSS 55 puan ile Bah&ccedil;ıvan, Şof&ouml;r ve Temizlik Personeli alımı!"
+                                            target="_blank">K&uuml;lt&uuml;r ve Turizm Bakanlığı KPSS 55 puan ile
+                                            Bah&ccedil;ıvan, Şof&ouml;r ve Temizlik Personeli alımı!</a>
+                                    </li>
+                                    <li>
+                                        <a href="memur/haber/3212929-hatay-mustafa-kemal-universitesi-kpss-50-puan-personel-aliyor-basvurular-ne-zaman-bitecek.html"
+                                            title="Hatay Mustafa Kemal &Uuml;niversitesi KPSS 50 Puan personel alıyor! Başvurular ne zaman bitecek?"
+                                            target="_blank">Hatay Mustafa Kemal &Uuml;niversitesi KPSS 50 Puan personel
+                                            alıyor! Başvurular ne zaman bitecek?</a>
+                                    </li>
+                                    <li>
+                                        <a href="egitim-ogretim/haber/3211821-kpss-on-lisans-lisans-ve-ortaogretim-basvurulari-ne-zaman-2022-osym-takvimi.html"
+                                            title=" KPSS &ouml;n lisans, lisans ve orta&ouml;ğretim başvuruları ne zaman? 2022 &Ouml;SYM takvimi!"
+                                            target="_blank"> KPSS &ouml;n lisans, lisans ve orta&ouml;ğretim başvuruları
+                                            ne zaman? 2022 &Ouml;SYM takvimi!</a>
+                                    </li>
+                                    <li>
+                                        <a href="dini-bilgiler/haber/3213464-kadir-gecesi-2022-ne-zaman-bin-aydan-hayirli-gece-bu-yil-hangi-gune-denk-geliyor.html"
+                                            title="Kadir Gecesi (2022) ne zaman? &quot;Bin aydan hayırlı gece&quot; bu yıl hangi g&uuml;ne denk geliyor?"
+                                            target="_blank">Kadir Gecesi (2022) ne zaman? &quot;Bin aydan hayırlı
+                                            gece&quot; bu yıl hangi g&uuml;ne denk geliyor?</a>
+                                    </li>
+                                    <li>
+                                        <a href="hayat/haber/3213354-kullanmadigi-zamanlarda-bos-durmasin-diye-kiraya-verdi-unlu-isim-gecelik-23-bin-tl-kazaniyor.html"
+                                            title="Kullanmadığı zamanlarda boş durmasın diye kiraya verdi! &Uuml;nl&uuml; isim gecelik 23 bin TL kazanıyor..."
+                                            target="_blank">Kullanmadığı zamanlarda boş durmasın diye kiraya verdi!
+                                            &Uuml;nl&uuml; isim gecelik 23 bin TL kazanıyor...</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://spor.haber7.com/spor/haber/3212827-manchester-city-real-madrid-sampiyonlar-ligi-yari-final-maci-ne-zaman-ve-hangi-kanalda"
+                                            title="Manchester City Real Madrid Şampiyonlar Ligi yarı final ma&ccedil;ı ne zaman ve hangi kanalda?"
+                                            target="_blank">Manchester City Real Madrid Şampiyonlar Ligi yarı final
+                                            ma&ccedil;ı ne zaman ve hangi kanalda?</a>
+                                    </li>
+                                    <li>
+                                        <a href="medya/haber/3205455-uc-kurus-tutkunlarinin-yuzunu-guldurmeyecek-karar-cukur-esintili-dizide-hesaplari-altust-eden-gelisme.html"
+                                            title="&Uuml;&ccedil; Kuruş tutkunlarının y&uuml;z&uuml;n&uuml; g&uuml;ld&uuml;rmeyecek karar! &Ccedil;ukur esintili dizide hesapları alt&uuml;st eden gelişme"
+                                            target="_blank">&Uuml;&ccedil; Kuruş tutkunlarının y&uuml;z&uuml;n&uuml;
+                                            g&uuml;ld&uuml;rmeyecek karar! &Ccedil;ukur esintili dizide hesapları
+                                            alt&uuml;st eden gelişme</a>
+                                    </li>
+                                    <li>
+                                        <a href="medya/haber/3209922-kardeslerim-oyuncusu-ayrilir-ayrilmaz-kiraciyla-sozlesti-tolgadan-kurtulmak-icin-sehri-terk-etmisti.html"
+                                            title="Kardeşlerim oyuncusu ayrılır ayrılmaz Kiracı&#039;yla s&ouml;zleşti! Tolga&#039;dan kurtulmak i&ccedil;in şehri terk etmişti"
+                                            target="_blank">Kardeşlerim oyuncusu ayrılır ayrılmaz Kiracı&#039;yla
+                                            s&ouml;zleşti! Tolga&#039;dan kurtulmak i&ccedil;in şehri terk etmişti</a>
+                                    </li>
+                                    <li>
+                                        <a href="medya/haber/3207667-ask-mantik-intikama-dair-fox-tvden-herkesi-hayrete-dusurecek-karar-o-tarih-gelip-cattiginda.html"
+                                            title="Aşk Mantık İntikam&#039;a dair Fox TV&#039;den herkesi hayrete d&uuml;ş&uuml;recek karar! O tarih gelip &ccedil;attığında..."
+                                            target="_blank">Aşk Mantık İntikam&#039;a dair Fox TV&#039;den herkesi
+                                            hayrete d&uuml;ş&uuml;recek karar! O tarih gelip &ccedil;attığında...</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://spor.haber7.com/spor/haber/3212037-fenerbahce-shakhtar-donetsk-maci-ne-zaman-ve-hangi-kanalda-fb-donetsk-mac-bilet-fiyatlari-ne-kadar"
+                                            title="Fenerbah&ccedil;e Shakhtar Donetsk ma&ccedil;ı ne zaman ve hangi kanalda? FB Donetsk ma&ccedil; bilet fiyatları ne kadar?"
+                                            target="_blank">Fenerbah&ccedil;e Shakhtar Donetsk ma&ccedil;ı ne zaman ve
+                                            hangi kanalda? FB Donetsk ma&ccedil; bilet fiyatları ne kadar?</a>
+                                    </li>
+                                </ul>
+                            </i>
+                        </div>
+
+                        <!-- News Widget - List -->
+                        <div class="sidebar-news-widget_list">
+
+                            <a href="guncel/haber/3213828-otomobil-40-metre-suruklendi-4-genc-olumden-dondu.html"
+                                title="Otomobil 40 metre s&uuml;r&uuml;klendi, 4 gen&ccedil; &ouml;l&uuml;mden d&ouml;nd&uuml;"
+                                target="_blank" data-number="19:10" class="js-sport-widget-item isActive"
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/otomobil_40_metre_suruklendi_4_genc_olumden_dondu_1650125431_8219.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Otomobil 40 metre s&uuml;r&uuml;klendi, 4 gen&ccedil; &ouml;l&uuml;mden
+                                    d&ouml;nd&uuml;
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="../i12.haber7.net/haber/haber7/thumbs/2022/15/otomobil_40_metre_suruklendi_4_genc_olumden_dondu_1650125431_8219.jpg"
+                                        alt="Otomobil 40 metre s&uuml;r&uuml;klendi, 4 gen&ccedil; &ouml;l&uuml;mden d&ouml;nd&uuml;"
+                                        title="Otomobil 40 metre s&uuml;r&uuml;klendi, 4 gen&ccedil; &ouml;l&uuml;mden d&ouml;nd&uuml;">
+                                </span>
+                            </a>
+                            <a href="https://spor.haber7.com/besiktas/haber/3213827-miralem-pjanic-iddiasi-sezon-sonu"
+                                title="Miralem Pjanic iddiası! Sezon sonu..." target="_blank" data-number="19:09"
+                                class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/03/hAAXT_1642404631_6471.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Miralem Pjanic iddiası! Sezon sonu...
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#" alt="Miralem Pjanic iddiası! Sezon sonu..."
+                                        title="Miralem Pjanic iddiası! Sezon sonu...">
+                                </span>
+                            </a>
+                            <a href="guncel/haber/3213826-koca-uc-yil-oncekine-cok-yaklastik.html"
+                                title="Koca: &Uuml;&ccedil; yıl &ouml;ncekine &ccedil;ok yaklaştık" target="_blank"
+                                data-number="19:07" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs//2020/03/rlQtL_1579004365_7688.gif">
+                                <!-- Title -->
+                                <span class="title">
+                                    Koca: &Uuml;&ccedil; yıl &ouml;ncekine &ccedil;ok yaklaştık
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#" alt="Koca: &Uuml;&ccedil; yıl &ouml;ncekine &ccedil;ok yaklaştık"
+                                        title="Koca: &Uuml;&ccedil; yıl &ouml;ncekine &ccedil;ok yaklaştık">
+                                </span>
+                            </a>
+                            <a href="guncel/haber/3213825-aleynanin-olumumden-sorumlu-dedigi-sanik-icin-muebbet-istendi.html"
+                                title="Aleyna&#039;nın &quot;&ouml;l&uuml;m&uuml;mden sorumlu&quot; dediği sanık i&ccedil;in m&uuml;ebbet istendi"
+                                target="_blank" data-number="19:05" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/aleynanin_olumumden_sorumlu_dedigi_sanik_icin_muebbet_istendi_1650124907_4967.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Aleyna&#039;nın &quot;&ouml;l&uuml;m&uuml;mden sorumlu&quot; dediği sanık
+                                    i&ccedil;in m&uuml;ebbet istendi
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#"
+                                        alt="Aleyna&#039;nın &quot;&ouml;l&uuml;m&uuml;mden sorumlu&quot; dediği sanık i&ccedil;in m&uuml;ebbet istendi"
+                                        title="Aleyna&#039;nın &quot;&ouml;l&uuml;m&uuml;mden sorumlu&quot; dediği sanık i&ccedil;in m&uuml;ebbet istendi">
+                                </span>
+                            </a>
+                            <a href="https://spor.haber7.com/galatasaray/haber/3213824-galatasaray-baskan-adayindan-sergen-yalcin-bombasi"
+                                title="Galatasaray başkan adayından Sergen Yal&ccedil;ın bombası!" target="_blank"
+                                data-number="18:51" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2021/44/sergen_yalcin_besiktasin_basinda_avrupada_ilk_pesinde_1635835166_2901.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Galatasaray başkan adayından Sergen Yal&ccedil;ın bombası!
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#" alt="Galatasaray başkan adayından Sergen Yal&ccedil;ın bombası!"
+                                        title="Galatasaray başkan adayından Sergen Yal&ccedil;ın bombası!">
+                                </span>
+                            </a>
+                            <a href="dunya/haber/3213823-ukraynadaki-muslumanlardan-ukraynali-sivillere-yardim-kampanyasi.html"
+                                title="Ukrayna&#039;daki M&uuml;sl&uuml;manlardan, Ukraynalı sivillere yardım kampanyası"
+                                target="_blank" data-number="18:51" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/ukraynadaki_muslumanlardan_ukraynali_sivillere_yardim_kampanyasi_1650124268_333.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Ukrayna&#039;daki M&uuml;sl&uuml;manlardan, Ukraynalı sivillere yardım kampanyası
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#"
+                                        alt="Ukrayna&#039;daki M&uuml;sl&uuml;manlardan, Ukraynalı sivillere yardım kampanyası"
+                                        title="Ukrayna&#039;daki M&uuml;sl&uuml;manlardan, Ukraynalı sivillere yardım kampanyası">
+                                </span>
+                            </a>
+                            <a href="guncel/haber/3213822-konyada-uzerine-televizyon-dusen-3-yasindaki-cocuk-kurtarilamadi.html"
+                                title="Konya&#039;da &uuml;zerine televizyon d&uuml;şen 3 yaşındaki &ccedil;ocuk kurtarılamadı"
+                                target="_blank" data-number="18:48" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/konyada_uzerine_televizyon_dusen_3_yasindaki_cocuk_kurtarilamadi_1650124084_246.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Konya&#039;da &uuml;zerine televizyon d&uuml;şen 3 yaşındaki &ccedil;ocuk
+                                    kurtarılamadı
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#"
+                                        alt="Konya&#039;da &uuml;zerine televizyon d&uuml;şen 3 yaşındaki &ccedil;ocuk kurtarılamadı"
+                                        title="Konya&#039;da &uuml;zerine televizyon d&uuml;şen 3 yaşındaki &ccedil;ocuk kurtarılamadı">
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- News Widget - Spor -->
+                    <div class="sidebar-news-widget spor mb20">
+
+                        <!-- News Widget - Title -->
+                        <div class="sidebar-news-widget_title">
+                            <i class="zmdi zmdi-edit"></i> SPOR HABERLERİ
+                        </div>
+
+                        <!-- News Widget - List -->
+                        <div class="sidebar-news-widget_list">
+
+                            <a href="https://spor.haber7.com/galatasaray/haber/3213824-galatasaray-baskan-adayindan-sergen-yalcin-bombasi"
+                                title="Galatasaray başkan adayından Sergen Yal&ccedil;ın bombası!" target="_blank"
+                                data-number="1" class="js-sport-widget-item isActive"
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2021/44/sergen_yalcin_besiktasin_basinda_avrupada_ilk_pesinde_1635835166_2901.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Galatasaray başkan adayından Sergen Yal&ccedil;ın bombası!
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="../i12.haber7.net/haber/haber7/thumbs/2021/44/sergen_yalcin_besiktasin_basinda_avrupada_ilk_pesinde_1635835166_2901.jpg"
+                                        alt="Galatasaray başkan adayından Sergen Yal&ccedil;ın bombası!"
+                                        title="Galatasaray başkan adayından Sergen Yal&ccedil;ın bombası!">
+                                </span>
+                            </a>
+                            <a href="https://spor.haber7.com/fenerbahce/haber/3213821-lowun-fenerbahceye-transferi-uefaya-bagli"
+                                title="L&ouml;w&#039;&uuml;n Fenerbah&ccedil;e&#039;ye transferi UEFA&#039;ya bağlı"
+                                target="_blank" data-number="2" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2021/51/joachim_lowden_fenerbahce_karari_1640166030_338.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    L&ouml;w&#039;&uuml;n Fenerbah&ccedil;e&#039;ye transferi UEFA&#039;ya bağlı
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#"
+                                        alt="L&ouml;w&#039;&uuml;n Fenerbah&ccedil;e&#039;ye transferi UEFA&#039;ya bağlı"
+                                        title="L&ouml;w&#039;&uuml;n Fenerbah&ccedil;e&#039;ye transferi UEFA&#039;ya bağlı">
+                                </span>
+                            </a>
+                            <a href="https://spor.haber7.com/super-lig/haber/3213771-antalyaspor-durdurulamiyor-rekor-geldi"
+                                title="Antalyaspor durdurulamıyor! Rekor..." target="_blank" data-number="3"
+                                class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/super_ligde_iki_mac_birden_goller_var_canli_1650121079_5073.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Antalyaspor durdurulamıyor! Rekor...
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#" alt="Antalyaspor durdurulamıyor! Rekor..."
+                                        title="Antalyaspor durdurulamıyor! Rekor...">
+                                </span>
+                            </a>
+                            <a href="https://spor.haber7.com/besiktas/haber/3213766-besiktasin-giresun-kadrosu-aciklandi"
+                                title="Beşiktaş&#039;ın Giresun kadrosu a&ccedil;ıklandı!" target="_blank"
+                                data-number="4" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/besiktasin_giresun_kadrosu_aciklandi_1650112760_4237.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Beşiktaş&#039;ın Giresun kadrosu a&ccedil;ıklandı!
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#" alt="Beşiktaş&#039;ın Giresun kadrosu a&ccedil;ıklandı!"
+                                        title="Beşiktaş&#039;ın Giresun kadrosu a&ccedil;ıklandı!">
+                                </span>
+                            </a>
+                            <a href="https://spor.haber7.com/galatasaray/haber/3213749-burak-elmas-bu-sozlerle-veda-etti"
+                                title="Burak Elmas bu s&ouml;zlerle veda etti!" target="_blank" data-number="5"
+                                class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/burak_elmas_bu_sozlerle_veda_etti_1650109094_3735.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Burak Elmas bu s&ouml;zlerle veda etti!
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#" alt="Burak Elmas bu s&ouml;zlerle veda etti!"
+                                        title="Burak Elmas bu s&ouml;zlerle veda etti!">
+                                </span>
+                            </a>
+                            <a href="https://spor.haber7.com/avrupa-ligleri/haber/3213720-cengiz-underin-sozleri-italyanlari-kizdirdi"
+                                title="Cengiz &Uuml;nder&#039;in s&ouml;zleri İtalyanları kızdırdı!" target="_blank"
+                                data-number="6" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/V51WA_1650102191_1127.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Cengiz &Uuml;nder&#039;in s&ouml;zleri İtalyanları kızdırdı!
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#" alt="Cengiz &Uuml;nder&#039;in s&ouml;zleri İtalyanları kızdırdı!"
+                                        title="Cengiz &Uuml;nder&#039;in s&ouml;zleri İtalyanları kızdırdı!">
+                                </span>
+                            </a>
+                            <a href="https://spor.haber7.com/besiktas/haber/3213743-talisca-icin-sponsor-devreye-girdi"
+                                title="Talisca i&ccedil;in sponsor devreye girdi!" target="_blank" data-number="7"
+                                class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2021/37/taliscadan_flas_besiktas_aciklamasi_1631994473_0069.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Talisca i&ccedil;in sponsor devreye girdi!
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#" alt="Talisca i&ccedil;in sponsor devreye girdi!"
+                                        title="Talisca i&ccedil;in sponsor devreye girdi!">
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- News Widget - Ekonomi -->
+                    <div class="sidebar-news-widget ekonomi mb20">
+
+                        <!-- News Widget - Title -->
+                        <div class="sidebar-news-widget_title">
+                            <i class="zmdi zmdi-edit"></i> EKONOMİ HABERLERİ
+                        </div>
+
+                        <!-- News Widget - List -->
+                        <div class="sidebar-news-widget_list">
+
+                            <a href="https://ekonomi.haber7.com/ekonomi/haber/3213792-ticaret-bakanligindan-indirimlere-ayar"
+                                title="Ticaret Bakanlığı&#039;ndan &lsquo;İndirimlere&rsquo; ayar" target="_blank"
+                                data-number="1" class="js-sport-widget-item isActive"
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/ticaret_bakanligindan_indirimlere_ayar_1650118063_2387.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Ticaret Bakanlığı&#039;ndan &lsquo;İndirimlere&rsquo; ayar
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="../i12.haber7.net/haber/haber7/thumbs/2022/15/ticaret_bakanligindan_indirimlere_ayar_1650118063_2387.jpg"
+                                        alt="Ticaret Bakanlığı&#039;ndan &lsquo;İndirimlere&rsquo; ayar"
+                                        title="Ticaret Bakanlığı&#039;ndan &lsquo;İndirimlere&rsquo; ayar">
+                                </span>
+                            </a>
+                            <a href="https://ekonomi.haber7.com/ekonomi/haber/3213781-rusya-turkiyeden-bazi-tarim-urunlerine-kisitlamayi-kaldirdi"
+                                title="Rusya, T&uuml;rkiye&#039;den bazı tarım &uuml;r&uuml;nlerine kısıtlamayı kaldırdı"
+                                target="_blank" data-number="2" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/rusya_turkiyeden_bazi_tarim_urunlerine_kisitlamayi_kaldirdi_1650117820_3853.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Rusya, T&uuml;rkiye&#039;den bazı tarım &uuml;r&uuml;nlerine kısıtlamayı kaldırdı
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#"
+                                        alt="Rusya, T&uuml;rkiye&#039;den bazı tarım &uuml;r&uuml;nlerine kısıtlamayı kaldırdı"
+                                        title="Rusya, T&uuml;rkiye&#039;den bazı tarım &uuml;r&uuml;nlerine kısıtlamayı kaldırdı">
+                                </span>
+                            </a>
+                            <a href="emlak/haber/3213425-phaselis-tuneli-acildi-yolculuk-suresi-10-dakika-kisalacak.html"
+                                title="Phaselis T&uuml;neli a&ccedil;ıldı! Yolculuk s&uuml;resi 10 dakika kısalacak"
+                                target="_blank" data-number="3" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/turkiyenin_gurur_gunu_phaselis_tuneli_bugun_aciliyor_1650092002_1307.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Phaselis T&uuml;neli a&ccedil;ıldı! Yolculuk s&uuml;resi 10 dakika kısalacak
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#"
+                                        alt="Phaselis T&uuml;neli a&ccedil;ıldı! Yolculuk s&uuml;resi 10 dakika kısalacak"
+                                        title="Phaselis T&uuml;neli a&ccedil;ıldı! Yolculuk s&uuml;resi 10 dakika kısalacak">
+                                </span>
+                            </a>
+                            <a href="https://ekonomi.haber7.com/ekonomi/haber/3213763-bakan-kirisciden-seker-stoku-aciklamasi"
+                                title="Bakan Kiriş&ccedil;i&#039;den &#039;şeker stoku&#039; a&ccedil;ıklaması"
+                                target="_blank" data-number="4" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/bakan_kirisciden_seker_stoku_aciklamasi_1650113695_1614.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Bakan Kiriş&ccedil;i&#039;den &#039;şeker stoku&#039; a&ccedil;ıklaması
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#"
+                                        alt="Bakan Kiriş&ccedil;i&#039;den &#039;şeker stoku&#039; a&ccedil;ıklaması"
+                                        title="Bakan Kiriş&ccedil;i&#039;den &#039;şeker stoku&#039; a&ccedil;ıklaması">
+                                </span>
+                            </a>
+                            <a href="https://ekonomi.haber7.com/ekonomi/haber/3213761-bakan-mustan-sarp-sinir-kapisindaki-tir-yogunluguyla-ilgili-aciklama"
+                                title="Bakan Muş&#039;tan Sarp Sınır Kapısı&#039;ndaki tır yoğunluğuyla ilgili a&ccedil;ıklama"
+                                target="_blank" data-number="5" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/bakan_mus_ihracatin_artmasiyla_beraber_tir_trafiginde_bir_yogunluk_soz_konusu_1650111319_8046.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Bakan Muş&#039;tan Sarp Sınır Kapısı&#039;ndaki tır yoğunluğuyla ilgili
+                                    a&ccedil;ıklama
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#"
+                                        alt="Bakan Muş&#039;tan Sarp Sınır Kapısı&#039;ndaki tır yoğunluğuyla ilgili a&ccedil;ıklama"
+                                        title="Bakan Muş&#039;tan Sarp Sınır Kapısı&#039;ndaki tır yoğunluğuyla ilgili a&ccedil;ıklama">
+                                </span>
+                            </a>
+                            <a href="https://ekonomi.haber7.com/ekonomi/haber/3213754-50-kurusa-alip-5-liradan-satiyorlar-curumesine-engel-olamadilar"
+                                title="50 kuruşa alıp 5 liradan satıyorlar! &Ccedil;&uuml;r&uuml;mesine engel olamadılar"
+                                target="_blank" data-number="6" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/isyan_ediyorlar_50_kurusa_alip_5_liradan_satiyorlar_1650110552_5291.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    50 kuruşa alıp 5 liradan satıyorlar! &Ccedil;&uuml;r&uuml;mesine engel olamadılar
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#"
+                                        alt="50 kuruşa alıp 5 liradan satıyorlar! &Ccedil;&uuml;r&uuml;mesine engel olamadılar"
+                                        title="50 kuruşa alıp 5 liradan satıyorlar! &Ccedil;&uuml;r&uuml;mesine engel olamadılar">
+                                </span>
+                            </a>
+                            <a href="https://ekonomi.haber7.com/ekonomi/haber/3213741-erdogandan-phaselis-tuneli-acilisinda-net-mesaj-hicbir-sikintimiz-kalmayacak"
+                                title="Erdoğan&#039;dan Phaselis T&uuml;neli a&ccedil;ılışında net mesaj: Hi&ccedil;bir sıkıntımız kalmayacak"
+                                target="_blank" data-number="7" class="js-sport-widget-item "
+                                data-image="https://i12.haber7.net//haber/haber7/thumbs/2022/15/erdogandan_phaselis_tuneli_acilisinda_net_mesaj_hicbir_sikintimiz_kalmayacak_1650110340_395.jpg">
+                                <!-- Title -->
+                                <span class="title">
+                                    Erdoğan&#039;dan Phaselis T&uuml;neli a&ccedil;ılışında net mesaj: Hi&ccedil;bir
+                                    sıkıntımız kalmayacak
+                                </span>
+                                <!-- Image-->
+                                <span class="image">
+                                    <img src="#"
+                                        alt="Erdoğan&#039;dan Phaselis T&uuml;neli a&ccedil;ılışında net mesaj: Hi&ccedil;bir sıkıntımız kalmayacak"
+                                        title="Erdoğan&#039;dan Phaselis T&uuml;neli a&ccedil;ılışında net mesaj: Hi&ccedil;bir sıkıntımız kalmayacak">
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <div class="site-footer">
+
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer - Copyright -->
+                <div class="copyright col-md-4">
+
+                    <!-- Logo -->
+                    <a href="index.html" title="Haber7" class="site-footer-logo">
+                        <img src="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.svg"
+                            data-svg-fallback="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.png"
+                            alt="Haber7">
+                    </a>
+
+                </div>
+
+                <!-- Footer - Content -->
+                <div class="footer-content col-md-5">
+
+                    <!-- Left Block -->
+                    <div class="footer-content-left">
+                        <!-- Menu - Title -->
+                        <h4 class="footer-menu-title">KURUMSAL</h4>
+
+                        <!-- Menu - Content -->
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="kullanim.html" title="Kullanım Şartları" target="_blank">Kullanım Şartları</a>
+                            </li>
+                            <li>
+                                <a href="yayin-ilkeleri.html" title="Yayın İlkeleri" target="_blank">Yayın İlkeleri</a>
+                            </li>
+                            <li>
+                                <a href="kunye.html" title="Künye" target="_blank">Künye</a>
+                            </li>
+                            <li>
+                                <a href="reklam.html" title="Reklam" target="_blank">Reklam</a>
+                            </li>
+                            <li>
+                                <a href="iletisim.html" title="İletişim" target="_blank">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Block -->
+                    <div class="footer-content-right">
+                        <!-- Menu - Title -->
+                        <div class="footer-menu-title">BAĞLANTILAR</div>
+
+                        <!-- Menu - Content -->
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="egitim/haber/3058617-e-okul-karne-notlari-goruntuleme-2021-vbs-takdir-tesekkur-belgesi-ogrenme-ekrani.html"
+                                    title="e-Okul Giriş Sayfası" target="_blank">e-Okul Giriş Sayfası</a>
+                            </li>
+                            <li>
+                                <a href="memur.html" title="Memur Alımı" target="_blank">Memur Alımı</a>
+                            </li>
+                            <li>
+                                <a href="dini-bilgiler.html" title="Dini Bilgiler" target="_blank">Dini Bilgiler</a>
+                            </li>
+                            <li>
+                                <a href="konu/e-devlet-sifre-nereden-alinir-giris.html" title="E-Devlet Giriş"
+                                    target="_blank">E-Devlet Giriş</a>
+                            </li>
+                            <li>
+                                <a href="seyahat/haber/2901962-vize-nasil-alinir-2021-vize-icin-gerekli-evraklar-ve-harc-ucretleri.html"
+                                    title="Vize nasıl alınır? " target="_blank" rel="noopener">Vize nasıl alınır? </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Footer - Mobile Buttons -->
+                <div class="mobile-buttons col-md-3">
+
+                    <!-- Title -->
+                    <h4>UYGULAMALAR</h4>
+
+                    <!-- App Store -->
+                    <a href="https://itunes.apple.com/us/app/haber7-com-haberler-ve-gazete-manşetleri/id435885984?mt=8"
+                        title="Haber7 App Store'da" target="_blank" class="mobile-buttons-item appstore"
+                        rel="nofollow"></a>
+
+                    <!-- Play Store -->
+                    <a href="https://play.google.com/store/apps/details?id=com.kanal7&amp;hl=tr"
+                        title="Haber7 Google Play'de" target="_blank" class="mobile-buttons-item googleplay"
+                        rel="nofollow"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Brands -->
+        <div class="site-footer-brands">
+
+            <!-- Footer Brands - Kanal7 -->
+            <a href="https://www.kanal7.com/" title="Kanal7" target="_blank" rel="noopener"
+                class="site-footer-brands_item kanal7">
+                Kanal7
+            </a>
+
+            <!-- Footer Brands - Radyo7 -->
+            <a href="http://www.radyo7.com/" title="Radyo7" target="_blank" rel="noopener"
+                class="site-footer-brands_item radyo7">
+                Radyo7
+            </a>
+
+            <!-- Footer Brands - Kanal7 Avrupa -->
+            <a href="https://www.kanal7avrupa.com/" title="Kanal7 Avrupa" target="_blank" rel="noopener"
+                class="site-footer-brands_item avrupa7">
+                Avrupa7
+            </a>
+
+            <!-- Footer Brands - UlkeTV -->
+            <a href="https://www.ulketv.com.tr/" title="ÜlkeTV" target="_blank" rel="noopener"
+                class="site-footer-brands_item ulke-tv">
+                ÜlkeTV
+            </a>
+
+            <!-- Footer Brands - Izle7 -->
+            <a href="https://www.izle7.com/" title="İzle7" target="_blank" rel="noopener"
+                class="site-footer-brands_item izle7">
+                İzle7
+            </a>
+
+            <!-- Footer Brands - Yasemin -->
+            <a href="https://www.yasemin.com/" title="Yasemin" target="_blank" rel="noopener"
+                class="site-footer-brands_item yasemin">
+                Yasemin
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Cookie Message --->
+    <div class="cookie-message">
+        <div class="container">
+            <span>Veri politikasındaki amaçlarla sınırlı ve mevzuata uygun şekilde çerez konumlandırmaktayız. Detaylar
+                için <a href="kullanim.html" title="veri politikası" target="_blank">veri politikamızı</a>
+                inceleyebilirsiniz.</span>
+            <button class="cookie-message-close" aria-label="Mesajı Kapat">
+                <i class="zmdi zmdi-close" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Control
+        var isMobile = {
+            Android: function () {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function () {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function () {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function () {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function () {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function () {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+
+        // Get Query String
+        var QueryString = function () {
+            var query_string = {};
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (typeof query_string[pair[0]] === "undefined") {
+                    query_string[pair[0]] = pair[1];
+                } else if (typeof query_string[pair[0]] === "string") {
+                    var arr = [query_string[pair[0]], pair[1]];
+                    query_string[pair[0]] = arr;
+                } else {
+                    query_string[pair[0]].push(pair[1]);
+                }
+            }
+            return query_string;
+        }();
+    </script>
+
+    <!-- JavaScript -->
+    <script src="../s.haber7.net/assets/v3/common/js/libs/jquery-1.12.1.min.js"></script>
+    <script src="../s.haber7.net/assets/v3/common/js/plugin.min5ed3.js?v4"></script>
+    <script src='../s.haber7.net/assets/v3/common/js/onscreen.min.js'></script>
+
+    <script>
+        $(function () {
+            // CountDown
+            // Animation Action
+            var countdownValue = 180,
+                countdownNumberEl = $('.refresh-countdown-number');
+
+            // Set Countdown Text
+            countdownNumberEl.text(countdownValue);
+
+            // Per 1 Second Run
+            setInterval(function () {
+                countdownValue = --countdownValue <= 0 ? 180 : countdownValue;
+
+                countdownNumberEl.text(countdownValue);
+
+            }, 1000);
+
+            // Breaking News Page
+            // PushState Action
+
+            var getPageLink = window.location.protocol + '//' + window.location.host + window.location.pathname;
+
+            $('.category-news-item').onScreen({
+                throttle: 0,
+                tolerance: 200,
+                doIn: function () {
+
+                    // Get News Item ID
+                    var getItemId = $(this).attr('id');
+                    // Change Link
+                    history.replaceState(null, null, getPageLink + getItemId);
+                    nextPageTrackingAction(window.location.pathname + getItemId, 'Son Dakika');
+                }
+            });
+
+        });
+    </script>
+    <script src="../s.haber7.net/assets/v3/common/js/main.min9eb5.js?v30.3"></script>
+
+    <script>
+        // Read More
+        // Scroll & Tracking Action
+        if ($(".readmore").length > 0) {
+
+            // Readmore After
+            // Empty Paragraph Fix
+            $('.readmore').each(function (e) {
+                if ($(' + p', this).html() == '&nbsp;') {
+                    $(' + p', this).hide();
+                }
+            });
+        }
+
+        // Next Page
+        // Tracking Action
+        function nextPageTrackingAction(triggerAnalyticsUrl, defaultTitle) {
+            var getPageTitle = $('.news-detail h1').text();
+
+            var mainAnalyticsUA = 'UA-186571064-1';
+
+            gtag('config', mainAnalyticsUA, { 'page_path': triggerAnalyticsUrl });
+
+
+            $(".readInfo").html("");
+
+        }
+    </script>
+
+
+    <!-- Yandex.Metrika counter -->
+    <script
+        type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym"); ym(14645857, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true }); </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/14645857" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript">
+        (function () {
+            var a = document.getElementsByTagName('script')[0],
+                b = document.createElement('script');
+            b.async = !0; b.src = '../cdn.dimml.io/dimml.js';
+            a.parentNode.insertBefore(b, a);
+        })();
+    </script>
+
+
+</body>
+
+</html>
