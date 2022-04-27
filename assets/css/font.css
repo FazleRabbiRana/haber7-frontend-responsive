@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Brandon Grotesque Black';
+    src: url('https://i11.haber7.net/assets/v2/common/fonts/brandon/brandon-black.eot'); /* IE9 Compat Modes */
+    src: url('https://i11.haber7.net/assets/v2/common/fonts/brandon/brandon-black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('https://i11.haber7.net/assets/v2/common/fonts/brandon/brandon-black.woff') format('woff'), /* Modern Browsers */
+    url('https://i11.haber7.net/assets/v2/common/fonts/brandon/brandon-black.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('https://i11.haber7.net/assets/v2/common/fonts/brandon/brandon-black.svg#31abb7704a87130091ce57face358af8') format('svg'); /* Legacy iOS */
+
+    font-style:   normal;
+    font-weight:  400;
+}
+
+@font-face {
+    font-family: 'FreightText Pro Black';
+    src: url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-black-italic.eot'); /* IE9 Compat Modes */
+    src: url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-black-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-black-italic.woff') format('woff'), /* Modern Browsers */
+    url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-black-italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-black-italic.svg#494afc30a77d55d1235e873a41e53e4a') format('svg'); /* Legacy iOS */
+
+    font-weight:  400;
+}
+
+@font-face {
+    font-family: 'FreightText Pro Bold';
+    src: url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-bold.eot'); /* IE9 Compat Modes */
+    src: url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-bold.woff') format('woff'), /* Modern Browsers */
+    url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-bold.svg#2d47676828a72ef468efe3a042ec24f6') format('svg'); /* Legacy iOS */
+
+    font-style:   normal;
+    font-weight:  400;
+}
+
+@font-face {
+    font-family: 'FreightText Pro Book';
+    src: url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-book.eot'); /* IE9 Compat Modes */
+    src: url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-book.woff') format('woff'), /* Modern Browsers */
+    url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('https://i11.haber7.net/assets/v2/common/fonts/freight/freight-text-pro-book.svg#567fec1ea62e7808c5a092cb9f4bb8eb') format('svg'); /* Legacy iOS */
+
+    font-style:   normal;
+    font-weight:  400;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('https://i11.haber7.net/assets/v2/common/fonts/icomoon/icomoon.eot?31o8cv');
+    src: url('https://i11.haber7.net/assets/v2/common/fonts/icomoon/icomoon.eot?31o8cv#iefix') format('embedded-opentype'),
+    url('https://i11.haber7.net/assets/v2/common/fonts/icomoon/icomoon.ttf?31o8cv') format('truetype'),
+    url('https://i11.haber7.net/assets/v2/common/fonts/icomoon/icomoon.woff?31o8cv') format('woff'),
+    url('https://i11.haber7.net/assets/v2/common/fonts/icomoon/icomoon.svg?31o8cv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

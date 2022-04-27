@@ -1,0 +1,6 @@
+/*!
+ Project Name  : Infinite Content.
+ Description   : Infinite News Content.
+ Version       : 1.0
+ */
+var contentInfinite=$(".infinite-content");contentInfinite.infiniteScroll({path:".pagination__next",append:".infinite-item",status:".scroller-status",scrollThreshold:750}).on("load.infiniteScroll",function(t,n,e){currentPage=contentInfinite.data("infiniteScroll").pageIndex,console.log("CURRENT PAGE : "+currentPage+" Total Page : "+totalPages),currentPage>=totalPages?contentInfinite.infiniteScroll("option",{loadOnScroll:!1}):contentInfinite.infiniteScroll("option",{loadOnScroll:!0})}).on("history.infiniteScroll",function(){var t=window.location.pathname,n=t.match("/p([0-9]+)");-1==window.location.href.search("/p([0-9]+)")?document.title=getPageTitle:document.title=getPageTitle+" - Sayfa "+n[1],gtag("config",mainAnalyticsUA,{page_path:window.location.pathname}),"undefined"!=typeof analytics_seo_user&&gtag("config",analytics_seo_user,{page_path:window.location.pathname}),yaCounter14645857.hit(t,getPageTitle),"undefined"!=typeof news_id&&$.getScript("//api.haber7.com/content/hit/news/"+news_id)}),currentPage==totalPages&&(contentInfinite.infiniteScroll("option",{loadOnScroll:!1}),$(".scroller-status").hide());
