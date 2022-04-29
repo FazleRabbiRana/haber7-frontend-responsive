@@ -9169,7 +9169,7 @@ hr {
     text-shadow: none;
     background-color: transparent;
     border: 0;
-    background: url(../images/kabe-ve-dualar-button.png) top left no-repeat rgba(48, 91, 65, 0.39);
+    background: url(../img/kabe-ve-dualar-button.png) top left no-repeat rgba(48, 91, 65, 0.39);
 }
 
 .multimedia-buttons-item.kabe {
@@ -9764,7 +9764,7 @@ hr {
     height: 34px;
     content: "";
     position: absolute;
-    background: url(../images/exchange-icon.svg) top left no-repeat;
+    background: url(../img/exchange-icon.svg) top left no-repeat;
 }
 
 .economy-section .exchange-rate-content+a {
@@ -9807,7 +9807,7 @@ hr {
     height: 7px;
     margin-left: 2px;
     display: inline-block;
-    background: url(../images/exchange-arrow.svg) top left no-repeat;
+    background: url(../img/exchange-arrow.svg) top left no-repeat;
 }
 
 .today-news-section .image img,
@@ -9904,19 +9904,19 @@ hr {
 }
 
 .currency-item.DOLAR {
-    background-image: url(../images/currency-icon/dollar.svg);
+    background-image: url(../img/dollar.svg);
 }
 
 .currency-item.EURO {
-    background-image: url(../images/currency-icon/euro.svg);
+    background-image: url(../img/euro.svg);
 }
 
 .currency-item.ALTIN {
-    background-image: url(../images/currency-icon/gold.svg);
+    background-image: url(../img/gold.svg);
 }
 
 .currency-item.BIST100 {
-    background-image: url(../images/currency-icon/bist.svg);
+    background-image: url(../img/bist.svg);
 }
 
 .corona-widget {
