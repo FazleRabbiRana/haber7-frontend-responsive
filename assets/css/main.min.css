@@ -7137,7 +7137,7 @@ hr {
     -webkit-border-radius: 25px;
     border-radius: 25px;
     display: inline-block;
-    background: url(../images/mobile-app-button.png) top left no-repeat #1c1b1b;
+    background: url(../img/mobile-app-button.png) top left no-repeat #1c1b1b;
 }
 
 .site-footer .mobile-buttons-item.appstore {
@@ -7166,7 +7166,7 @@ hr {
     display: inline-block;
     overflow: hidden;
     text-indent: -999px;
-    background: url(../images/footer-brands.png?v1) top left no-repeat;
+    background: url(../img/footer-brands.png) top left no-repeat;
 }
 
 .cookie-message,
