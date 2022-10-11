@@ -4685,11 +4685,14 @@ hr {
     padding: 0 !important;
 }
 
-.container,
+/* 
+ * commented out due to using bootstrap 
+ */
+/* .container,
 .container-fluid {
     padding-left: 10px;
     padding-right: 10px;
-}
+} */
 
 .no-border {
     border: 0 !important;
@@ -4854,16 +4857,19 @@ hr {
     content: "\e914";
 }
 
-.container {
+/* 
+ * commented out due to using bootstrap 
+ */
+/* .container {
     width: 960px;
-}
+} */
 
-.row {
+/* .row {
     margin-left: -10px;
     margin-right: -10px;
-}
+} */
 
-.col-md-1,
+/* .col-md-1,
 .col-md-10,
 .col-md-11,
 .col-md-12,
@@ -4880,9 +4886,37 @@ hr {
     padding-left: 10px;
     padding-right: 10px;
     float: left;
+} */
+
+/**
+* adjust space after using bootstrap
+*/
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px!important;
+    }
+}
+.container,
+.container-fluid {
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding-right: var(--bs-gutter-x,.625rem);
+    padding-left: var(--bs-gutter-x,.625rem);
+}
+.row {
+    /* margin-left: -10px;
+    margin-right: -10px; */
+    margin-right: calc(var(--bs-gutter-x) * calc(-10 / 24));
+    margin-left: calc(var(--bs-gutter-x) * calc(-10 / 24));
+}
+.row>* {
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding-right: calc(var(--bs-gutter-x) * calc(10 / 24));
+    padding-left: calc(var(--bs-gutter-x) * calc(10 / 24));
 }
 
-.col-md-12 {
+/* .col-md-12 {
     width: 100%;
 }
 
@@ -4928,7 +4962,7 @@ hr {
 
 .col-md-1 {
     width: 8.33333333%;
-}
+} */
 
 .col-md-pull-12 {
     right: 100%;
