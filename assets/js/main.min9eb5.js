@@ -282,6 +282,15 @@ if (
       slidesToScroll: 6,
       accessibility: !1,
       variableWidth: !0,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToScroll: 1,
+            dots: false,
+          }
+        }
+      ],
       prevArrow:
         '<span class="slider-arrow prev"><i class="zmdi zmdi-chevron-left"></i></span>',
       nextArrow:
@@ -416,6 +425,22 @@ if (
       slidesToScroll: 2,
       variableWidth: !0,
       accessibility: !1,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ],
       prevArrow:
         '<span class="slider-arrow prev"><i class="zmdi zmdi-chevron-left"></i></span>',
       nextArrow:

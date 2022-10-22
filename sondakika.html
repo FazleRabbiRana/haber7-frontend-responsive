@@ -6,15 +6,17 @@
     <!-- META TAGS -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta http-equiv="Refresh" content="180">
+    <!-- <meta http-equiv="Refresh" content="180"> -->
     <meta property="fb:app_id" content="121750831288720">
     <meta property="twitter:account_id" content="120840897">
 
+	<!-- ICONS -->
+	<link rel="shortcut icon" href="./assets/img/favicons/favicon.png" type="image/png">
+
     <!-- LINK -->
-    <link rel="preload" as="style" href="assets/css/home.critical.min7e49.css">
-    <link rel="stylesheet" href="assets/css/home.mina2b0.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.min.css">
 
     <!-- Mobile Control -->
@@ -50,6 +52,249 @@
             box-sizing: content-box;
         }
     </style>
+
+    <style>
+        .category-spot {
+            border-radius: 3px;
+            line-height: 25px;
+            padding: 10px 10px;
+            background: #efefef;
+            border: 1px solid #eaeaea;
+            font-size: 14px;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            background: -moz-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250, 248, 248, 1)), color-stop(100%, rgba(231, 230, 231, 1)));
+            background: -webkit-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
+            background: -o-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
+            background: linear-gradient(to bottom, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
+        }
+
+        .category-spot:after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            right: -18px;
+            width: 90px;
+            height: 90px;
+            opacity: .4;
+            z-index: -1;
+            background: url('https://i.haber7.net/assets/v3/common/images/haber7-logo.svg') -170px 0px no-repeat;
+            background-size: 426%;
+        }
+
+        .refresh-countdown-number {
+            font-size: 16px;
+        }
+
+        .visible-lg,
+        .visible-md,
+        .visible-sm,
+        .visible-xs {
+            display: none
+        }
+
+        .visible-lg-block,
+        .visible-lg-inline,
+        .visible-lg-inline-block,
+        .visible-md-block,
+        .visible-md-inline,
+        .visible-md-inline-block,
+        .visible-xs-block,
+        .visible-xs-inline,
+        .visible-xs-inline-block {
+            display: none
+        }
+
+        @media (max-width:959px) {
+            .visible-xs {
+                display: block
+            }
+
+            .visible-xs-block {
+                display: block
+            }
+
+            .visible-xs-inline {
+                display: inline
+            }
+
+            .visible-xs-inline-block {
+                display: inline-block
+            }
+        }
+
+        @media (min-width:960px) and (max-width:1119px) {
+            .visible-md {
+                display: block
+            }
+
+            .visible-md-block {
+                display: block
+            }
+
+            .visible-md-inline {
+                display: inline
+            }
+
+            .visible-md-inline-block {
+                display: inline-block
+            }
+        }
+
+        @media (min-width:1120px) {
+            .visible-lg {
+                display: block
+            }
+
+            .visible-lg-block {
+                display: block
+            }
+
+            .visible-lg-inline {
+                display: inline
+            }
+
+            .visible-lg-inline-block {
+                display: inline-block
+            }
+
+            .hidden-lg {
+                display: none
+            }
+        }
+
+        @media (min-width:320px) and (max-width:959px) {
+            .hidden-xs {
+                display: none
+            }
+        }
+
+        @media (min-width:960px) and (max-width:1119px) {
+            .hidden-md {
+                display: none
+            }
+        }
+
+        /* PAGE */
+        .site-header,
+        .site-footer {
+            width: auto !important;
+        }
+
+        @media (max-width:959px) {
+            .site-header .site-logo {
+                float: none;
+                text-align: center
+            }
+
+            .site-header-bottom {
+                position: relative
+            }
+
+            .site-header-bottom:after {
+                width: 100px;
+                height: 90%;
+                top: 2px;
+                right: 140px;
+                content: '';
+                pointer-events: none;
+                position: absolute;
+                background-image: linear-gradient(90deg, rgba(243, 243, 243, 0) 0, #fff 100%)
+            }
+
+            .main-menu {
+                display: flex;
+                padding-right: 40px;
+                width: calc(100% - 138px);
+                overflow: auto hidden
+            }
+
+            .site-menu,
+            .site-search {
+                width: 100vw;
+                right: -10px
+            }
+
+            .site-search:before {
+                right: 104px
+            }
+
+            .site-menu .items {
+                height: auto;
+                font-size: 15px;
+                line-height: 43px;
+                text-align: center
+            }
+
+            .site-menu .items .site-link {
+                display: none
+            }
+
+            .site-menu-list {
+                padding-top: 8px;
+                padding-bottom: 5px;
+                text-align: center
+            }
+
+            .breaking-news-box .image {
+                float: none;
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .breaking-news-box .content .title {
+                font-size: 18px;
+                line-height: 22px
+            }
+
+            .breaking-news-box .content .summary {
+                font-size: 15px;
+            }
+
+            .category-title .title {
+                font-size: 22px;
+                text-transform: uppercase
+            }
+
+            .category-title .title:before {
+                width: 65px
+            }
+
+            .category-title.relative .title {
+                font-size: 20px;
+                color: #b34062
+            }
+
+            .category-title.relative .title:before {
+                width: 25px;
+                background: #df6e8f
+            }
+
+            .category-title.relative .title:after {
+                background: #b34062
+            }
+
+            .breaking-news-content .category-news-item .image {
+                height: auto
+            }
+
+            .cookie-message {
+                height: auto;
+                line-height: 17px;
+                padding-top: 10px;
+            }
+
+            .cookie-message-close {
+                position: absolute;
+                bottom: 8px;
+                right: 18px;
+                background: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -82,58 +327,6 @@
                             <span class="number"></span>
                         </div>
                     </span>
-
-                    <style>
-                        .telegram .whatsapp_title .title:before {
-                            content: 'Telegram' !important;
-                            animation: none;
-                        }
-
-                        .telegram .whatsapp_title .number:before {
-                            content: 'Haber7 Kanalı';
-                            -webkit-animation: telegramAnimation 10s linear 5s infinite forwards;
-                            animation: telegramAnimation 10s linear 5s infinite forwards
-                        }
-
-                        @-webkit-keyframes telegramAnimation {
-                            50% {
-                                content: 'Abone Ol';
-                            }
-
-                            100% {
-                                content: 'Haber7 Kanalı';
-                            }
-                        }
-
-                        @keyframes telegramAnimation {
-                            50% {
-                                content: 'Abone Ol';
-                            }
-
-                            100% {
-                                content: 'Haber7 Kanalı';
-                            }
-                        }
-
-                        .telegram .icon {
-                            background: url('https://s.haber7.net/assets/v3/common/images/telegram-icon.svg') center no-repeat !important;
-                            animation: none;
-                        }
-
-                        .bip .whatsapp_title .title:before {
-                            content: 'BİP' !important;
-                            animation: none;
-                        }
-
-                        .bip .whatsapp_title .number:before {
-                            content: '0552 073 07 07';
-                        }
-
-                        .bip .icon {
-                            background: url('https://s.haber7.net/assets/v3/common/images/bip-icon.svg') center no-repeat !important;
-                            animation: none;
-                        }
-                    </style>
 
                     <!-- Weather -->
                     <div class="weather">
@@ -402,555 +595,6 @@
     </div>
 
 
-    <style>
-        .category-spot {
-            border-radius: 3px;
-            line-height: 25px;
-            padding: 10px 10px;
-            background: #efefef;
-            border: 1px solid #eaeaea;
-            font-size: 14px;
-            position: relative;
-            z-index: 2;
-            overflow: hidden;
-            background: -moz-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
-            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250, 248, 248, 1)), color-stop(100%, rgba(231, 230, 231, 1)));
-            background: -webkit-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
-            background: -o-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
-            background: -ms-linear-gradient(top, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
-            background: linear-gradient(to bottom, rgba(250, 248, 248, 1) 0%, rgba(231, 230, 231, 1) 100%);
-        }
-
-        .category-spot:after {
-            content: '';
-            position: absolute;
-            bottom: -20px;
-            right: -18px;
-            width: 90px;
-            height: 90px;
-            opacity: .4;
-            z-index: -1;
-            background: url('https://i.haber7.net/assets/v3/common/images/haber7-logo.svg') -170px 0px no-repeat;
-            background-size: 426%;
-        }
-
-        .refresh-countdown-number {
-            font-size: 16px;
-        }
-
-        /* RESPONSIVE GRID */
-        .container {
-            width: auto;
-        }
-
-        @media (min-width:960px) {
-            .container {
-                width: 960px
-            }
-        }
-
-        @media (min-width:960px) {
-
-            .col-md-1,
-            .col-md-10,
-            .col-md-11,
-            .col-md-12,
-            .col-md-2,
-            .col-md-3,
-            .col-md-4,
-            .col-md-5,
-            .col-md-6,
-            .col-md-7,
-            .col-md-8,
-            .col-md-9 {
-                float: left
-            }
-
-            .col-md-12 {
-                width: 100%
-            }
-
-            .col-md-11 {
-                width: 91.66666667%
-            }
-
-            .col-md-10 {
-                width: 83.33333333%
-            }
-
-            .col-md-9 {
-                width: 75%
-            }
-
-            .col-md-8 {
-                width: 66.66666667%
-            }
-
-            .col-md-7 {
-                width: 58.33333333%
-            }
-
-            .col-md-6 {
-                width: 50%
-            }
-
-            .col-md-5 {
-                width: 41.66666667%
-            }
-
-            .col-md-4 {
-                width: 33.33333333%
-            }
-
-            .col-md-3 {
-                width: 25%
-            }
-
-            .col-md-2 {
-                width: 16.66666667%
-            }
-
-            .col-md-1 {
-                width: 8.33333333%
-            }
-
-            .col-md-pull-12 {
-                right: 100%
-            }
-
-            .col-md-pull-11 {
-                right: 91.66666667%
-            }
-
-            .col-md-pull-10 {
-                right: 83.33333333%
-            }
-
-            .col-md-pull-9 {
-                right: 75%
-            }
-
-            .col-md-pull-8 {
-                right: 66.66666667%
-            }
-
-            .col-md-pull-7 {
-                right: 58.33333333%
-            }
-
-            .col-md-pull-6 {
-                right: 50%
-            }
-
-            .col-md-pull-5 {
-                right: 41.66666667%
-            }
-
-            .col-md-pull-4 {
-                right: 33.33333333%
-            }
-
-            .col-md-pull-3 {
-                right: 25%
-            }
-
-            .col-md-pull-2 {
-                right: 16.66666667%
-            }
-
-            .col-md-pull-1 {
-                right: 8.33333333%
-            }
-
-            .col-md-pull-0 {
-                right: auto
-            }
-
-            .col-md-push-12 {
-                left: 100%
-            }
-
-            .col-md-push-11 {
-                left: 91.66666667%
-            }
-
-            .col-md-push-10 {
-                left: 83.33333333%
-            }
-
-            .col-md-push-9 {
-                left: 75%
-            }
-
-            .col-md-push-8 {
-                left: 66.66666667%
-            }
-
-            .col-md-push-7 {
-                left: 58.33333333%
-            }
-
-            .col-md-push-6 {
-                left: 50%
-            }
-
-            .col-md-push-5 {
-                left: 41.66666667%
-            }
-
-            .col-md-push-4 {
-                left: 33.33333333%
-            }
-
-            .col-md-push-3 {
-                left: 25%
-            }
-
-            .col-md-push-2 {
-                left: 16.66666667%
-            }
-
-            .col-md-push-1 {
-                left: 8.33333333%
-            }
-
-            .col-md-push-0 {
-                left: auto
-            }
-
-            .col-md-offset-12 {
-                margin-left: 100%
-            }
-
-            .col-md-offset-11 {
-                margin-left: 91.66666667%
-            }
-
-            .col-md-offset-10 {
-                margin-left: 83.33333333%
-            }
-
-            .col-md-offset-9 {
-                margin-left: 75%
-            }
-
-            .col-md-offset-8 {
-                margin-left: 66.66666667%
-            }
-
-            .col-md-offset-7 {
-                margin-left: 58.33333333%
-            }
-
-            .col-md-offset-6 {
-                margin-left: 50%
-            }
-
-            .col-md-offset-5 {
-                margin-left: 41.66666667%
-            }
-
-            .col-md-offset-4 {
-                margin-left: 33.33333333%
-            }
-
-            .col-md-offset-3 {
-                margin-left: 25%
-            }
-
-            .col-md-offset-2 {
-                margin-left: 16.66666667%
-            }
-
-            .col-md-offset-1 {
-                margin-left: 8.33333333%
-            }
-
-            .col-md-offset-0 {
-                margin-left: 0
-            }
-        }
-
-        @media (max-width:959px) {
-
-            .col-md-3,
-            .col-md-4,
-            .col-md-5,
-            .col-md-8 {
-                width: auto !important;
-                float: none
-            }
-        }
-
-        .visible-lg,
-        .visible-md,
-        .visible-sm,
-        .visible-xs {
-            display: none
-        }
-
-        .visible-lg-block,
-        .visible-lg-inline,
-        .visible-lg-inline-block,
-        .visible-md-block,
-        .visible-md-inline,
-        .visible-md-inline-block,
-        .visible-xs-block,
-        .visible-xs-inline,
-        .visible-xs-inline-block {
-            display: none
-        }
-
-        @media (max-width:959px) {
-            .visible-xs {
-                display: block
-            }
-        }
-
-        @media (max-width:959px) {
-            .visible-xs-block {
-                display: block
-            }
-        }
-
-        @media (max-width:959px) {
-            .visible-xs-inline {
-                display: inline
-            }
-        }
-
-        @media (max-width:959px) {
-            .visible-xs-inline-block {
-                display: inline-block
-            }
-        }
-
-        @media (min-width:960px) and (max-width:1119px) {
-            .visible-md {
-                display: block
-            }
-        }
-
-        @media (min-width:960px) and (max-width:1119px) {
-            .visible-md-block {
-                display: block
-            }
-        }
-
-        @media (min-width:960px) and (max-width:1119px) {
-            .visible-md-inline {
-                display: inline
-            }
-        }
-
-        @media (min-width:960px) and (max-width:1119px) {
-            .visible-md-inline-block {
-                display: inline-block
-            }
-        }
-
-        @media (min-width:1120px) {
-            .visible-lg {
-                display: block
-            }
-        }
-
-        @media (min-width:1120px) {
-            .visible-lg-block {
-                display: block
-            }
-        }
-
-        @media (min-width:1120px) {
-            .visible-lg-inline {
-                display: inline
-            }
-        }
-
-        @media (min-width:1120px) {
-            .visible-lg-inline-block {
-                display: inline-block
-            }
-        }
-
-        @media (min-width:320px) and (max-width:959px) {
-            .hidden-xs {
-                display: none
-            }
-        }
-
-        @media (min-width:960px) and (max-width:1119px) {
-            .hidden-md {
-                display: none
-            }
-        }
-
-        @media (min-width:1120px) {
-            .hidden-lg {
-                display: none
-            }
-        }
-
-        /* PAGE */
-        .site-header,
-        .site-footer {
-            width: auto !important;
-        }
-
-        @media (max-width:959px) {
-            .site-header .site-logo {
-                float: none;
-                text-align: center
-            }
-
-            .site-header-bottom {
-                position: relative
-            }
-
-            .site-header-bottom:after {
-                width: 100px;
-                height: 90%;
-                top: 2px;
-                right: 140px;
-                content: '';
-                pointer-events: none;
-                position: absolute;
-                background-image: linear-gradient(90deg, rgba(243, 243, 243, 0) 0, #fff 100%)
-            }
-
-            .main-menu {
-                display: flex;
-                padding-right: 40px;
-                width: calc(100% - 138px);
-                overflow: auto hidden
-            }
-
-            .site-menu,
-            .site-search {
-                width: 100vw;
-                right: -10px
-            }
-
-            .site-search:before {
-                right: 104px
-            }
-
-            .site-menu .items {
-                height: auto;
-                font-size: 15px;
-                line-height: 43px;
-                text-align: center
-            }
-
-            .site-menu .items .site-link {
-                display: none
-            }
-
-            .site-menu-list {
-                padding-top: 8px;
-                padding-bottom: 5px;
-                text-align: center
-            }
-
-            .breaking-news-box .image {
-                float: none;
-                width: 100%;
-                margin-right: 0;
-            }
-
-            .breaking-news-box .content .title {
-                font-size: 18px;
-                line-height: 22px
-            }
-
-            .breaking-news-box .content .summary {
-                font-size: 15px;
-            }
-
-            .category-title .title {
-                font-size: 22px;
-                text-transform: uppercase
-            }
-
-            .category-title .title:before {
-                width: 65px
-            }
-
-            .category-title.relative .title {
-                font-size: 20px;
-                color: #b34062
-            }
-
-            .category-title.relative .title:before {
-                width: 25px;
-                background: #df6e8f
-            }
-
-            .category-title.relative .title:after {
-                background: #b34062
-            }
-
-            .breaking-news-content .category-news-item .image {
-                height: auto
-            }
-
-            .site-footer {
-                margin-top: 20px;
-            }
-
-            .copyright {
-                text-align: center
-            }
-
-            .site-footer .footer-content-left {
-                padding-left: 25px
-            }
-
-            .site-footer .footer-content-right {
-                padding-right: 25px
-            }
-
-            .site-footer-logo {
-                margin-top: 0;
-                margin-left: auto;
-                margin-bottom: 30px
-            }
-
-            .footer-content {
-                overflow: hidden;
-                margin-bottom: 30px
-            }
-
-            .site-footer-brands {
-                height: auto;
-                margin-top: 30px;
-                padding: 15px 0 5px
-            }
-
-            .site-footer .mobile-buttons {
-                overflow: hidden;
-                padding-left: 0
-            }
-
-            .site-footer .mobile-buttons-item.appstore {
-                margin-bottom: 0
-            }
-
-            .cookie-message {
-                height: auto;
-                line-height: 17px;
-                padding-top: 10px;
-            }
-
-            .cookie-message-close {
-                position: absolute;
-                bottom: 8px;
-                right: 18px;
-                background: none;
-            }
-        }
-    </style>
-
     <main class="main-content">
         <div class="container">
 
@@ -979,10 +623,10 @@
             </span>
 
             <!-- Content -->
-            <div class="row mb30">
+            <div class="row mb30 g-4 justify-content-center">
 
                 <!-- Left Block -->
-                <div class="col-md-8">
+                <div class="col-md-7 col-lg-8">
 
                     <div class="breaking-news-content">
 
@@ -1523,10 +1167,10 @@
                 </div>
 
                 <!-- Right Block -->
-                <div class="col-md-4 hidden-xs">
+                <div class="col-md-5 col-lg-4 hidden-xs">
 
                     <!-- News Widget -->
-                    <div class="sidebar-news-widget last-news">
+                    <div class="sidebar-news-widget last-news mt-4 mt-md-0">
 
                         <!-- News Widget - Title -->
                         <div class="sidebar-news-widget_title">
@@ -2074,130 +1718,134 @@
     <!-- Footer -->
     <div class="site-footer">
 
-        <div class="container">
-            <div class="row">
+		<div class="container">
+			<div class="row flex-lg-nowrap justify-content-center justify-content-lg-between">
 
-                <!-- Footer - Copyright -->
-                <div class="copyright col-md-4">
+				<!-- Footer - Copyright -->
+				<div class="copyright col-12 col-md-5 col-lg-4 text-center d-sm-flex align-items-center justify-content-center">
 
-                    <!-- Logo -->
-                    <a href="#" title="Haber7" class="site-footer-logo">
-                        <img src="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.svg"
-                            data-svg-fallback="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.png"
-                            alt="Haber7">
-                    </a>
+					<!-- Logo -->
+					<a href="#" title="Haber7" class="site-footer-logo">
+						<img src="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.svg"
+							data-svg-fallback="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.png"
+							alt="Haber7">
+					</a>
 
-                </div>
+				</div>
 
-                <!-- Footer - Content -->
-                <div class="footer-content col-md-5">
+				<!-- Footer - Content -->
+				<div class="footer-content col-12 col-md-7 col-lg-5 flex-lg-grow-1 row row-cols-md-2 justify-content-between ms-md-auto ms-lg-0">
 
-                    <!-- Left Block -->
-                    <div class="footer-content-left">
-                        <!-- Menu - Title -->
-                        <h4 class="footer-menu-title">KURUMSAL</h4>
+					<!-- Left Block -->
+					<div class="footer-content-left col-auto flex-grow-1 flex-md-grow-0">
+						<!-- Menu - Title -->
+						<h4 class="footer-menu-title">KURUMSAL</h4>
 
-                        <!-- Menu - Content -->
-                        <ul class="footer-menu">
-                            <li>
-                                <a href="#" title="Kullanım Şartları" target="_blank">Kullanım Şartları</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Yayın İlkeleri" target="_blank">Yayın İlkeleri</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Künye" target="_blank">Künye</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Reklam" target="_blank">Reklam</a>
-                            </li>
-                            <li>
-                                <a href="#" title="İletişim" target="_blank">İletişim</a>
-                            </li>
-                        </ul>
-                    </div>
+						<!-- Menu - Content -->
+						<ul class="footer-menu">
+							<li>
+								<a href="#" title="Kullanım Şartları" target="_blank" rel="nofollow">Kullanım
+									Şartları</a>
+							</li>
+							<li>
+								<a href="#" title="Yayın İlkeleri" target="_blank" rel="nofollow">Yayın İlkeleri</a>
+							</li>
+							<li>
+								<a href="#" title="Künye" target="_blank" rel="nofollow">Künye</a>
+							</li>
+							<li>
+								<a href="#" title="Reklam" target="_blank" rel="nofollow">Reklam</a>
+							</li>
+							<li>
+								<a href="#" title="İletişim" target="_blank" rel="nofollow">İletişim</a>
+							</li>
+						</ul>
+					</div>
 
-                    <!-- Right Block -->
-                    <div class="footer-content-right">
-                        <!-- Menu - Title -->
-                        <div class="footer-menu-title">BAĞLANTILAR</div>
+					<!-- Right Block -->
+					<div class="footer-content-right col-auto">
+						<!-- Menu - Title -->
+						<div class="footer-menu-title">BAĞLANTILAR</div>
 
-                        <!-- Menu - Content -->
-                        <ul class="footer-menu">
-                            <li>
-                                <a href="#" title="e-Okul Giriş Sayfası" target="_blank">e-Okul Giriş Sayfası</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Memur Alımı" target="_blank">Memur Alımı</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Dini Bilgiler" target="_blank">Dini Bilgiler</a>
-                            </li>
-                            <li>
-                                <a href="#" title="E-Devlet Giriş" target="_blank">E-Devlet Giriş</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Vize nasıl alınır? " target="_blank" rel="noopener">Vize nasıl
-                                    alınır? </a>
-                            </li>
-                        </ul>
-                    </div>
+						<!-- Menu - Content -->
+						<ul class="footer-menu">
+							<li>
+								<a href="#" title="e-Okul Giriş Sayfası" target="_blank">e-Okul Giriş Sayfası</a>
+							</li>
+							<li>
+								<a href="#" title="Memur Alımı" target="_blank">Memur Alımı</a>
+							</li>
+							<li>
+								<a href="#" title="Dini Bilgiler" target="_blank">Dini Bilgiler</a>
+							</li>
+							<li>
+								<a href="#" title="E-Devlet Giriş" target="_blank">E-Devlet Giriş</a>
+							</li>
+							<li>
+								<a href="#" title="Vize nasıl alınır? " target="_blank" rel="noopener">Vize nasıl
+									alınır? </a>
+							</li>
+							<li>
+								<a href="#" title="İstanbul Hava Durumu" target="_blank" rel="noopener">İstanbul Hava
+									Durumu</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-                </div>
+				<!-- Footer - Mobile Buttons -->
+				<div class="mobile-buttons col">
 
-                <!-- Footer - Mobile Buttons -->
-                <div class="mobile-buttons col-md-3">
+					<!-- Title -->
+					<h4>UYGULAMALAR</h4>
 
-                    <!-- Title -->
-                    <h4>UYGULAMALAR</h4>
+					<!-- App Store -->
+					<a href="#" title="Haber7 App Store'da" target="_blank" class="mobile-buttons-item appstore"
+						rel="nofollow"></a>
 
-                    <!-- App Store -->
-                    <a href="#" title="Haber7 App Store'da" target="_blank" class="mobile-buttons-item appstore"
-                        rel="nofollow"></a>
+					<!-- Play Store -->
+					<a href="#" title="Haber7 Google Play'de" target="_blank" class="mobile-buttons-item googleplay"
+						rel="nofollow"></a>
+				</div>
 
-                    <!-- Play Store -->
-                    <a href="#" title="Haber7 Google Play'de" target="_blank" class="mobile-buttons-item googleplay"
-                        rel="nofollow"></a>
-                </div>
+			</div>
+		</div>
 
-            </div>
-        </div>
+		<!-- Footer Brands -->
+		<div class="site-footer-brands">
 
-        <!-- Footer Brands -->
-        <div class="site-footer-brands">
+			<!-- Footer Brands - Kanal7 -->
+			<a href="#" title="Kanal7" target="_blank" rel="noopener" class="site-footer-brands_item kanal7">
+				Kanal7
+			</a>
 
-            <!-- Footer Brands - Kanal7 -->
-            <a href="#" title="Kanal7" target="_blank" rel="noopener" class="site-footer-brands_item kanal7">
-                Kanal7
-            </a>
+			<!-- Footer Brands - Radyo7 -->
+			<a href="#" title="Radyo7" target="_blank" rel="noopener" class="site-footer-brands_item radyo7">
+				Radyo7
+			</a>
 
-            <!-- Footer Brands - Radyo7 -->
-            <a href="#" title="Radyo7" target="_blank" rel="noopener" class="site-footer-brands_item radyo7">
-                Radyo7
-            </a>
+			<!-- Footer Brands - Kanal7 Avrupa -->
+			<a href="#" title="Kanal7 Avrupa" target="_blank" rel="noopener" class="site-footer-brands_item avrupa7">
+				Avrupa7
+			</a>
 
-            <!-- Footer Brands - Kanal7 Avrupa -->
-            <a href="#" title="Kanal7 Avrupa" target="_blank" rel="noopener" class="site-footer-brands_item avrupa7">
-                Avrupa7
-            </a>
+			<!-- Footer Brands - UlkeTV -->
+			<a href="#" title="ÜlkeTV" target="_blank" rel="noopener" class="site-footer-brands_item ulke-tv">
+				ÜlkeTV
+			</a>
 
-            <!-- Footer Brands - UlkeTV -->
-            <a href="#" title="ÜlkeTV" target="_blank" rel="noopener" class="site-footer-brands_item ulke-tv">
-                ÜlkeTV
-            </a>
+			<!-- Footer Brands - Izle7 -->
+			<a href="#" title="İzle7" target="_blank" rel="noopener" class="site-footer-brands_item izle7">
+				İzle7
+			</a>
 
-            <!-- Footer Brands - Izle7 -->
-            <a href="#" title="İzle7" target="_blank" rel="noopener" class="site-footer-brands_item izle7">
-                İzle7
-            </a>
+			<!-- Footer Brands - Yasemin -->
+			<a href="#" title="Yasemin" target="_blank" rel="noopener" class="site-footer-brands_item yasemin">
+				Yasemin
+			</a>
 
-            <!-- Footer Brands - Yasemin -->
-            <a href="#" title="Yasemin" target="_blank" rel="noopener" class="site-footer-brands_item yasemin">
-                Yasemin
-            </a>
-
-        </div>
-    </div>
+		</div>
+	</div>
 
     <!-- Cookie Message --->
     <div class="cookie-message">

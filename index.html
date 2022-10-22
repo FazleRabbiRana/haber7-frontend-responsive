@@ -12,11 +12,12 @@
 	<meta property="fb:app_id" content="121750831288720">
 	<meta property="twitter:account_id" content="120840897">
 
+	<!-- ICONS -->
+	<link rel="shortcut icon" href="./assets/img/favicons/favicon.png" type="image/png">
+
 	<!-- LINK -->
 	<link rel="preload" as="style" href="assets/css/home.critical.min7e49.css">
-	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/home.mina2b0.css">
 	<link rel="stylesheet" href="assets/css/main.min.css">
 
 	<!-- Mobile Control -->
@@ -63,149 +64,99 @@
 		<div class="site-header-top">
 			<div class="container">
 
-				<!-- Logo -->
-				<h1 class="site-logo">
-					<a href="index.html" title="Haber7">
-						<img src="assets/img/haber7-logo.svg" data-svg-fallback="" alt="Haber7">
-					</a>
-				</h1>
-
-				<!-- Header Widgets -->
-				<div class="header-widgets">
-
-					<!-- BIP Subscribe -->
-					<span class="whatsapp bip" href="#" title="BİP" rel="nofollow">
-
-						<!-- Whatsapp - Icon -->
-						<i class="icon"></i>
-
-						<!-- Whatsapp - Title -->
-						<div class="whatsapp_title">
-							<span class="title"></span>
-							<span class="number"></span>
-						</div>
-					</span>
-
-					<style>
-						.telegram .whatsapp_title .title:before {
-							content: 'Telegram' !important;
-							animation: none;
-						}
-
-						.telegram .whatsapp_title .number:before {
-							content: 'Haber7 Kanalı';
-							-webkit-animation: telegramAnimation 10s linear 5s infinite forwards;
-							animation: telegramAnimation 10s linear 5s infinite forwards
-						}
-
-						@-webkit-keyframes telegramAnimation {
-							50% {
-								content: 'Abone Ol';
-							}
-
-							100% {
-								content: 'Haber7 Kanalı';
-							}
-						}
-
-						@keyframes telegramAnimation {
-							50% {
-								content: 'Abone Ol';
-							}
-
-							100% {
-								content: 'Haber7 Kanalı';
-							}
-						}
-
-						.telegram .icon {
-							background: url('https://s.haber7.net/assets/v3/common/images/telegram-icon.svg') center no-repeat !important;
-							animation: none;
-						}
-
-						.bip .whatsapp_title .title:before {
-							content: 'BİP' !important;
-							animation: none;
-						}
-
-						.bip .whatsapp_title .number:before {
-							content: '0552 073 07 07';
-						}
-
-						.bip .icon {
-							background: url('https://s.haber7.net/assets/v3/common/images/bip-icon.svg') center no-repeat !important;
-							animation: none;
-						}
-					</style>
-
-					<!-- Weather -->
-					<div class="weather">
-
-						<!-- Weather - Icon -->
-						<i class="icon wi-default wi-parcali-bulutlu"></i>
-
-						<!-- Weather - Name -->
-						<span class="weather-name">
-
-							<!-- Selected City Name -->
-							<span class="city-name">
-								<div class="dummy-load w-name"></div>
-							</span>
-
-							<!-- City Name List -->
-							<div class="city-name-list"></div>
-
-							<!-- Weather - Status -->
-							<span class="status">
-								<span class="status-degree">
-									<div class="dummy-load w-status"></div>
+				<div class="row justify-content-center justify-content-lg-between">
+					<!-- Logo -->
+					<h1 class="site-logo col d-none d-lg-block">
+						<a href="index.html" title="Haber7">
+							<img src="assets/img/haber7-logo.svg" data-svg-fallback="" alt="Haber7">
+						</a>
+					</h1>
+	
+					<!-- Header Widgets -->
+					<div class="header-widgets col-auto">
+	
+						<!-- BIP Subscribe -->
+						<span class="whatsapp bip" href="#" title="BİP" rel="nofollow">
+	
+							<!-- Whatsapp - Icon -->
+							<i class="icon"></i>
+	
+							<!-- Whatsapp - Title -->
+							<div class="whatsapp_title">
+								<span class="title"></span>
+								<span class="number"></span>
+							</div>
+						</span>
+	
+						<!-- Weather -->
+						<div class="weather">
+	
+							<!-- Weather - Icon -->
+							<i class="icon wi-default wi-parcali-bulutlu"></i>
+	
+							<!-- Weather - Name -->
+							<span class="weather-name">
+	
+								<!-- Selected City Name -->
+								<span class="city-name">
+									<div class="dummy-load w-name"></div>
 								</span>
-								<span class="status-text"></span>
+	
+								<!-- City Name List -->
+								<div class="city-name-list"></div>
+	
+								<!-- Weather - Status -->
+								<span class="status">
+									<span class="status-degree">
+										<div class="dummy-load w-status"></div>
+									</span>
+									<span class="status-text"></span>
+								</span>
 							</span>
-						</span>
-					</div>
-
-					<!-- Prayer -->
-					<div class="prayer ramadan">
-						<!-- Prayer - Left Time -->
-						<span class="prayer_time">-:-</span>
-
-						<!-- Prayer - Name -->
-						<span class="prayer_name">
-							<span class="name">
-								<div class="dummy-load p-name"></div>
+						</div>
+	
+						<!-- Prayer -->
+						<div class="prayer ramadan">
+							<!-- Prayer - Left Time -->
+							<span class="prayer_time">-:-</span>
+	
+							<!-- Prayer - Name -->
+							<span class="prayer_name">
+								<span class="name">
+									<div class="dummy-load p-name"></div>
+								</span>
+								<span class="text">
+									<div class="dummy-load p-text"></div>
+								</span>
 							</span>
-							<span class="text">
-								<div class="dummy-load p-text"></div>
-							</span>
-						</span>
-
-						<!-- Prayer List -->
-						<div class="prayer-list">
-							<span class="prayer-list_item_secondary">
-								<span>16 Nisan 2022</span>
-							</span>
-							<span class="prayer-list_item_secondary">
-								<span>15 Ramazan 1443</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">İmsak:</span> <span class="time-value">-:-</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">Güneş:</span> <span class="time-value">-:-</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">Öğle:</span> <span class="time-value">-:-</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">İkindi:</span> <span class="time-value">-:-</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">Akşam:</span> <span class="time-value">-:-</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">Yatsı:</span> <span class="time-value">-:-</span>
-							</span>
+	
+							<!-- Prayer List -->
+							<div class="prayer-list">
+								<span class="prayer-list_item_secondary">
+									<span>16 Nisan 2022</span>
+								</span>
+								<span class="prayer-list_item_secondary">
+									<span>15 Ramazan 1443</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">İmsak:</span> <span class="time-value">-:-</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">Güneş:</span> <span class="time-value">-:-</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">Öğle:</span> <span class="time-value">-:-</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">İkindi:</span> <span class="time-value">-:-</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">Akşam:</span> <span class="time-value">-:-</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">Yatsı:</span> <span class="time-value">-:-</span>
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -214,7 +165,7 @@
 		</div>
 
 		<!-- Header - Bottom -->
-		<div class="site-header-bottom">
+		<div class="site-header-bottom d-none d-lg-block">
 			<div class="container">
 
 				<!-- Main Menu -->
@@ -397,7 +348,7 @@
 	</header>
 
 	<!-- Ramazan - Iftara Kalan Sure -->
-	<div class="ramazan-widget">
+	<div class="ramazan-widget d-none d-lg-block">
 		<div class="container">
 			<iframe src="https://i13.haber7.net/sondakika/ramazan-widget/default/web/970x53.html?v13" width="970"
 				height="53"></iframe>
@@ -530,16 +481,13 @@
 			<!-- Ads / Currency Widget -->
 			<div class="subhead-bottom row">
 				<div class="col-md-8">
-					<div class="w620-ad">
-						<a class="show"
-							href="http://pubads.g.doubleclick.net/gampad/clk?id=5957917602&amp;iu=/324749355/makroo_click_link"
-							title="HalkBank" target="_blank">
-							<iframe src="https://i11.haber7.net/makroo/hb-ads/v2/desktop/620x60.html" width="620"
-								height="60" frameborder="0" scrolling="no" style="pointer-events: none"></iframe>
+					<div class="w620-ad d-none d-lg-block">
+						<a class="show" href="https://pubads.g.doubleclick.net/gampad/clk?id=5957917602&amp;iu=/324749355/makroo_click_link" title="HalkBank" target="_blank">
+							<iframe src="https://i11.haber7.net/makroo/hb-ads/v2/desktop/620x60.html" width="620" height="60" frameborder="0" scrolling="no" style="pointer-events: none"></iframe>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4">
 
 					<!-- Currency Widget -->
 					<div class="currency-widget">
@@ -579,7 +527,7 @@
 
 
 			<!-- Top Headline -->
-			<div class="top-headline row g-4">
+			<div class="top-headline row">
 				<div class="col-md-6 col-lg-3">
 					<a href="single-news.html" title="Koca: &Uuml;&ccedil; yıl &ouml;ncekine &ccedil;ok yaklaştık"
 						target="_blank" class="top-headline-item guncel">
@@ -1280,14 +1228,16 @@
 					<span class="title">MULTİMEDYA</span>
 
 					<!-- Photo Gallery Link -->
-					<a href="#" title="Foto Galeri" class="link photo" target="_blank">
-						FOTO GALERİ <i class="zmdi zmdi-arrow-right"></i>
-					</a>
-
-					<!-- Video Gallery Link -->
-					<a href="#" title="Video Galeri" class="link video" target="_blank" rel="noopener">
-						VİDEO GALERİ
-					</a>
+					<div class="multimedia-gallery-links">
+						<a href="#" title="Foto Galeri" class="link photo" target="_blank">
+							FOTO GALERİ <i class="zmdi zmdi-arrow-right"></i>
+						</a>
+	
+						<!-- Video Gallery Link -->
+						<a href="#" title="Video Galeri" class="link video" target="_blank" rel="noopener">
+							VİDEO GALERİ
+						</a>
+					</div>
 				</div>
 
 				<div class="row g-4">
@@ -1414,145 +1364,147 @@
 				</div>
 
 				<!-- Newspaper Slider -->
-				<div class="newspaper-slider">
-					<a href="#" title="Yeni Şafak" target="_blank">
-						<span class="image">
-							<img class="lazy"
-								data-original="https://i13.haber7.net/haber7/gazete/yeni-safak/small_160422_0800.jpg"
-								alt="Yeni Şafak">
-						</span>
-						<span class="title">Yeni Şafak</span>
-					</a>
-					<a href="#" title="T&uuml;rkiye" target="_blank">
-						<span class="image">
-							<img class="lazy"
-								data-original="https://i13.haber7.net/haber7/gazete/turkiye/small_160422_0800.jpg"
-								alt="T&uuml;rkiye">
-						</span>
-						<span class="title">Türkiye</span>
-					</a>
-					<a href="#" title="Akşam" target="_blank">
-						<span class="image">
-							<img class="lazy"
-								data-original="https://i13.haber7.net/haber7/gazete/aksam/small_160422_0800.jpg"
-								alt="Akşam">
-						</span>
-						<span class="title">Akşam</span>
-					</a>
-					<a href="#" title="Yeni Akit" target="_blank">
-						<span class="image">
-							<img class="lazy"
-								data-original="https://i13.haber7.net/haber7/gazete/yeni-akit/small_160422_0800.jpg"
-								alt="Yeni Akit">
-						</span>
-						<span class="title">Yeni Akit</span>
-					</a>
-					<a href="#" title="Diriliş Postası" target="_blank">
-						<span class="image">
-							<img class="lazy"
-								data-original="https://i13.haber7.net/haber7/gazete/dirilis-postasi/small_160422_0800.jpg"
-								alt="Diriliş Postası">
-						</span>
-						<span class="title">Diriliş Postası</span>
-					</a>
-					<a href="#" title="Milat" target="_blank">
-						<span class="image">
-							<img class="lazy"
-								data-original="https://i13.haber7.net/haber7/gazete/milat/small_160422_0800.jpg"
-								alt="Milat">
-						</span>
-						<span class="title">Milat</span>
-					</a>
-					<a href="#" title="Sabah" target="_blank">
-						<span class="image">
-							<img class="lazy"
-								data-original="https://i13.haber7.net/haber7/gazete/sabah/small_160422_0800.jpg"
-								alt="Sabah">
-						</span>
-						<span class="title">Sabah</span>
-					</a>
-					<a href="#" title="Milliyet" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/milliyet/small_160422_0800.jpg"
-								alt="Milliyet">
-						</span>
-						<span class="title">Milliyet</span>
-					</a>
-					<a href="#" title="H&uuml;rriyet" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/hurriyet/small_160422_0800.jpg"
-								alt="H&uuml;rriyet">
-						</span>
-						<span class="title">Hürriyet</span>
-					</a>
-					<a href="#" title="T&uuml;rkg&uuml;n" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/turkgun/small_160422_0800.jpg"
-								alt="T&uuml;rkg&uuml;n">
-						</span>
-						<span class="title">Türkgün</span>
-					</a>
-					<a href="#" title="Yeni Birlik" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/yeni-birlik/small_160422_0800.jpg"
-								alt="Yeni Birlik">
-						</span>
-						<span class="title">Yeni Birlik</span>
-					</a>
-					<a href="#" title="Milli Gazete" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/milli-gazete/small_160422_0800.jpg"
-								alt="Milli Gazete">
-						</span>
-						<span class="title">Milli Gazete</span>
-					</a>
-					<a href="#" title="D&uuml;nya" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/dunya/small_160422_0800.jpg"
-								alt="D&uuml;nya">
-						</span>
-						<span class="title">Dünya</span>
-					</a>
-					<a href="#" title="Yeni &Ccedil;ağ" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/yenicag/small_160422_0800.jpg"
-								alt="Yeni &Ccedil;ağ">
-						</span>
-						<span class="title">Yeni Çağ</span>
-					</a>
-					<a href="#" title="Yeni S&ouml;z" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/yenisoz/small_160422_0800.jpg"
-								alt="Yeni S&ouml;z">
-						</span>
-						<span class="title">Yeni Söz</span>
-					</a>
-					<a href="#" title="Aydınlık" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/aydinlik/small_160422_0800.jpg"
-								alt="Aydınlık">
-						</span>
-						<span class="title">Aydınlık</span>
-					</a>
-					<a href="#" title="Doğru Haber" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/dogru-haber/small_160422_0800.jpg"
-								alt="Doğru Haber">
-						</span>
-						<span class="title">Doğru Haber</span>
-					</a>
-					<a href="#" title="Takvim" target="_blank">
-						<span class="image">
-							<img data-lazy="https://i13.haber7.net/haber7/gazete/takvim-gazetesi/small_160422_0800.jpg"
-								alt="Takvim">
-						</span>
-						<span class="title">Takvim</span>
-					</a>
+				<div class="newspaper-slider-outer">
+					<div class="newspaper-slider">
+						<a href="#" title="Yeni Şafak" target="_blank">
+							<span class="image">
+								<img class="lazy"
+									data-original="https://i13.haber7.net/haber7/gazete/yeni-safak/small_160422_0800.jpg"
+									alt="Yeni Şafak">
+							</span>
+							<span class="title">Yeni Şafak</span>
+						</a>
+						<a href="#" title="T&uuml;rkiye" target="_blank">
+							<span class="image">
+								<img class="lazy"
+									data-original="https://i13.haber7.net/haber7/gazete/turkiye/small_160422_0800.jpg"
+									alt="T&uuml;rkiye">
+							</span>
+							<span class="title">Türkiye</span>
+						</a>
+						<a href="#" title="Akşam" target="_blank">
+							<span class="image">
+								<img class="lazy"
+									data-original="https://i13.haber7.net/haber7/gazete/aksam/small_160422_0800.jpg"
+									alt="Akşam">
+							</span>
+							<span class="title">Akşam</span>
+						</a>
+						<a href="#" title="Yeni Akit" target="_blank">
+							<span class="image">
+								<img class="lazy"
+									data-original="https://i13.haber7.net/haber7/gazete/yeni-akit/small_160422_0800.jpg"
+									alt="Yeni Akit">
+							</span>
+							<span class="title">Yeni Akit</span>
+						</a>
+						<a href="#" title="Diriliş Postası" target="_blank">
+							<span class="image">
+								<img class="lazy"
+									data-original="https://i13.haber7.net/haber7/gazete/dirilis-postasi/small_160422_0800.jpg"
+									alt="Diriliş Postası">
+							</span>
+							<span class="title">Diriliş Postası</span>
+						</a>
+						<a href="#" title="Milat" target="_blank">
+							<span class="image">
+								<img class="lazy"
+									data-original="https://i13.haber7.net/haber7/gazete/milat/small_160422_0800.jpg"
+									alt="Milat">
+							</span>
+							<span class="title">Milat</span>
+						</a>
+						<a href="#" title="Sabah" target="_blank">
+							<span class="image">
+								<img class="lazy"
+									data-original="https://i13.haber7.net/haber7/gazete/sabah/small_160422_0800.jpg"
+									alt="Sabah">
+							</span>
+							<span class="title">Sabah</span>
+						</a>
+						<a href="#" title="Milliyet" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/milliyet/small_160422_0800.jpg"
+									alt="Milliyet">
+							</span>
+							<span class="title">Milliyet</span>
+						</a>
+						<a href="#" title="H&uuml;rriyet" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/hurriyet/small_160422_0800.jpg"
+									alt="H&uuml;rriyet">
+							</span>
+							<span class="title">Hürriyet</span>
+						</a>
+						<a href="#" title="T&uuml;rkg&uuml;n" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/turkgun/small_160422_0800.jpg"
+									alt="T&uuml;rkg&uuml;n">
+							</span>
+							<span class="title">Türkgün</span>
+						</a>
+						<a href="#" title="Yeni Birlik" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/yeni-birlik/small_160422_0800.jpg"
+									alt="Yeni Birlik">
+							</span>
+							<span class="title">Yeni Birlik</span>
+						</a>
+						<a href="#" title="Milli Gazete" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/milli-gazete/small_160422_0800.jpg"
+									alt="Milli Gazete">
+							</span>
+							<span class="title">Milli Gazete</span>
+						</a>
+						<a href="#" title="D&uuml;nya" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/dunya/small_160422_0800.jpg"
+									alt="D&uuml;nya">
+							</span>
+							<span class="title">Dünya</span>
+						</a>
+						<a href="#" title="Yeni &Ccedil;ağ" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/yenicag/small_160422_0800.jpg"
+									alt="Yeni &Ccedil;ağ">
+							</span>
+							<span class="title">Yeni Çağ</span>
+						</a>
+						<a href="#" title="Yeni S&ouml;z" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/yenisoz/small_160422_0800.jpg"
+									alt="Yeni S&ouml;z">
+							</span>
+							<span class="title">Yeni Söz</span>
+						</a>
+						<a href="#" title="Aydınlık" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/aydinlik/small_160422_0800.jpg"
+									alt="Aydınlık">
+							</span>
+							<span class="title">Aydınlık</span>
+						</a>
+						<a href="#" title="Doğru Haber" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/dogru-haber/small_160422_0800.jpg"
+									alt="Doğru Haber">
+							</span>
+							<span class="title">Doğru Haber</span>
+						</a>
+						<a href="#" title="Takvim" target="_blank">
+							<span class="image">
+								<img data-lazy="https://i13.haber7.net/haber7/gazete/takvim-gazetesi/small_160422_0800.jpg"
+									alt="Takvim">
+							</span>
+							<span class="title">Takvim</span>
+						</a>
+					</div>
 				</div>
 			</div>
 
 			<!-- Related News / Authors -->
-			<div class="related-news row">
+			<div class="related-news row g-4">
 				<div class="col-md-8 col-lg-9">
 					<!-- Related News Section -->
 					<div class="related-news-section">
@@ -1788,7 +1740,7 @@
 					</a>
 				</div>
 
-				<div class="row">
+				<div class="row g-4">
 					<div class="col-md-5 col-lg-4">
 
 						<!-- Sport Widget -->
@@ -1901,7 +1853,7 @@
 
 					</div>
 					<div class="col-md-7 col-lg-8">
-						<div class="row mb20">
+						<div class="row g-4 mb20">
 							<div class="col-md-9">
 
 								<!-- Sport News - Slider -->
@@ -1921,7 +1873,7 @@
 								</a>
 
 							</div>
-							<div class="col-md-3 d-flex flex-wrap">
+							<div class="col-md-3 d-flex flex-wrap justify-content-center">
 
 								<!-- Fixture Button -->
 								<a href="#" target="_blank" rel="noopener" title="Fikstür ve Puan Durumu"
@@ -1943,7 +1895,7 @@
 						</div>
 
 						<!-- Sport News -->
-						<div class="row">
+						<div class="row g-4">
 							<div class="col-md-6">
 
 								<a href="#"
@@ -1981,7 +1933,7 @@
 			<!-- <iframe id="kanal7-schedule" class="mb20" src="" width="940px" height="100px" frameborder="0" scrolling="no" title="Kanal7 Yayın Akışı"></iframe> -->
 
 			<!-- Live Streams -->
-			<div class="group-live-streams py-2 px-5 px-md-2 d-flex flex-column flex-md-row justify-content-center justify-content-md-between gap-3 gap-md-0">
+			<div class="group-live-streams py-2 px-5 px-md-2 d-flex flex-wrap flex-md-nowrap flex-md-row justify-content-center justify-content-md-between gap-3 gap-md-0">
 
 				<!-- Kanal7 - Item -->
 				<a href="#" rel="nofollow" class="group-live-streams_item" title="Kanal7 - Canlı İzle" target="_blank">
@@ -2467,10 +2419,10 @@
 	<div class="site-footer">
 
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row flex-lg-nowrap justify-content-center justify-content-lg-between">
 
 				<!-- Footer - Copyright -->
-				<div class="copyright col-md-4 d-flex align-items-center justify-content-center">
+				<div class="copyright col-12 col-md-5 col-lg-4 text-center d-sm-flex align-items-center justify-content-center">
 
 					<!-- Logo -->
 					<a href="#" title="Haber7" class="site-footer-logo">
@@ -2482,10 +2434,10 @@
 				</div>
 
 				<!-- Footer - Content -->
-				<div class="footer-content col-md-5 row row-cols-md-2 justify-content-between">
+				<div class="footer-content col-12 col-md-7 col-lg-5 flex-lg-grow-1 row row-cols-md-2 justify-content-between ms-md-auto ms-lg-0">
 
 					<!-- Left Block -->
-					<div class="footer-content-left col">
+					<div class="footer-content-left col-auto flex-grow-1 flex-md-grow-0">
 						<!-- Menu - Title -->
 						<h4 class="footer-menu-title">KURUMSAL</h4>
 
@@ -2511,7 +2463,7 @@
 					</div>
 
 					<!-- Right Block -->
-					<div class="footer-content-right col">
+					<div class="footer-content-right col-auto">
 						<!-- Menu - Title -->
 						<div class="footer-menu-title list">
 							BAĞLANTILAR <i class="zmdi zmdi-chevron-down"></i>
@@ -2852,7 +2804,7 @@
 				</div>
 
 				<!-- Footer - Mobile Buttons -->
-				<div class="mobile-buttons col-3">
+				<div class="mobile-buttons col">
 
 					<!-- Title -->
 					<h4>UYGULAMALAR</h4>
