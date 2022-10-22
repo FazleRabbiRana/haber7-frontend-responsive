@@ -2,19 +2,21 @@
 <html lang="tr">
 
 <head>
-    <title>Haber 7 - Haber - Haberler - Son Dakika Haberleri</title>
+    <title>Haber 7 - Ekonomi Haberleri, Türkiye ve Dünya Ekonomisi - Ekotrent</title>
     <!-- META TAGS -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width">
 
-    <meta http-equiv="Refresh" content="180">
+    <!-- <meta http-equiv="Refresh" content="180"> -->
     <meta property="fb:app_id" content="121750831288720">
     <meta property="twitter:account_id" content="120840897">
 
+	<!-- ICONS -->
+	<link rel="shortcut icon" href="./assets/img/favicons/favicon.png" type="image/png">
+
     <!-- LINK -->
-    <link rel="preload" as="style" href="assets/css/home.critical.min7e49.css">
-    <link rel="stylesheet" href="assets/css/home.mina2b0.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.min.css">
 
     <!-- Mobile Control -->
@@ -47,7 +49,7 @@
 <body>
 
     <!-- Header -->
-    <header class="site-header">
+    <header class="site-header d-none d-lg-block">
 
         <!-- Header - Top -->
         <div class="site-header-top">
@@ -75,58 +77,6 @@
                             <span class="number"></span>
                         </div>
                     </span>
-
-                    <style>
-                        .telegram .whatsapp_title .title:before {
-                            content: 'Telegram' !important;
-                            animation: none;
-                        }
-
-                        .telegram .whatsapp_title .number:before {
-                            content: 'Haber7 Kanalı';
-                            -webkit-animation: telegramAnimation 10s linear 5s infinite forwards;
-                            animation: telegramAnimation 10s linear 5s infinite forwards
-                        }
-
-                        @-webkit-keyframes telegramAnimation {
-                            50% {
-                                content: 'Abone Ol';
-                            }
-
-                            100% {
-                                content: 'Haber7 Kanalı';
-                            }
-                        }
-
-                        @keyframes telegramAnimation {
-                            50% {
-                                content: 'Abone Ol';
-                            }
-
-                            100% {
-                                content: 'Haber7 Kanalı';
-                            }
-                        }
-
-                        .telegram .icon {
-                            background: url('https://s.haber7.net/assets/v3/common/images/telegram-icon.svg') center no-repeat !important;
-                            animation: none;
-                        }
-
-                        .bip .whatsapp_title .title:before {
-                            content: 'BİP' !important;
-                            animation: none;
-                        }
-
-                        .bip .whatsapp_title .number:before {
-                            content: '0552 073 07 07';
-                        }
-
-                        .bip .icon {
-                            background: url('https://s.haber7.net/assets/v3/common/images/bip-icon.svg') center no-repeat !important;
-                            animation: none;
-                        }
-                    </style>
 
                     <!-- Weather -->
                     <div class="weather">
@@ -655,7 +605,7 @@
             <!-- Top Headline -->
             <div class="top-headline row">
 
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <a href="#" title="6 ila&ccedil; daha geri &ouml;deme listesine alındı" target="_blank"
                         class="top-headline-item ekonomi">
                         <!-- Image-->
@@ -671,7 +621,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <a href="#" title="Kripto paralarda Fed d&uuml;ş&uuml;ş&uuml;" target="_blank"
                         class="top-headline-item ekonomi">
                         <!-- Image-->
@@ -687,7 +637,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <a href="#" title="Yerli turistin harcaması iki katına &ccedil;ıktı" target="_blank"
                         class="top-headline-item ekonomi">
                         <!-- Image-->
@@ -703,7 +653,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <a href="#" title="&Ccedil;ift&ccedil;i sayısı 500 binin altına d&uuml;şt&uuml;" target="_blank"
                         class="top-headline-item ekonomi">
                         <!-- Image-->
@@ -728,7 +678,7 @@
                 <h2 class="economy-exchange-rate-title">Piyasada Bugün</h2>
 
                 <!-- Dollar -->
-                <a href="#" title="Dolar">
+                <a href="#" title="Dolar" class="economy-exchange-rate-content dollar">
                     <span class="name">DOLAR</span>
                     <span class="value first">14,737</span>
                     <span class="value second">
@@ -736,7 +686,7 @@
                     </span>
                 </a>
                 <!-- Euro -->
-                <a href="#" title="Euro">
+                <a href="#" title="Euro" class="economy-exchange-rate-content euro">
                     <span class="name">EURO</span>
                     <span class="value first">15,951</span>
                     <span class="value second">
@@ -744,7 +694,7 @@
                     </span>
                 </a>
                 <!-- Borsa Ist -->
-                <a href="#" title="Borsa İstanbul">
+                <a href="#" title="Borsa İstanbul" class="economy-exchange-rate-content bist">
                     <span class="name">BORSA İST.</span>
                     <span class="value first">2549</span>
                     <span class="value second">
@@ -752,7 +702,7 @@
                     </span>
                 </a>
                 <!-- Gold -->
-                <a href="#" title="Altın">
+                <a href="#" title="Altın" class="economy-exchange-rate-content gold">
                     <span class="name">GRAM ALTIN</span>
                     <span class="value first">916,902</span>
                     <span class="value second">
@@ -762,8 +712,8 @@
             </div>
 
             <!-- Economy News / Widgets -->
-            <div class="home-economy-news row">
-                <div class="col-md-8">
+            <div class="home-economy-news row g-4 justify-content-center">
+                <div class="col-lg-8">
 
                     <!-- Economy News Section -->
                     <div class="home-economy-news-section">
@@ -774,7 +724,7 @@
                         </div>
 
                         <!-- News -->
-                        <div class="clearfix">
+                        <div class="clearfix economy-news-wrapper">
                             <a href="#"
                                 title="ASKON Başkanı Aydın; &lsquo;T&uuml;rkiye saygın bir &uuml;lke olarak b&uuml;y&uuml;k bir itibar g&ouml;rmektedir&rsquo;"
                                 class="news-box" target="_blank">
@@ -872,7 +822,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
 
                     <!-- Featured Widget -->
                     <div class="economy-featured-widget">
@@ -1073,20 +1023,22 @@
                 <div class="section-title">
                     <span class="title">MULTİMEDYA</span>
 
-                    <!-- Photo Gallery Link -->
-                    <a href="#" title="Foto Galeri" class="link photo" target="_blank">
-                        FOTO GALERİ <i class="zmdi zmdi-arrow-right"></i>
-                    </a>
-
-                    <!-- Video Gallery Link -->
-                    <a href="#" title="Video Galeri" class="link video" target="_blank">
-                        VİDEO GALERİ
-                    </a>
+                    <div class="multimedia-gallery-links">
+                        <!-- Photo Gallery Link -->
+                        <a href="#" title="Foto Galeri" class="link photo" target="_blank">
+                            FOTO GALERİ <i class="zmdi zmdi-arrow-right"></i>
+                        </a>
+    
+                        <!-- Video Gallery Link -->
+                        <a href="#" title="Video Galeri" class="link video" target="_blank">
+                            VİDEO GALERİ
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Videos / Photos -->
-                <div class="row">
-                    <div class="left-block col-md-6">
+                <div class="row g-4 gy-md-3">
+                    <div class="left-block col-lg-6">
 
                         <!-- Multimedia Videos -->
                         <a href="#" title="Bayram ikramiyesi m&uuml;jdesi geldi! Tarihler belli oldu"
@@ -1100,12 +1052,12 @@
                         </a>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
 
                         <!-- Multimedia Photos / Videos -->
-                        <div class="right-block row">
+                        <div class="right-block row g-4 gy-md-3">
 
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <a href="#"
                                     title="Ukrayna savaşının sebep olduğu un krizini b&ouml;yle &ccedil;&ouml;zd&uuml;ler"
                                     class="news-box photo" target="_blank">
@@ -1125,7 +1077,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <a href="#"
                                     title="T&uuml;rkiye&#039;nin en b&uuml;y&uuml;k bakır madenine 2.2 milyar liralık teklif"
                                     class="news-box photo" target="_blank">
@@ -1147,7 +1099,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <a href="#" title="Otob&uuml;s biletleri u&ccedil;akla yarışıyor" class="news-box photo"
                                     target="_blank">
                                     <div class="title">
@@ -1166,7 +1118,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <a href="#" title="Altın fiyatlarında sert hareketlilik" class="news-box photo"
                                     target="_blank">
                                     <div class="title">
@@ -1201,9 +1153,9 @@
                 </div>
 
                 <!-- News -->
-                <div class="row">
+                <div class="row g-4 gy-md-3">
 
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <a href="#"
                             title="Yurtdışında g&ouml;rd&uuml;, &uuml;retime başladı! Yılda 300 bin TL kazanmayı hedefliyor"
                             class="news-box" target="_blank">
@@ -1218,7 +1170,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-md-3">
                         <a href="#" title="Yaş meyve sebze sekt&ouml;r&uuml;nde Rusya sevinci" class="news-box"
                             target="_blank">
                             <div class="title">
@@ -1232,7 +1184,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-md-3">
                         <a href="#"
                             title="Enerji krizi ile iklim krizi i&ccedil;in birlikte &ccedil;&ouml;z&uuml;m &ccedil;ağrısı!"
                             class="news-box" target="_blank">
@@ -1247,7 +1199,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-md-3">
                         <a href="#"
                             title="T&uuml;rkiye&#039;de &uuml;retiliyor d&uuml;nyaya satılıyor! Talep y&uuml;zde 40 arttı"
                             class="news-box" target="_blank">
@@ -1262,7 +1214,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-md-3">
                         <a href="#" title="THY&#039;den Brezilya deviyle &ouml;nemli anlaşma! İmzalar atıldı"
                             class="news-box" target="_blank">
                             <div class="title">
@@ -1276,7 +1228,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <a href="#"
                             title="Vakıfbank&rsquo;ta hurda altınlar &ouml;zel fiyatla TL&rsquo;ye d&ouml;n&uuml;ş&uuml;yor"
                             class="news-box" target="_blank">
@@ -1302,447 +1254,134 @@
     <!-- Footer -->
     <div class="site-footer">
 
-        <div class="container">
-            <div class="row">
+		<div class="container">
+			<div class="row flex-lg-nowrap justify-content-center justify-content-lg-between">
 
-                <!-- Footer - Copyright -->
-                <div class="copyright col-md-4">
+				<!-- Footer - Copyright -->
+				<div class="copyright col-12 col-md-5 col-lg-4 text-center d-sm-flex align-items-center justify-content-center">
 
-                    <!-- Logo -->
-                    <a href="#" title="Haber7" class="site-footer-logo">
-                        <img src="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.svg"
-                            data-svg-fallback="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.png"
-                            alt="Haber7">
-                    </a>
+					<!-- Logo -->
+					<a href="#" title="Haber7" class="site-footer-logo">
+						<img src="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.svg"
+							data-svg-fallback="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.png"
+							alt="Haber7">
+					</a>
 
-                </div>
+				</div>
 
-                <!-- Footer - Content -->
-                <div class="footer-content col-md-5">
+				<!-- Footer - Content -->
+				<div class="footer-content col-12 col-md-7 col-lg-5 flex-lg-grow-1 row row-cols-md-2 justify-content-between ms-md-auto ms-lg-0">
 
-                    <!-- Left Block -->
-                    <div class="footer-content-left">
-                        <!-- Menu - Title -->
-                        <h4 class="footer-menu-title">KURUMSAL</h4>
+					<!-- Left Block -->
+					<div class="footer-content-left col-auto flex-grow-1 flex-md-grow-0">
+						<!-- Menu - Title -->
+						<h4 class="footer-menu-title">KURUMSAL</h4>
 
-                        <!-- Menu - Content -->
-                        <ul class="footer-menu">
-                            <li>
-                                <a href="#" title="Kullanım Şartları" target="_blank" rel="nofollow">Kullanım
-                                    Şartları</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Yayın İlkeleri" target="_blank" rel="nofollow">Yayın İlkeleri</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Künye" target="_blank" rel="nofollow">Künye</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Reklam" target="_blank" rel="nofollow">Reklam</a>
-                            </li>
-                            <li>
-                                <a href="#" title="İletişim" target="_blank" rel="nofollow">İletişim</a>
-                            </li>
-                        </ul>
-                    </div>
+						<!-- Menu - Content -->
+						<ul class="footer-menu">
+							<li>
+								<a href="#" title="Kullanım Şartları" target="_blank" rel="nofollow">Kullanım
+									Şartları</a>
+							</li>
+							<li>
+								<a href="#" title="Yayın İlkeleri" target="_blank" rel="nofollow">Yayın İlkeleri</a>
+							</li>
+							<li>
+								<a href="#" title="Künye" target="_blank" rel="nofollow">Künye</a>
+							</li>
+							<li>
+								<a href="#" title="Reklam" target="_blank" rel="nofollow">Reklam</a>
+							</li>
+							<li>
+								<a href="#" title="İletişim" target="_blank" rel="nofollow">İletişim</a>
+							</li>
+						</ul>
+					</div>
 
-                    <!-- Right Block -->
-                    <div class="footer-content-right">
-                        <!-- Menu - Title -->
-                        <div class="footer-menu-title list">
-                            BAĞLANTILAR <i class="zmdi zmdi-chevron-down"></i>
+					<!-- Right Block -->
+					<div class="footer-content-right col-auto">
+						<!-- Menu - Title -->
+						<div class="footer-menu-title">BAĞLANTILAR</div>
 
+						<!-- Menu - Content -->
+						<ul class="footer-menu">
+							<li>
+								<a href="#" title="e-Okul Giriş Sayfası" target="_blank">e-Okul Giriş Sayfası</a>
+							</li>
+							<li>
+								<a href="#" title="Memur Alımı" target="_blank">Memur Alımı</a>
+							</li>
+							<li>
+								<a href="#" title="Dini Bilgiler" target="_blank">Dini Bilgiler</a>
+							</li>
+							<li>
+								<a href="#" title="E-Devlet Giriş" target="_blank">E-Devlet Giriş</a>
+							</li>
+							<li>
+								<a href="#" title="Vize nasıl alınır? " target="_blank" rel="noopener">Vize nasıl
+									alınır? </a>
+							</li>
+							<li>
+								<a href="#" title="İstanbul Hava Durumu" target="_blank" rel="noopener">İstanbul Hava
+									Durumu</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-                            <!-- Footer Dropdown -->
-                            <ul>
-                                <li>
-                                    <a href="#"
-                                        title="Elif Buse Doğan kimdir ve nerelidir? Elif Buse Doğan ka&ccedil; yaşında? Elif Buse Doğan şarkıları..."
-                                        target="_blank">Elif Buse Doğan kimdir ve nerelidir? Elif Buse Doğan ka&ccedil;
-                                        yaşında? Elif Buse Doğan şarkıları...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="İsmail K&uuml;&ccedil;&uuml;kkaya kimdir ve nerelidir? İsmail K&uuml;&ccedil;&uuml;kkaya hayatı ve biyografisi..."
-                                        target="_blank">İsmail K&uuml;&ccedil;&uuml;kkaya kimdir ve nerelidir? İsmail
-                                        K&uuml;&ccedil;&uuml;kkaya hayatı ve biyografisi...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Demet Akbağ T&uuml;rk halkından &ouml;z&uuml;r diledi! Yılmaz Erdoğan adına..."
-                                        target="_blank">Demet Akbağ T&uuml;rk halkından &ouml;z&uuml;r diledi! Yılmaz
-                                        Erdoğan adına...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Sakaryaspor Turgutluspor ma&ccedil;ı ne zaman, saat ka&ccedil;ta ve hangi kanalda?"
-                                        target="_blank">Sakaryaspor Turgutluspor ma&ccedil;ı ne zaman, saat ka&ccedil;ta
-                                        ve hangi kanalda?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Uğur Aslan kimdir ve aslen nerelidir? Eşi kimdir? Uğur Aslan dizileri..."
-                                        target="_blank">Uğur Aslan kimdir ve aslen nerelidir? Eşi kimdir? Uğur Aslan
-                                        dizileri...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="TRT1 Alparslan B&uuml;y&uuml;k Sel&ccedil;uklu&rsquo;nun Evdokya&rsquo;sından &uuml;zen haber! Tutkunlarının keyfini ka&ccedil;ıracak gelişme"
-                                        target="_blank">TRT1 Alparslan B&uuml;y&uuml;k Sel&ccedil;uklu&rsquo;nun
-                                        Evdokya&rsquo;sından &uuml;zen haber! Tutkunlarının keyfini ka&ccedil;ıracak
-                                        gelişme</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="T&uuml;rkiye g&uuml;zeline ve kızına dayak! Gizem Ko&ccedil;ak hem hapsedildi hem de şiddet g&ouml;rd&uuml;..."
-                                        target="_blank">T&uuml;rkiye g&uuml;zeline ve kızına dayak! Gizem Ko&ccedil;ak
-                                        hem hapsedildi hem de şiddet g&ouml;rd&uuml;...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Şahan G&ouml;kbakar&#039;dan m&uuml;lteci &ccedil;ıkışı: Hazmedemiyorum! "
-                                        target="_blank">Şahan G&ouml;kbakar&#039;dan m&uuml;lteci &ccedil;ıkışı:
-                                        Hazmedemiyorum! </a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Rekabet Kurumu 60 uzman yardımcısı alımı başladı! Son başvuru ne zaman bitecek?"
-                                        target="_blank">Rekabet Kurumu 60 uzman yardımcısı alımı başladı! Son başvuru ne
-                                        zaman bitecek?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Milli Saraylar İdaresi en az lise mezunu personel alımı başladı! Başvurular ne zaman bitecek?"
-                                        target="_blank">Milli Saraylar İdaresi en az lise mezunu personel alımı başladı!
-                                        Başvurular ne zaman bitecek?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Sağlık Bilimleri &Uuml;niversitesi en az lise mezunu personel alımı bitiyor! Başvuru i&ccedil;in son 6 g&uuml;n..."
-                                        target="_blank">Sağlık Bilimleri &Uuml;niversitesi en az lise mezunu personel
-                                        alımı bitiyor! Başvuru i&ccedil;in son 6 g&uuml;n...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Manchester City Liverpool FA Cup Yarı Final Ma&ccedil;ı Şifresiz İzle! M. City Liverpool Tivibu Spor"
-                                        target="_blank">Manchester City Liverpool FA Cup Yarı Final Ma&ccedil;ı Şifresiz
-                                        İzle! M. City Liverpool Tivibu Spor</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="İrmikli g&uuml;lla&ccedil; nasıl yapılır? G&uuml;lla&ccedil; malzemeleri nelerdir?"
-                                        target="_blank">İrmikli g&uuml;lla&ccedil; nasıl yapılır? G&uuml;lla&ccedil;
-                                        malzemeleri nelerdir?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Casillas bu kez ağlattı! Real Madrid efsanesinin son hali hayranlarını h&uuml;zne boğdu..."
-                                        target="_blank">Casillas bu kez ağlattı! Real Madrid efsanesinin son hali
-                                        hayranlarını h&uuml;zne boğdu...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Fenerbah&ccedil;e Opet Vakıfbank Spor Kul&uuml;b&uuml; Kupa Volley final ma&ccedil;ı ne zaman ve saat ka&ccedil;ta?"
-                                        target="_blank">Fenerbah&ccedil;e Opet Vakıfbank Spor Kul&uuml;b&uuml; Kupa
-                                        Volley final ma&ccedil;ı ne zaman ve saat ka&ccedil;ta?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Fenerbah&ccedil;e G&ouml;ztepe ma&ccedil;ı ne zaman ve hangi kanalda? FB G&ouml;ztepe ma&ccedil; bilet fiyatları ne kadar?"
-                                        target="_blank">Fenerbah&ccedil;e G&ouml;ztepe ma&ccedil;ı ne zaman ve hangi
-                                        kanalda? FB G&ouml;ztepe ma&ccedil; bilet fiyatları ne kadar?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Kuran 16. c&uuml;z oku! 16. c&uuml;z ka&ccedil;ıncı sayfada? Kuran 16 c&uuml;z bilgisayar hatlı..."
-                                        target="_blank">Kuran 16. c&uuml;z oku! 16. c&uuml;z ka&ccedil;ıncı sayfada?
-                                        Kuran 16 c&uuml;z bilgisayar hatlı...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Karab&uuml;k &Uuml;niversitesi en az lise mezunu personel personel arıyor! Başvuru şartları neler?"
-                                        target="_blank">Karab&uuml;k &Uuml;niversitesi en az lise mezunu personel
-                                        personel arıyor! Başvuru şartları neler?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="BDDK en az lise mezunu memur arıyor! Başvurular ne zaman sona eriyor?"
-                                        target="_blank">BDDK en az lise mezunu memur arıyor! Başvurular ne zaman sona
-                                        eriyor?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="AFAD en az 22.442 TL, en fazla 44. 884 TL ile personel alımı yapacak! Başvurular ne zaman bitecek?"
-                                        target="_blank">AFAD en az 22.442 TL, en fazla 44. 884 TL ile personel alımı
-                                        yapacak! Başvurular ne zaman bitecek?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="K&uuml;lt&uuml;r ve Turizm Bakanlığı KPSS 55 puan ile Bah&ccedil;ıvan, Şof&ouml;r ve Temizlik Personeli alımı!"
-                                        target="_blank">K&uuml;lt&uuml;r ve Turizm Bakanlığı KPSS 55 puan ile
-                                        Bah&ccedil;ıvan, Şof&ouml;r ve Temizlik Personeli alımı!</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Hatay Mustafa Kemal &Uuml;niversitesi KPSS 50 Puan personel alıyor! Başvurular ne zaman bitecek?"
-                                        target="_blank">Hatay Mustafa Kemal &Uuml;niversitesi KPSS 50 Puan personel
-                                        alıyor! Başvurular ne zaman bitecek?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title=" KPSS &ouml;n lisans, lisans ve orta&ouml;ğretim başvuruları ne zaman? 2022 &Ouml;SYM takvimi!"
-                                        target="_blank"> KPSS &ouml;n lisans, lisans ve orta&ouml;ğretim başvuruları ne
-                                        zaman? 2022 &Ouml;SYM takvimi!</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Kadir Gecesi (2022) ne zaman? &quot;Bin aydan hayırlı gece&quot; bu yıl hangi g&uuml;ne denk geliyor?"
-                                        target="_blank">Kadir Gecesi (2022) ne zaman? &quot;Bin aydan hayırlı gece&quot;
-                                        bu yıl hangi g&uuml;ne denk geliyor?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Kullanmadığı zamanlarda boş durmasın diye kiraya verdi! &Uuml;nl&uuml; isim gecelik 23 bin TL kazanıyor..."
-                                        target="_blank">Kullanmadığı zamanlarda boş durmasın diye kiraya verdi!
-                                        &Uuml;nl&uuml; isim gecelik 23 bin TL kazanıyor...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Manchester City Real Madrid Şampiyonlar Ligi yarı final ma&ccedil;ı ne zaman ve hangi kanalda?"
-                                        target="_blank">Manchester City Real Madrid Şampiyonlar Ligi yarı final
-                                        ma&ccedil;ı ne zaman ve hangi kanalda?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="&Uuml;&ccedil; Kuruş tutkunlarının y&uuml;z&uuml;n&uuml; g&uuml;ld&uuml;rmeyecek karar! &Ccedil;ukur esintili dizide hesapları alt&uuml;st eden gelişme"
-                                        target="_blank">&Uuml;&ccedil; Kuruş tutkunlarının y&uuml;z&uuml;n&uuml;
-                                        g&uuml;ld&uuml;rmeyecek karar! &Ccedil;ukur esintili dizide hesapları
-                                        alt&uuml;st eden gelişme</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Kardeşlerim oyuncusu ayrılır ayrılmaz Kiracı&#039;yla s&ouml;zleşti! Tolga&#039;dan kurtulmak i&ccedil;in şehri terk etmişti"
-                                        target="_blank">Kardeşlerim oyuncusu ayrılır ayrılmaz Kiracı&#039;yla
-                                        s&ouml;zleşti! Tolga&#039;dan kurtulmak i&ccedil;in şehri terk etmişti</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Aşk Mantık İntikam&#039;a dair Fox TV&#039;den herkesi hayrete d&uuml;ş&uuml;recek karar! O tarih gelip &ccedil;attığında..."
-                                        target="_blank">Aşk Mantık İntikam&#039;a dair Fox TV&#039;den herkesi hayrete
-                                        d&uuml;ş&uuml;recek karar! O tarih gelip &ccedil;attığında...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Fenerbah&ccedil;e Shakhtar Donetsk ma&ccedil;ı ne zaman ve hangi kanalda? FB Donetsk ma&ccedil; bilet fiyatları ne kadar?"
-                                        target="_blank">Fenerbah&ccedil;e Shakhtar Donetsk ma&ccedil;ı ne zaman ve hangi
-                                        kanalda? FB Donetsk ma&ccedil; bilet fiyatları ne kadar?</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="MA&Ccedil; &Ouml;ZETİ | Trabzonspor 1-1 Fatih Karag&uuml;mr&uuml;k SK S&uuml;per Lig"
-                                        target="_blank">MA&Ccedil; &Ouml;ZETİ | Trabzonspor 1-1 Fatih
-                                        Karag&uuml;mr&uuml;k SK S&uuml;per Lig</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="TV8&#039;deki Aşkların En G&uuml;zeli dizisinin Zeyno&#039;sundan keyiflendiren haber! Bir Zamanlar &Ccedil;ukurova&#039;da..."
-                                        target="_blank">TV8&#039;deki Aşkların En G&uuml;zeli dizisinin
-                                        Zeyno&#039;sundan keyiflendiren haber! Bir Zamanlar
-                                        &Ccedil;ukurova&#039;da...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="EDHO&#039;daki Hızır&#039;ın d&uuml;şmanı Kuruluş Osman&#039;a geliyor! Eşkıya D&uuml;nyaya H&uuml;k&uuml;mdar Olmaz&#039;da masaya alınmıştı"
-                                        target="_blank">EDHO&#039;daki Hızır&#039;ın d&uuml;şmanı Kuruluş Osman&#039;a
-                                        geliyor! Eşkıya D&uuml;nyaya H&uuml;k&uuml;mdar Olmaz&#039;da masaya
-                                        alınmıştı</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Mahkum&#039;da erken veda! 4 aydır macerasını s&uuml;rd&uuml;ren dizide o ismin vedasıyla kan kaybı yaşanacak"
-                                        target="_blank">Mahkum&#039;da erken veda! 4 aydır macerasını s&uuml;rd&uuml;ren
-                                        dizide o ismin vedasıyla kan kaybı yaşanacak</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Kasaba Doktoru oyuncuları kimdir? Kasaba Doktoru hangi g&uuml;n? Kasaba Doktoru oyuncu isimleri... "
-                                        target="_blank">Kasaba Doktoru oyuncuları kimdir? Kasaba Doktoru hangi g&uuml;n?
-                                        Kasaba Doktoru oyuncu isimleri... </a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Sen &Ccedil;al Kapımı ile Mucize Doktor y&ouml;netmeninin &ccedil;ektiği Kiracı&#039;ya bomba transfer! Payitaht Abd&uuml;lhamid..."
-                                        target="_blank">Sen &Ccedil;al Kapımı ile Mucize Doktor y&ouml;netmeninin
-                                        &ccedil;ektiği Kiracı&#039;ya bomba transfer! Payitaht Abd&uuml;lhamid...</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="G&ouml;n&uuml;l Dağı oyuncusundan yepyeni proje! Senaryo gereği işlediği su&ccedil; nedeniyle cezaevine sevk edilmişti"
-                                        target="_blank">G&ouml;n&uuml;l Dağı oyuncusundan yepyeni proje! Senaryo gereği
-                                        işlediği su&ccedil; nedeniyle cezaevine sevk edilmişti</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="150 b&ouml;l&uuml;m yayınlanan Diriliş Ertuğrul ekibindeydi! TRT1 dizisindeki yeni rol&uuml; beğeni yağmuruna tutuldu"
-                                        target="_blank">150 b&ouml;l&uuml;m yayınlanan Diriliş Ertuğrul ekibindeydi!
-                                        TRT1 dizisindeki yeni rol&uuml; beğeni yağmuruna tutuldu</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="TRT1 Barbaroslar Akdeniz&rsquo;in Kılıcı&rsquo;nı bırakacağı s&ouml;z edilen Engin Altan&rsquo;dan ezberleri bozacak proje!"
-                                        target="_blank">TRT1 Barbaroslar Akdeniz&rsquo;in Kılıcı&rsquo;nı bırakacağı
-                                        s&ouml;z edilen Engin Altan&rsquo;dan ezberleri bozacak proje!</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        title="Teşkilat&#039;ın Ceren&#039;inden ağızları a&ccedil;ık bıraktıran haber! Dizide Orak H&uuml;creli Anemi hastalığına sahipti"
-                                        target="_blank">Teşkilat&#039;ın Ceren&#039;inden ağızları a&ccedil;ık
-                                        bıraktıran haber! Dizide Orak H&uuml;creli Anemi hastalığına sahipti</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Sabah" target="_blank">Sabah</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Takvim" target="_blank">Takvim</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Milliyet" target="_blank">Milliyet</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Hürriyet" target="_blank">Hürriyet</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Fotomaç" target="_blank">Fotomaç</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Fanatik" target="_blank">Fanatik</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Patara plajı nerede" target="_blank">Patara plajı nerede</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Schengen vizesi" target="_blank">Schengen vizesi</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Türk pasaportu" target="_blank">Türk pasaportu</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="En ucuz uçak bileti" target="_blank">En ucuz uçak bileti</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="2020 Vizesiz gidilen ülkelerin listesi" target="_blank">2020
-                                        Vizesiz
-                                        gidilen ülkelerin listesi</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Pasaport nasıl alınır" target="_blank">Pasaport nasıl alınır</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Türkiye’de gezilecek yerler" target="_blank">Türkiye’de gezilecek
-                                        yerler</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="En çok aranan rotalar" target="_blank">En çok aranan rotalar</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Yeşil pasaport nedir" target="_blank">Yeşil pasaport nedir</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Ucuza seyahat" target="_blank">Ucuza seyahat</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Uçakta taşınması yasak olan maddeler" target="_blank">Uçakta
-                                        taşınması
-                                        yasak olan maddeler</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Vize şartı olmayan 4 ülke!" target="_blank">Vize şartı olmayan 4
-                                        ülke!</a>
-                                </li>
-                            </ul>
+				<!-- Footer - Mobile Buttons -->
+				<div class="mobile-buttons col">
 
-                        </div>
+					<!-- Title -->
+					<h4>UYGULAMALAR</h4>
 
-                        <!-- Menu - Content -->
-                        <ul class="footer-menu">
-                            <li>
-                                <a href="#" title="e-Okul Giriş Sayfası" target="_blank">e-Okul Giriş Sayfası</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Memur Alımı" target="_blank">Memur Alımı</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Dini Bilgiler" target="_blank">Dini Bilgiler</a>
-                            </li>
-                            <li>
-                                <a href="#" title="E-Devlet Giriş" target="_blank">E-Devlet Giriş</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Vize nasıl alınır? " target="_blank" rel="noopener">Vize nasıl
-                                    alınır? </a>
-                            </li>
-                            <li>
-                                <a href="#" title="İstanbul Hava Durumu" target="_blank" rel="noopener">İstanbul Hava
-                                    Durumu</a>
-                            </li>
-                        </ul>
-                    </div>
+					<!-- App Store -->
+					<a href="#" title="Haber7 App Store'da" target="_blank" class="mobile-buttons-item appstore"
+						rel="nofollow"></a>
 
-                </div>
+					<!-- Play Store -->
+					<a href="#" title="Haber7 Google Play'de" target="_blank" class="mobile-buttons-item googleplay"
+						rel="nofollow"></a>
+				</div>
 
-                <!-- Footer - Mobile Buttons -->
-                <div class="mobile-buttons col-md-3">
+			</div>
+		</div>
 
-                    <!-- Title -->
-                    <h4>UYGULAMALAR</h4>
+		<!-- Footer Brands -->
+		<div class="site-footer-brands">
 
-                    <!-- App Store -->
-                    <a href="#" title="Haber7 App Store'da" target="_blank" class="mobile-buttons-item appstore"
-                        rel="nofollow"></a>
+			<!-- Footer Brands - Kanal7 -->
+			<a href="#" title="Kanal7" target="_blank" rel="noopener" class="site-footer-brands_item kanal7">
+				Kanal7
+			</a>
 
-                    <!-- Play Store -->
-                    <a href="#" title="Haber7 Google Play'de" target="_blank" class="mobile-buttons-item googleplay"
-                        rel="nofollow"></a>
-                </div>
+			<!-- Footer Brands - Radyo7 -->
+			<a href="#" title="Radyo7" target="_blank" rel="noopener" class="site-footer-brands_item radyo7">
+				Radyo7
+			</a>
 
-            </div>
-        </div>
+			<!-- Footer Brands - Kanal7 Avrupa -->
+			<a href="#" title="Kanal7 Avrupa" target="_blank" rel="noopener" class="site-footer-brands_item avrupa7">
+				Avrupa7
+			</a>
 
-        <!-- Footer Brands -->
-        <div class="site-footer-brands">
+			<!-- Footer Brands - UlkeTV -->
+			<a href="#" title="ÜlkeTV" target="_blank" rel="noopener" class="site-footer-brands_item ulke-tv">
+				ÜlkeTV
+			</a>
 
-            <!-- Footer Brands - Kanal7 -->
-            <a href="#" title="Kanal7" target="_blank" rel="noopener" class="site-footer-brands_item kanal7">
-                Kanal7
-            </a>
+			<!-- Footer Brands - Izle7 -->
+			<a href="#" title="İzle7" target="_blank" rel="noopener" class="site-footer-brands_item izle7">
+				İzle7
+			</a>
 
-            <!-- Footer Brands - Radyo7 -->
-            <a href="#" title="Radyo7" target="_blank" rel="noopener" class="site-footer-brands_item radyo7">
-                Radyo7
-            </a>
+			<!-- Footer Brands - Yasemin -->
+			<a href="#" title="Yasemin" target="_blank" rel="noopener" class="site-footer-brands_item yasemin">
+				Yasemin
+			</a>
 
-            <!-- Footer Brands - Kanal7 Avrupa -->
-            <a href="#" title="Kanal7 Avrupa" target="_blank" rel="noopener" class="site-footer-brands_item avrupa7">
-                Avrupa7
-            </a>
-
-            <!-- Footer Brands - UlkeTV -->
-            <a href="#" title="ÜlkeTV" target="_blank" rel="noopener" class="site-footer-brands_item ulke-tv">
-                ÜlkeTV
-            </a>
-
-            <!-- Footer Brands - Izle7 -->
-            <a href="#" title="İzle7" target="_blank" rel="noopener" class="site-footer-brands_item izle7">
-                İzle7
-            </a>
-
-            <!-- Footer Brands - Yasemin -->
-            <a href="#" title="Yasemin" target="_blank" rel="noopener" class="site-footer-brands_item yasemin">
-                Yasemin
-            </a>
-
-        </div>
-    </div>
+		</div>
+	</div>
 
     <!-- Mobile Redirect Banner -->
     <div class="mobile-redirect-banner">
