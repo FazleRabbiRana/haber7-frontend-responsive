@@ -16277,7 +16277,7 @@ ins.adsbyneytivme[type="native"][theme="default"] {
     content: "";
     position: absolute;
     text-transform: uppercase;
-    background: url(../images/sport-multimedia-icon.svg) top left no-repeat rgba(255, 255, 255, 0.43);
+    background: url(../img/sport-multimedia-icon.svg) top left no-repeat rgba(255, 255, 255, 0.43);
     -webkit-border-radius: 50px;
     border-radius: 50px;
     font-family: "Gilroy Black", sans-serif;
@@ -16570,7 +16570,7 @@ ins.adsbyneytivme[type="native"][theme="default"] {
     height: 63px;
     content: "";
     position: absolute;
-    background: url(../images/exchange-icon.svg) top left no-repeat;
+    background: url(../img/exchange-icon.svg) top left no-repeat;
     background-size: 100%;
 }
 
@@ -16630,7 +16630,7 @@ ins.adsbyneytivme[type="native"][theme="default"] {
     height: 8px;
     margin-left: 2px;
     display: inline-block;
-    background: url(../images/exchange-arrow.svg) top left no-repeat;
+    background: url(../img/exchange-arrow.svg) top left no-repeat;
     background-size: 100%;
 }
 
@@ -16639,7 +16639,7 @@ ins.adsbyneytivme[type="native"][theme="default"] {
 }
 
 .economy-exchange-rate-content .value .icon.down {
-    background-position: 0 -9px;
+    background-position: 0 -10px;
 }
 
 .economy-exchange-rate-content .value.second {
