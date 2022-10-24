@@ -383,7 +383,7 @@ body {
     color: #333;
     font-family: sans-serif;
     line-height: 1.42857143em;
-    min-width: 990px;
+    /* min-width: 990px; */
     overflow-x: hidden;
     cursor: default;
     font-smoothing: antialiased;
@@ -2415,8 +2415,14 @@ div[id^=dfp-] {
 }
 
 .newspaper-headline li a {
-    display: inline-block;
-    width: 155px
+    display: block;
+    width: min(155px, 100%);
+}
+
+@media (max-width: 575px) {
+    .newspaper-headline li a {
+        margin-inline: auto;
+    }
 }
 
 .newspaper-detail .info, .newspaper-headline li a .title {
@@ -2464,7 +2470,8 @@ div[id^=dfp-] {
 }
 
 .newspaper-detail .info .title {
-    font-size: 30px !important
+    font-size: 30px !important;
+    line-height: 1.1;
 }
 
 .newspaper-detail .info .social {
@@ -2512,7 +2519,14 @@ div[id^=dfp-] {
     text-align: center;
     font-family: 'FreightText Pro Bold';
     font-size: 20px;
-    padding: 15px
+    /* padding: 15px; */
+    padding: 15px 10px;
+}
+
+@media (max-width: 767px) {
+    .newspapers-list li {
+        font-size: 18px;
+    }
 }
 
 .gbox {
@@ -4950,8 +4964,10 @@ div[id^=dfp-] {
 .authors-item {
     width: 100%;
     height: auto !important;
-    display: table;
-    background-color: #E8E8E8
+    background-color: #E8E8E8;
+    /* display: table; */
+    display: flex;
+    align-items: center;
 }
 
 .authors-item:after, .authors-item:before {
@@ -4963,23 +4979,34 @@ div[id^=dfp-] {
     clear: both
 }
 
-.authors-item .content, .authors-item .picture {
+/* .authors-item .content, 
+.authors-item .picture {
     display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+} */
+
+.authors-item .picture {
+    flex: 0 0 auto;
+    display: inline-block;
+    float: none;
+}
+
+.authors-item .content {
+    flex: 1 1 auto;
 }
 
 .authors-item .picture {
     background: #C7C7C7;
     -webkit-border-radius: 50%;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .authors-item .picture img {
-    height: 90px
+    height: 90px;
 }
 
 .authors-item .content {
-    width: 100%
+    width: 100%;
 }
 
 .authors-item .content .name {
@@ -7119,10 +7146,6 @@ div[id^=dfp-] {
         display: none !important
     }
 
-    .container {
-        max-width: 960px
-    }
-
     .pl {
         padding-left: 10px
     }
@@ -7131,27 +7154,12 @@ div[id^=dfp-] {
         padding-right: 10px
     }
 
-    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .container-fluid {
-        padding-left: 5px;
-        padding-right: 5px
-    }
-
     .ml {
         margin-left: 10px
     }
 
     .mr {
         margin-right: 10px
-    }
-
-    .container-fluid {
-        margin-right: auto;
-        margin-left: auto
-    }
-
-    .row {
-        margin-left: -5px;
-        margin-right: -5px
     }
 
     .ads {
@@ -7202,7 +7210,8 @@ div[id^=dfp-] {
         margin: 30px 0 20px 5px
     }
 
-    .page-header #top-bar #top-widgets ul li.search .area, .tumspor .page-header #menu ul li:nth-child(n+11) {
+    .page-header #top-bar #top-widgets ul li.search .area, 
+    .tumspor .page-header #menu ul li:nth-child(n+11) {
         display: none
     }
 
@@ -7210,11 +7219,16 @@ div[id^=dfp-] {
         display: inline-block
     }
 
-    .days-news ul li:nth-child(n+5), .haber7 .page-header #menu ul li:nth-child(n+15), .page-main .second-headline ul li:nth-child(n+4), .prev-next-news {
+    .days-news ul li:nth-child(n+5), 
+    .haber7 .page-header #menu ul li:nth-child(n+15), 
+    .page-main .second-headline ul li:nth-child(n+4), 
+    .prev-next-news {
         display: none
     }
 
-    .page-main .first-headline, .page-main .first-headline .bx-viewport, .page-main .first-headline ul li {
+    .page-main .first-headline, 
+    .page-main .first-headline .bx-viewport, 
+    .page-main .first-headline ul li {
         height: 190px
     }
 
@@ -7230,7 +7244,8 @@ div[id^=dfp-] {
         width: 24.21px
     }
 
-    .page-main .middle-news .sub-headline ul li, .page-main .middle-news .sub-headline ul li.parts-one {
+    .page-main .middle-news .sub-headline ul li, 
+    .page-main .middle-news .sub-headline ul li.parts-one {
         height: 231px !important
     }
 
@@ -7238,7 +7253,8 @@ div[id^=dfp-] {
         height: inherit
     }
 
-    .page-main .sub-headline .picture-top-headline:before, .page-main .sub-headline ul li {
+    .page-main .sub-headline .picture-top-headline:before, 
+    .page-main .sub-headline ul li {
         height: 213px
     }
 
@@ -7268,7 +7284,8 @@ div[id^=dfp-] {
         line-height: 25px
     }
 
-    .page-main .sub-headline.home .bx-middle-headline-pager .bx-pager-item a.active:before, .page-main .sub-headline.home .bx-pager-item-all a.active:before {
+    .page-main .sub-headline.home .bx-middle-headline-pager .bx-pager-item a.active:before, 
+    .page-main .sub-headline.home .bx-pager-item-all a.active:before {
         bottom: -11px;
         left: 25px;
         font-size: 12px
