@@ -237,6 +237,15 @@ if (
       slidesToScroll: 3,
       variableWidth: !0,
       accessibility: !1,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToScroll: 1,
+            dots: false,
+          }
+        }
+      ],
       prevArrow:
         '<span class="slider-arrow prev"><i class="zmdi zmdi-chevron-left"></i></span>',
       nextArrow:
