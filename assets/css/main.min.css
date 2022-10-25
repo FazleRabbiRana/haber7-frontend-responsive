@@ -10826,9 +10826,15 @@ ins.adsbyneytivme[type="native"][theme="default"] {
 .news-header .title {
     color: #222;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     margin-bottom: 10px;
     font-family: "Adelle Sans Bold", sans-serif;
+}
+
+@media (max-width: 767px) {
+    .news-header .title {
+        font-size: 30px;
+    }
 }
 
 .news-header .spot {
@@ -10845,6 +10851,13 @@ ins.adsbyneytivme[type="native"][theme="default"] {
     background: #ddd;
 }
 
+@media (max-width: 991px) {
+    .news-image {
+        height: auto;
+        aspect-ratio: 640/360;
+    }
+}
+
 .news-content p,
 .news-info {
     margin-bottom: 20px;
@@ -10852,6 +10865,8 @@ ins.adsbyneytivme[type="native"][theme="default"] {
 
 .news-image img {
     width: inherit;
+    height: inherit;
+    object-fit: cover;
 }
 
 .news-image figcaption {
@@ -10870,6 +10885,13 @@ ins.adsbyneytivme[type="native"][theme="default"] {
     float: left;
     cursor: default;
     margin-top: 8px;
+}
+
+@media (max-width: 767px) {
+    .news-info .date {
+        float: none;
+        margin-bottom: 15px;
+    }
 }
 
 .news-info .date-item {
@@ -10951,8 +10973,14 @@ ins.adsbyneytivme[type="native"][theme="default"] {
 
 .news-content p {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.67;
     font-family: "PT Serif", serif;
+}
+
+@media (max-width: 767px) {
+    .news-content p {
+        font-size: 16px;
+    }
 }
 
 .news-content p b,
@@ -11479,6 +11507,12 @@ ins.adsbyneytivme[type="native"][theme="default"] {
 
 .news-share-secondary {
     float: right;
+}
+
+@media (max-width: 767px) {
+    .news-share-secondary {
+        float: left;
+    }
 }
 
 .news-share-secondary:after,

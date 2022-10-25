@@ -1358,7 +1358,7 @@ body {
     min-width: min(250px, 100%);
     height: auto;
     aspect-ratio: 1/1;
-    padding: 30px
+    padding: 30px;
 }
 
 @media (max-width: 991px) {
@@ -4242,6 +4242,12 @@ div[id^=dfp-] {
     line-height: initial
 }
 
+@media (max-width: 767px) {
+    .page-main .news-detail .head h1 {
+        font-size: 32px;
+    }
+}
+
 .page-main .news-detail .head h2 {
     font-family: 'FreightText Pro Book';
     font-size: 20px;
@@ -4334,6 +4340,12 @@ div[id^=dfp-] {
     font-size: 20px;
     line-height: 1.48;
     margin: 26px 0
+}
+
+@media (max-width: 767px) {
+    .page-main .news-detail .news-content p {
+        font-size: 18px;
+    }
 }
 
 .page-main .news-detail .news-content p strong {
@@ -4707,6 +4719,15 @@ div[id^=dfp-] {
 
 .page-main .comments .write button:hover {
     background-color: #d1d1d1
+}
+
+@media (max-width: 575px) {
+    .page-main .comments .write input {
+        width: 100%;
+    }
+    .page-main .comments .write button {
+        width: auto;
+    }
 }
 
 .page-main .comments .write .info {
@@ -7908,5 +7929,11 @@ div[id^=dfp-] {
 
     .mt-turkcell {
         margin-top: 20px
+    }
+}
+
+@media (max-width: 575px) {
+    .page-main .comments-list .write {
+        width: 90%;
     }
 }
