@@ -7934,6 +7934,6 @@ div[id^=dfp-] {
 
 @media (max-width: 575px) {
     .page-main .comments-list .write {
-        width: 90%;
+        width: 100%;
     }
 }

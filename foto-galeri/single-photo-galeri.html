@@ -15,7 +15,7 @@
 	<link rel="shortcut icon" href="../assets/img/favicons/favicon.png" type="image/png">
 
 	<!-- LINK -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/main.min.css">
 	<link rel="stylesheet" href="../assets/css/main.min7373.css">
 
@@ -32,155 +32,105 @@
 <body class="white-mode">
 
 	<!-- Header -->
-	<header class="site-header d-none d-lg-block">
+	<header class="site-header">
 
 		<!-- Header - Top -->
 		<div class="site-header-top">
 			<div class="container">
 
-				<!-- Logo -->
-				<h1 class="site-logo">
-					<a href="../index.html" title="Haber7">
-						<img src="../assets/img/haber7-logo.svg" data-svg-fallback="" alt="Haber7">
-					</a>
-				</h1>
-
-				<!-- Header Widgets -->
-				<div class="header-widgets">
-
-					<!-- BIP Subscribe -->
-					<span class="whatsapp bip" href="#" title="BİP" rel="nofollow">
-
-						<!-- Whatsapp - Icon -->
-						<i class="icon"></i>
-
-						<!-- Whatsapp - Title -->
-						<div class="whatsapp_title">
-							<span class="title"></span>
-							<span class="number"></span>
-						</div>
-					</span>
-
-					<style>
-						.telegram .whatsapp_title .title:before {
-							content: 'Telegram' !important;
-							animation: none;
-						}
-
-						.telegram .whatsapp_title .number:before {
-							content: 'Haber7 Kanalı';
-							-webkit-animation: telegramAnimation 10s linear 5s infinite forwards;
-							animation: telegramAnimation 10s linear 5s infinite forwards
-						}
-
-						@-webkit-keyframes telegramAnimation {
-							50% {
-								content: 'Abone Ol';
-							}
-
-							100% {
-								content: 'Haber7 Kanalı';
-							}
-						}
-
-						@keyframes telegramAnimation {
-							50% {
-								content: 'Abone Ol';
-							}
-
-							100% {
-								content: 'Haber7 Kanalı';
-							}
-						}
-
-						.telegram .icon {
-							background: url('https://s.haber7.net/assets/v3/common/images/telegram-icon.svg') center no-repeat !important;
-							animation: none;
-						}
-
-						.bip .whatsapp_title .title:before {
-							content: 'BİP' !important;
-							animation: none;
-						}
-
-						.bip .whatsapp_title .number:before {
-							content: '0552 073 07 07';
-						}
-
-						.bip .icon {
-							background: url('https://s.haber7.net/assets/v3/common/images/bip-icon.svg') center no-repeat !important;
-							animation: none;
-						}
-					</style>
-
-					<!-- Weather -->
-					<div class="weather">
-
-						<!-- Weather - Icon -->
-						<i class="icon wi-default wi-parcali-bulutlu"></i>
-
-						<!-- Weather - Name -->
-						<span class="weather-name">
-
-							<!-- Selected City Name -->
-							<span class="city-name">
-								<div class="dummy-load w-name"></div>
-							</span>
-
-							<!-- City Name List -->
-							<div class="city-name-list"></div>
-
-							<!-- Weather - Status -->
-							<span class="status">
-								<span class="status-degree">
-									<div class="dummy-load w-status"></div>
+				<div class="row justify-content-center justify-content-lg-between">
+					<!-- Logo -->
+					<h1 class="site-logo col d-none d-lg-block">
+						<a href="../index.html" title="Haber7">
+							<img src="../assets/img/haber7-logo.svg" data-svg-fallback="" alt="Haber7">
+						</a>
+					</h1>
+	
+					<!-- Header Widgets -->
+					<div class="header-widgets col-auto">
+	
+						<!-- BIP Subscribe -->
+						<span class="whatsapp bip" href="#" title="BİP" rel="nofollow">
+	
+							<!-- Whatsapp - Icon -->
+							<i class="icon"></i>
+	
+							<!-- Whatsapp - Title -->
+							<div class="whatsapp_title">
+								<span class="title"></span>
+								<span class="number"></span>
+							</div>
+						</span>
+	
+						<!-- Weather -->
+						<div class="weather">
+	
+							<!-- Weather - Icon -->
+							<i class="icon wi-default wi-parcali-bulutlu"></i>
+	
+							<!-- Weather - Name -->
+							<span class="weather-name">
+	
+								<!-- Selected City Name -->
+								<span class="city-name">
+									<div class="dummy-load w-name"></div>
 								</span>
-								<span class="status-text"></span>
+	
+								<!-- City Name List -->
+								<div class="city-name-list"></div>
+	
+								<!-- Weather - Status -->
+								<span class="status">
+									<span class="status-degree">
+										<div class="dummy-load w-status"></div>
+									</span>
+									<span class="status-text"></span>
+								</span>
 							</span>
-						</span>
-					</div>
-
-					<!-- Prayer -->
-					<div class="prayer ramadan">
-						<!-- Prayer - Left Time -->
-						<span class="prayer_time">-:-</span>
-
-						<!-- Prayer - Name -->
-						<span class="prayer_name">
-							<span class="name">
-								<div class="dummy-load p-name"></div>
+						</div>
+	
+						<!-- Prayer -->
+						<div class="prayer ramadan">
+							<!-- Prayer - Left Time -->
+							<span class="prayer_time">-:-</span>
+	
+							<!-- Prayer - Name -->
+							<span class="prayer_name">
+								<span class="name">
+									<div class="dummy-load p-name"></div>
+								</span>
+								<span class="text">
+									<div class="dummy-load p-text"></div>
+								</span>
 							</span>
-							<span class="text">
-								<div class="dummy-load p-text"></div>
-							</span>
-						</span>
-
-						<!-- Prayer List -->
-						<div class="prayer-list">
-							<span class="prayer-list_item_secondary">
-								<span>16 Nisan 2022</span>
-							</span>
-							<span class="prayer-list_item_secondary">
-								<span>15 Ramazan 1443</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">İmsak:</span> <span class="time-value">-:-</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">Güneş:</span> <span class="time-value">-:-</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">Öğle:</span> <span class="time-value">-:-</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">İkindi:</span> <span class="time-value">-:-</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">Akşam:</span> <span class="time-value">-:-</span>
-							</span>
-							<span class="prayer-list_item">
-								<span class="time-name">Yatsı:</span> <span class="time-value">-:-</span>
-							</span>
+	
+							<!-- Prayer List -->
+							<div class="prayer-list">
+								<span class="prayer-list_item_secondary">
+									<span>16 Nisan 2022</span>
+								</span>
+								<span class="prayer-list_item_secondary">
+									<span>15 Ramazan 1443</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">İmsak:</span> <span class="time-value">-:-</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">Güneş:</span> <span class="time-value">-:-</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">Öğle:</span> <span class="time-value">-:-</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">İkindi:</span> <span class="time-value">-:-</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">Akşam:</span> <span class="time-value">-:-</span>
+								</span>
+								<span class="prayer-list_item">
+									<span class="time-name">Yatsı:</span> <span class="time-value">-:-</span>
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -189,11 +139,11 @@
 		</div>
 
 		<!-- Header - Bottom -->
-		<div class="site-header-bottom">
+		<div class="site-header-bottom sticky-head">
 			<div class="container">
 
 				<!-- Main Menu -->
-				<ul class="main-menu">
+				<ul class="main-menu d-none d-lg-block">
 					<li class="main-menu-item">
 						<a href="../sondakika.html" title="Son Dakika Haberleri" target="_blank">Son Dakika</a>
 					</li>
@@ -228,6 +178,68 @@
 						<a href="../gazete-mansetleri.html" title="Seyahat Haberleri" target="_blank">Gazate</a>
 					</li>
 				</ul>
+
+				<!-- Mobile Menu -->
+				<div class="mobile-nav-wrapper navbar navbar-expand-lg d-lg-none">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavMenuContent" aria-controls="mainNavMenuContent" aria-expanded="false" aria-label="Toggle navigation">
+						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="toggler-icon"><g fill="currentColor"><path d="M0 7h7V0H0v7zm1-6h5v5H1V1z"></path><path d="M9 0v7h7V0H9zm6 6h-5V1h5v5z"></path><path d="M0 16h7V9H0v7zm1-6h5v5H1v-5z"></path><path d="M9 16h7V9H9v7zm1-6h5v5h-5v-5z"></path></g></svg>
+					</button>
+	
+					<div class="collapse navbar-collapse" id="mainNavMenuContent">
+						<div class="mobile-main-menu-wrapper">
+							<button type="button" class="navbar-toggler nav-closer" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#mainNavMenuContent" aria-controls="mainNavMenuContent" aria-expanded="false" aria-label="Close navigation">
+								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="toggler-icon"><path d="M9.207 8.5l6.646 6.646-.707.707L8.5 9.207l-6.646 6.646-.707-.707L7.793 8.5 1.146 1.854l.707-.707L8.5 7.793l6.646-6.646.707.707L9.207 8.5z" fill="currentColor"></path></svg>
+							</button>
+	
+							<ul class="main-menu mobile-main-menu navbar-nav">
+								<li class="main-menu-item">
+									<a href="../sondakika.html" title="Son Dakika Haberleri" target="_blank">Son Dakika</a>
+								</li>
+								<li class="main-menu-item">
+									<a href="../guncel.html" title="Gündem Haberleri" target="_blank">guncel</a>
+								</li>
+								<li class="main-menu-item">
+									<a href="../etiket.html" title="Siyaset Haberleri" target="_blank" rel="noopener">Etiket</a>
+								</li>
+								<li class="main-menu-item">
+									<a href="../sport.html" title="Spor Haberleri" target="_blank" rel="noopener">Spor</a>
+								</li>
+								<li class="main-menu-item">
+									<a href="../economy.html" title="Ekonomi Haberleri" target="_blank" rel="noopener">Ekonomi</a>
+								</li>
+								<!-- <li class="main-menu-item">
+									<a href="#" target="_blank" title="Halkbank" rel="noopener">
+										<img width="122" src="assets/img/logo-small-2xc4ca.png" alt="Halkbank Kobi">
+									</a>
+								</li> -->
+								<li class="main-menu-item">
+									<a href="../yazarlar.html" title="Dünya Haberleri" target="_blank">Yazarlar</a>
+								</li>
+								<li class="main-menu-item">
+									<a href="../biyografi.html" title="Otomobil Haberleri" target="_blank"
+										rel="noopener">Biyografi</a>
+								</li>
+								<li class="main-menu-item">
+									<a href="../foto-galeri.html" title="Seyahat Haberleri" target="_blank">Photo Gallery</a>
+								</li>
+								<li class="main-menu-item">
+									<a href="../gazete-mansetleri.html" title="Seyahat Haberleri" target="_blank">Gazate</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="mobile-menu-backdrop">
+							<button type="button" class="navbar-toggler nav-closer" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#mainNavMenuContent" aria-controls="mainNavMenuContent" aria-expanded="false" aria-label="Close navigation"></button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Mobile Logo -->
+				<h1 class="site-logo text-center d-lg-none">
+					<a href="../index.html" title="Haber7">
+						<img src="../assets/img/haber7-logo.svg" data-svg-fallback="" alt="Haber7">
+					</a>
+				</h1>
 
 				<!-- Search / Menu -->
 				<div class="right-widgets">
@@ -772,11 +784,12 @@
 
 	<!-- JavaScript -->
 	<script src="../assets/js/libs/jquery-1.12.1.min.js"></script>
+	<script src="../assets/js/bootstrap.bundle.min.js"></script>
 	<script src="../assets/js/plugin.min.js"></script>
 	<script src="../assets/js/main.min83a7.js"></script>
 
 	<script src="../assets/js/plugin.min5ed3.js"></script>
-	<script src="../assets/js/main.min9eb5.js"></script>
+	<script src="../assets/js/main.min.js"></script>
 
 </body>
 
