@@ -1,3 +1,39 @@
+/* -------------------------
+Sticky header
+------------------------- */
+(function ($) {
+	'use strict';
+
+	jQuery(document).ready(function ($) {
+    $(window).on("scroll", function () {
+      var $w = $(this),
+        header = $('.sticky-head'); //use this class to the element to make sticky
+    
+      if ($w.scrollTop() > 150) {
+        if (!header.hasClass('scrolled')) {
+          $('.sticky-head').addClass('scrolled');
+        }
+      }
+      if ($w.scrollTop() < 150) {
+        if (header.hasClass('scrolled')) {
+          $('.sticky-head').removeClass('scrolled sticky-sleep');
+        }
+      }
+      if ($w.scrollTop() > 350) {
+        if (!header.hasClass('sticky-awake')) {
+          $('.sticky-head').addClass('sticky-awake');
+        }
+      }
+      if ($w.scrollTop() < 350) {
+        if (header.hasClass('sticky-awake')) {
+          $('.sticky-head').removeClass('sticky-awake');
+          $('.sticky-head').addClass('sticky-sleep');
+        }
+      }
+    });
+  });
+})(jQuery);
+
 function currencySlideAction() {
   setTimeout(function () {
     $(".currency-box.primary").hide(), $(".currency-box.secondary").fadeIn(200);
