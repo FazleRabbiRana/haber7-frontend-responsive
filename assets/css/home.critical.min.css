@@ -2488,32 +2488,6 @@ hr {
     margin-left: 10px
 }
 
-@media (max-width:768px) {
-    .breaking-news, .election-band, .site-footer, .site-header {
-        width: 960px
-    }
-
-    .newspaper-slider:after, .newspaper-slider:before, .pageskin, .site-menu, .site-search {
-        display: none
-    }
-
-    .auto-multimedia-section:after, .auto-multimedia-section:before, .economy-exchange-rate:after, .economy-exchange-rate:before, .estate-multimedia-section:after, .estate-multimedia-section:before, .sport-multimedia-section:after, .sport-multimedia-section:before {
-        width: 22px !important
-    }
-
-    .site-footer-brands_item+.site-footer-brands_item {
-        margin-left: 28px !important
-    }
-
-    .site-menu, .site-search {
-        display: block
-    }
-
-    .site-menu:after, .site-search:after {
-        display: none
-    }
-}
-
 .site-menu-list>.items .site-category {
     margin-right: 36px
 }

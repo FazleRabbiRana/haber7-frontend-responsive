@@ -34,17 +34,26 @@
 
 		@media (max-width: 767px) {
 			.populars .galleries.hide {
-				display: block!important;
+				display: block !important;
 			}
+
 			.populars .galleries+.galleries {
 				margin-top: 5px;
 			}
+
 			.populars .galleries::before {
 				content: attr(data-title);
 				color: #717171;
-				margin: 0 0 10px 10px;
+				margin: 0 0 10px 0px;
 				font-size: 18px;
 				font-weight: 700;
+			}
+
+			.populars .row.galleries {
+					margin-inline: 0;
+			}
+			.populars .row.galleries>[class|="col"] {
+					padding-inline: 0;
 			}
 		}
 	</style>
@@ -66,40 +75,40 @@
 							<img src="assets/img/haber7-logo.svg" data-svg-fallback="" alt="Haber7">
 						</a>
 					</h1>
-	
+
 					<!-- Header Widgets -->
 					<div class="header-widgets col-auto">
-	
+
 						<!-- BIP Subscribe -->
 						<span class="whatsapp bip" href="#" title="BİP" rel="nofollow">
-	
+
 							<!-- Whatsapp - Icon -->
 							<i class="icon"></i>
-	
+
 							<!-- Whatsapp - Title -->
 							<div class="whatsapp_title">
 								<span class="title"></span>
 								<span class="number"></span>
 							</div>
 						</span>
-	
+
 						<!-- Weather -->
 						<div class="weather">
-	
+
 							<!-- Weather - Icon -->
 							<i class="icon wi-default wi-parcali-bulutlu"></i>
-	
+
 							<!-- Weather - Name -->
 							<span class="weather-name">
-	
+
 								<!-- Selected City Name -->
 								<span class="city-name">
 									<div class="dummy-load w-name"></div>
 								</span>
-	
+
 								<!-- City Name List -->
 								<div class="city-name-list"></div>
-	
+
 								<!-- Weather - Status -->
 								<span class="status">
 									<span class="status-degree">
@@ -109,12 +118,12 @@
 								</span>
 							</span>
 						</div>
-	
+
 						<!-- Prayer -->
 						<div class="prayer ramadan">
 							<!-- Prayer - Left Time -->
 							<span class="prayer_time">-:-</span>
-	
+
 							<!-- Prayer - Name -->
 							<span class="prayer_name">
 								<span class="name">
@@ -124,7 +133,7 @@
 									<div class="dummy-load p-text"></div>
 								</span>
 							</span>
-	
+
 							<!-- Prayer List -->
 							<div class="prayer-list">
 								<span class="prayer-list_item_secondary">
@@ -202,15 +211,24 @@
 				<!-- Mobile Menu -->
 				<div class="mobile-nav-wrapper navbar navbar-expand-lg d-lg-none">
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavMenuContent" aria-controls="mainNavMenuContent" aria-expanded="false" aria-label="Toggle navigation">
-						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="toggler-icon"><g fill="currentColor"><path d="M0 7h7V0H0v7zm1-6h5v5H1V1z"></path><path d="M9 0v7h7V0H9zm6 6h-5V1h5v5z"></path><path d="M0 16h7V9H0v7zm1-6h5v5H1v-5z"></path><path d="M9 16h7V9H9v7zm1-6h5v5h-5v-5z"></path></g></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="toggler-icon">
+							<g fill="currentColor">
+								<path d="M0 7h7V0H0v7zm1-6h5v5H1V1z"></path>
+								<path d="M9 0v7h7V0H9zm6 6h-5V1h5v5z"></path>
+								<path d="M0 16h7V9H0v7zm1-6h5v5H1v-5z"></path>
+								<path d="M9 16h7V9H9v7zm1-6h5v5h-5v-5z"></path>
+							</g>
+						</svg>
 					</button>
-	
+
 					<div class="collapse navbar-collapse" id="mainNavMenuContent">
 						<div class="mobile-main-menu-wrapper">
 							<button type="button" class="navbar-toggler nav-closer" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#mainNavMenuContent" aria-controls="mainNavMenuContent" aria-expanded="false" aria-label="Close navigation">
-								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="toggler-icon"><path d="M9.207 8.5l6.646 6.646-.707.707L8.5 9.207l-6.646 6.646-.707-.707L7.793 8.5 1.146 1.854l.707-.707L8.5 7.793l6.646-6.646.707.707L9.207 8.5z" fill="currentColor"></path></svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="toggler-icon">
+									<path d="M9.207 8.5l6.646 6.646-.707.707L8.5 9.207l-6.646 6.646-.707-.707L7.793 8.5 1.146 1.854l.707-.707L8.5 7.793l6.646-6.646.707.707L9.207 8.5z" fill="currentColor"></path>
+								</svg>
 							</button>
-	
+
 							<ul class="main-menu mobile-main-menu navbar-nav">
 								<li class="main-menu-item">
 									<a href="sondakika.html" title="Son Dakika Haberleri" target="_blank">Son Dakika</a>
@@ -303,8 +321,7 @@
 						<nav class="site-menu-list">
 							<div class="items">
 								<a href="#" title="Emlak Haberleri" class="site-category" target="_blank">Emlak</a>
-								<a href="#" title="Teknoloji Haberleri" class="site-category"
-									target="_blank">Teknoloji</a>
+								<a href="#" title="Teknoloji Haberleri" class="site-category" target="_blank">Teknoloji</a>
 								<a href="#" title="Yaşam Haberleri" class="site-category" target="_blank">Yaşam</a>
 								<a href="#" title="Memur Haberleri" class="site-category" target="_blank">Memur</a>
 								<a href="#" title="Eğitim Haberleri" class="site-category" target="_blank">Eğitim</a>
@@ -313,8 +330,7 @@
 								<a href="#" title="3.Sayfa Haberleri" class="site-category" target="_blank">3.Sayfa</a>
 								<a href="#" title="Kitap Haberleri" class="site-category" target="_blank">Kitap</a>
 								<a href="#" title="Kültür Haberleri" class="site-category" target="_blank">Kültür</a>
-								<a href="#" title="Biyografi Haberleri" class="site-category"
-									target="_blank">Biyografi</a>
+								<a href="#" title="Biyografi Haberleri" class="site-category" target="_blank">Biyografi</a>
 							</div>
 						</nav>
 
@@ -327,14 +343,10 @@
 								<a title="TÜMSPOR" class="site-name">TÜMSPOR</a>
 
 								<!-- Site Menu List -->
-								<a href="#" title="Galatasaray" class="site-category" target="_blank"
-									rel="noopener">Galatasaray</a>
-								<a href="#" title="Fenerbahçe" class="site-category" target="_blank"
-									rel="noopener">Fenerbahçe</a>
-								<a href="#" title="Beşiktaş" class="site-category" target="_blank"
-									rel="noopener">Beşiktaş</a>
-								<a href="#" title="Trabzonspor" class="site-category" target="_blank"
-									rel="noopener">Trabzonspor</a>
+								<a href="#" title="Galatasaray" class="site-category" target="_blank" rel="noopener">Galatasaray</a>
+								<a href="#" title="Fenerbahçe" class="site-category" target="_blank" rel="noopener">Fenerbahçe</a>
+								<a href="#" title="Beşiktaş" class="site-category" target="_blank" rel="noopener">Beşiktaş</a>
+								<a href="#" title="Trabzonspor" class="site-category" target="_blank" rel="noopener">Trabzonspor</a>
 
 								<!-- Site Link -->
 								<a href="#" title="Spor Haberleri" target="_blank" rel="noopener">Spor Haberleri</a>
@@ -359,12 +371,9 @@
 								<a title="GEZELİM" class="site-name">GEZELİM</a>
 
 								<!-- Site Menu List -->
-								<a href="#" title="Rotalar" class="site-category" target="_blank"
-									rel="noopener">Rotalar</a>
-								<a href="#" title="Dünyayı Geziyorum " class="site-category" target="_blank"
-									rel="noopener">Dünyayı Geziyorum </a>
-								<a href="#" title="Gezi Rehberi" class="site-category" target="_blank"
-									rel="noopener">Gezi Rehberi</a>
+								<a href="#" title="Rotalar" class="site-category" target="_blank" rel="noopener">Rotalar</a>
+								<a href="#" title="Dünyayı Geziyorum " class="site-category" target="_blank" rel="noopener">Dünyayı Geziyorum </a>
+								<a href="#" title="Gezi Rehberi" class="site-category" target="_blank" rel="noopener">Gezi Rehberi</a>
 
 								<!-- Site Link -->
 								<a href="#" title="Gezelim" target="_blank" rel="noopener">Seyahat Haberleri</a>
@@ -376,14 +385,10 @@
 								<a title="YASEMİN" class="site-name">YASEMİN</a>
 
 								<!-- Site Menu List -->
-								<a href="#" title="Anne-Çocuk" class="site-category" target="_blank"
-									rel="noopener">Anne-Çocuk</a>
-								<a href="#" title="Masiva" class="site-category" target="_blank"
-									rel="noopener">Masiva</a>
-								<a href="#" title="Sağlık" class="site-category" target="_blank"
-									rel="noopener">Sağlık</a>
-								<a href="#" title="Güzellik" class="site-category" target="_blank"
-									rel="noopener">Güzellik</a>
+								<a href="#" title="Anne-Çocuk" class="site-category" target="_blank" rel="noopener">Anne-Çocuk</a>
+								<a href="#" title="Masiva" class="site-category" target="_blank" rel="noopener">Masiva</a>
+								<a href="#" title="Sağlık" class="site-category" target="_blank" rel="noopener">Sağlık</a>
+								<a href="#" title="Güzellik" class="site-category" target="_blank" rel="noopener">Güzellik</a>
 
 								<!-- Site Link -->
 								<a href="#" title="Yasemin" target="_blank" rel="noopener">Yasemin.com</a>
@@ -403,10 +408,8 @@
 			<div class="row">
 				<div class="col-lg-7">
 					<div class="hero">
-						<a title="700 yıllık camide şaşırtan gelenek! Her yıl &ccedil;amurla yenileniyor"
-							href="foto-galeri/single-photo-galeri.html">
-							<img alt="700 yıllık camide şaşırtan gelenek! Her yıl &ccedil;amurla yenileniyor"
-								src="assets/img/700_yillik_camide_sasirtan_gelenek_her_yil_camurla_yenileniyor_1650114836_4182.jpg">
+						<a title="700 yıllık camide şaşırtan gelenek! Her yıl &ccedil;amurla yenileniyor" href="foto-galeri/single-photo-galeri.html">
+							<img alt="700 yıllık camide şaşırtan gelenek! Her yıl &ccedil;amurla yenileniyor" src="assets/img/700_yillik_camide_sasirtan_gelenek_her_yil_camurla_yenileniyor_1650114836_4182.jpg">
 							<strong>700 yıllık camide şaşırtan gelenek! Her yıl çamurla yenileniyor</strong>
 						</a>
 					</div>
@@ -423,20 +426,16 @@
 						</div>
 						<div class="col-6 col-md-3 col-lg-6">
 							<div class="galleries">
-								<a title="Dikkat &ccedil;eken uyarı! Kargo teslim tutanağı yerine senet imzalamayın"
-									href="#">
-									<img src="assets/img/dikkat_ceken_uyari_kargo_teslim_tutanagi_yerine_senet_imzalamayin_1650102388_1598_w750_h421.jpg"
-										width="100%">
+								<a title="Dikkat &ccedil;eken uyarı! Kargo teslim tutanağı yerine senet imzalamayın" href="#">
+									<img src="assets/img/dikkat_ceken_uyari_kargo_teslim_tutanagi_yerine_senet_imzalamayin_1650102388_1598_w750_h421.jpg" width="100%">
 									<strong>Dikkat çeken uyarı! Kargo teslim tutanağı yerine senet imzalamayın</strong>
 								</a>
 							</div>
 						</div>
 						<div class="col-6 col-md-3 col-lg-6">
 							<div class="galleries">
-								<a title="Ge&ccedil;en yılın en g&ouml;z alıcı şehri hangisi oldu? T&uuml;rkiye listede var mı?"
-									href="#">
-									<img src="assets/img/gectigimiz_yilin_en_gozalici_sehri_hangisi_oldu_ulkemiz_sehirleri_listeye_girdi_mi_1650094439_5437_w696_h464.jpg"
-										width="100%">
+								<a title="Ge&ccedil;en yılın en g&ouml;z alıcı şehri hangisi oldu? T&uuml;rkiye listede var mı?" href="#">
+									<img src="assets/img/gectigimiz_yilin_en_gozalici_sehri_hangisi_oldu_ulkemiz_sehirleri_listeye_girdi_mi_1650094439_5437_w696_h464.jpg" width="100%">
 									<strong>Geçen yılın en göz alıcı şehri hangisi oldu? Türkiye listede var
 										mı?</strong>
 								</a>
@@ -444,8 +443,7 @@
 						</div>
 						<div class="col-6 col-md-3 col-lg-6">
 							<div class="galleries">
-								<a title="T&uuml;rk Yıldızları&#039;nın Ağrı semalarındaki &#039;ay yıldızlı&#039; g&ouml;sterisi nefes kesti"
-									href="#">
+								<a title="T&uuml;rk Yıldızları&#039;nın Ağrı semalarındaki &#039;ay yıldızlı&#039; g&ouml;sterisi nefes kesti" href="#">
 									<img src="assets/img/4tcpt_1650032113_5862_w960_h640.jpg" width="100%">
 									<strong>Türk Yıldızları'nın Ağrı semalarındaki 'ay yıldızlı' gösterisi nefes
 										kesti</strong>
@@ -459,7 +457,11 @@
 			<div class="ads x160">
 				<!-- Foto_Pageskin -->
 				<div id='dfp-pageskin-sag' style='width:160px; height:600px;'>
-					<script>googletag.cmd.push(function () { googletag.display('dfp-pageskin-sag'); });</script>
+					<script>
+						googletag.cmd.push(function() {
+							googletag.display('dfp-pageskin-sag');
+						});
+					</script>
 				</div>
 			</div>
 		</div>
@@ -491,8 +493,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-6">
-					<a href="#"
-						title="&#039;Eğiste Hadimi&#039; T&uuml;rkiye&#039;nin en y&uuml;kseği ve uzunu olacak!">
+					<a href="#" title="&#039;Eğiste Hadimi&#039; T&uuml;rkiye&#039;nin en y&uuml;kseği ve uzunu olacak!">
 						<span class="holder">
 							<img src="assets/img/Mxi7s_1650100237_4594_w600_h338.jpg" width="100%" alt="" />
 							<i class="photo"></i>
@@ -523,8 +524,7 @@
 				<div class="col-md-10 row galleries" data-title="Genel">
 					<div class="col-lg-6 hero">
 						<a href="#">
-							<img alt="Rus ordusunun Ukrayna&#039;daki asker ve te&ccedil;hizat kayıpları şoke etti!"
-								width="100%" src="assets/img/A8BG7_1646296441_266_w720_h540.jpg">
+							<img alt="Rus ordusunun Ukrayna&#039;daki asker ve te&ccedil;hizat kayıpları şoke etti!" width="100%" src="assets/img/A8BG7_1646296441_266_w720_h540.jpg">
 							<strong>Rus ordusunun Ukrayna'daki asker ve teçhizat kayıpları şoke etti!</strong>
 						</a>
 					</div>
@@ -558,10 +558,8 @@
 
 				<div class="col-md-10 row galleries hide" data-title="Güncel">
 					<div class="col-lg-6 hero">
-						<a
-							href="73639-dolmabahcede-duygusal-anlar-baskan-erdogan-ve-esi-emine-erdogan-yakindan-ilgilendi.html">
-							<img alt="Dolmabah&ccedil;e&#039;de duygusal anlar! Başkan Erdoğan ve eşi Emine Erdoğan yakından ilgilendi"
-								width="100%" src="assets/img/IfH3N_1650056595_9054_w750_h540.jpg">
+						<a href="73639-dolmabahcede-duygusal-anlar-baskan-erdogan-ve-esi-emine-erdogan-yakindan-ilgilendi.html">
+							<img alt="Dolmabah&ccedil;e&#039;de duygusal anlar! Başkan Erdoğan ve eşi Emine Erdoğan yakından ilgilendi" width="100%" src="assets/img/IfH3N_1650056595_9054_w750_h540.jpg">
 							<strong>Dolmabahçe'de duygusal anlar! Başkan Erdoğan ve eşi Emine Erdoğan yakından
 								ilgilendi</strong>
 						</a>
@@ -570,8 +568,7 @@
 						<div class="row">
 							<div class="col-md-6">
 								<a href="#">
-									<img width="100%"
-										src="assets/img/gectigimiz_yilin_en_gozalici_sehri_hangisi_oldu_ulkemiz_sehirleri_listeye_girdi_mi_1650094439_5437_w696_h464.jpg">
+									<img width="100%" src="assets/img/gectigimiz_yilin_en_gozalici_sehri_hangisi_oldu_ulkemiz_sehirleri_listeye_girdi_mi_1650094439_5437_w696_h464.jpg">
 								</a>
 							</div>
 							<div class="col-md-6">
@@ -582,8 +579,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<a
-									href="73613-cumhurbaskani-erdogan-ayasofya-fatih-medresesinin-acilisina-katiliyor.html">
+								<a href="73613-cumhurbaskani-erdogan-ayasofya-fatih-medresesinin-acilisina-katiliyor.html">
 									<img width="100%" src="assets/img/uaoSx_1649934409_0776_w750_h500.jpg">
 								</a>
 							</div>
@@ -597,10 +593,8 @@
 				</div>
 				<div class="col-md-10 row galleries hide" data-title="Siyaset">
 					<div class="col-lg-6 hero">
-						<a
-							href="73229-baskan-erdogan-da-o-kareyi-paylasti-devlet-ovunc-madalyasi-tevcih-toreninde-renkli-anlar.html">
-							<img alt="Başkan Erdoğan da o kareyi paylaştı! Devlet &Ouml;v&uuml;n&ccedil; Madalyası Tevcih T&ouml;reni&#039;nde renkli anlar..."
-								width="100%" src="assets/img/OF25J_1647438748_8695_w960_h640.jpg">
+						<a href="73229-baskan-erdogan-da-o-kareyi-paylasti-devlet-ovunc-madalyasi-tevcih-toreninde-renkli-anlar.html">
+							<img alt="Başkan Erdoğan da o kareyi paylaştı! Devlet &Ouml;v&uuml;n&ccedil; Madalyası Tevcih T&ouml;reni&#039;nde renkli anlar..." width="100%" src="assets/img/OF25J_1647438748_8695_w960_h640.jpg">
 							<strong>Başkan Erdoğan da o kareyi paylaştı! Devlet Övünç Madalyası Tevcih Töreni'nde renkli
 								anlar...</strong>
 						</a>
@@ -621,8 +615,7 @@
 						<div class="row">
 							<div class="col-md-6">
 								<a href="#">
-									<img width="100%"
-										src="assets/img/cumhurbaskani_erdogan_aymdeki_yemin_torenine_katildi_1645013023_7199_w750_h510.jpg">
+									<img width="100%" src="assets/img/cumhurbaskani_erdogan_aymdeki_yemin_torenine_katildi_1645013023_7199_w750_h510.jpg">
 								</a>
 							</div>
 							<div class="col-md-6">
@@ -636,8 +629,7 @@
 				<div class="col-md-10 row galleries hide" data-title="Spor">
 					<div class="col-lg-6 hero">
 						<a href="#">
-							<img alt="" width="100%"
-								src="assets/img/super_ligde_ara_transfer_doneminde_atilan_imzalar_1644237971_6164_w385_h218.jpg">
+							<img alt="" width="100%" src="assets/img/super_ligde_ara_transfer_doneminde_atilan_imzalar_1644237971_6164_w385_h218.jpg">
 							<strong>Süper Lig'de ara transfer döneminde atılan imzalar</strong>
 						</a>
 					</div>
@@ -657,8 +649,7 @@
 						<div class="row">
 							<div class="col-md-6">
 								<a href="#">
-									<img width="100%"
-										src="assets/img/mhkden_flas_karar_13_hakem_listeden_cikartildi_1646742918_7513_w750_h499.jpg">
+									<img width="100%" src="assets/img/mhkden_flas_karar_13_hakem_listeden_cikartildi_1646742918_7513_w750_h499.jpg">
 								</a>
 							</div>
 							<div class="col-md-6">
@@ -672,8 +663,7 @@
 				<div class="col-md-10 row galleries hide" data-title="Hayvanlar Alemi">
 					<div class="col-lg-6 hero">
 						<a href="#">
-							<img alt="Yuvası g&ouml;r&uuml;nt&uuml;lendi! Korku filmi gibi..." width="100%"
-								src="assets/img/yuvasi_goruntulendi_korku_filmi_gibi_1607596903_3061_w337_h450.jpg">
+							<img alt="Yuvası g&ouml;r&uuml;nt&uuml;lendi! Korku filmi gibi..." width="100%" src="assets/img/yuvasi_goruntulendi_korku_filmi_gibi_1607596903_3061_w337_h450.jpg">
 							<strong>Yuvası görüntülendi! Korku filmi gibi...</strong>
 						</a>
 					</div>
@@ -707,9 +697,7 @@
 				<div class="col-md-10 row galleries hide" data-title="Bilim-Teknik">
 					<div class="col-lg-6 hero">
 						<a href="#">
-							<img alt="&Ouml;l&uuml;m anında neler oluyor? İlk kez g&ouml;r&uuml;nt&uuml;lendi"
-								width="100%"
-								src="assets/img/olum_aninda_neler_oluyor_ilk_kez_goruntulendi_1645619148_7876_w750_h421.jpg">
+							<img alt="&Ouml;l&uuml;m anında neler oluyor? İlk kez g&ouml;r&uuml;nt&uuml;lendi" width="100%" src="assets/img/olum_aninda_neler_oluyor_ilk_kez_goruntulendi_1645619148_7876_w750_h421.jpg">
 							<strong>Ölüm anında neler oluyor? İlk kez görüntülendi</strong>
 						</a>
 					</div>
@@ -717,8 +705,7 @@
 						<div class="row">
 							<div class="col-md-6">
 								<a href="#">
-									<img width="100%"
-										src="assets/img/apple_urunlerine_bir_zam_daha_geldi_fiyati_40_bini_asti_1639810352_0053_w750_h550.jpg">
+									<img width="100%" src="assets/img/apple_urunlerine_bir_zam_daha_geldi_fiyati_40_bini_asti_1639810352_0053_w750_h550.jpg">
 								</a>
 							</div>
 							<div class="col-md-6">
@@ -730,8 +717,7 @@
 						<div class="row">
 							<div class="col-md-6">
 								<a href="#">
-									<img width="100%"
-										src="assets/img/iste_dunyanin_en_begenilen_sirketleri_aciklandi_1643881821_3865_w750_h426.jpg">
+									<img width="100%" src="assets/img/iste_dunyanin_en_begenilen_sirketleri_aciklandi_1643881821_3865_w750_h426.jpg">
 								</a>
 							</div>
 							<div class="col-md-6">
@@ -745,8 +731,7 @@
 				<div class="col-md-10 row galleries hide" data-title="Yaşam">
 					<div class="col-lg-6 hero">
 						<a href="#">
-							<img alt="Arşivlerden &ccedil;ıkan bu fotoğraflar sizleri T&uuml;rkiye tarihinde yolculuğa &ccedil;ıkaracak!"
-								width="100%" src="assets/img/7uiyJ_1647763196_557_w750_h882.jpg">
+							<img alt="Arşivlerden &ccedil;ıkan bu fotoğraflar sizleri T&uuml;rkiye tarihinde yolculuğa &ccedil;ıkaracak!" width="100%" src="assets/img/7uiyJ_1647763196_557_w750_h882.jpg">
 							<strong>Arşivlerden çıkan bu fotoğraflar sizleri Türkiye tarihinde yolculuğa
 								çıkaracak!</strong>
 						</a>
@@ -820,75 +805,370 @@
 
 			<div class="row galleries">
 				<div class="col-md-2 col-sm-4 col-xs-6">
-					<a title="İngiltere ve Kanada&#039;nın T&uuml;rkiye&#039;ye uyguladığı savunma sanayi ambargoları kalkıyor"
-						data-image="assets/img/Bf5qq_1649409584_5702_w678_h381.jpg"
-						data-description="Dışişleri Bakanı Mevl&uuml;t &Ccedil;avuşoğlu, İngiltere&#039;nin T&uuml;rkiye&#039;ye ihra&ccedil; kısıtlamalarını kaldırdığını duyurdu. Kanada da benzer bir adım atmak &uuml;zere."
-						href="#">
-						<img alt=""
-							title="İngiltere ve Kanada&#039;nın T&uuml;rkiye&#039;ye uyguladığı savunma sanayi ambargoları kalkıyor"
-							width="100%" src="assets/img/Bf5qq_1649409584_5702_w678_h381.jpg">
+					<a title="İngiltere ve Kanada&#039;nın T&uuml;rkiye&#039;ye uyguladığı savunma sanayi ambargoları kalkıyor" data-image="assets/img/Bf5qq_1649409584_5702_w678_h381.jpg" data-description="Dışişleri Bakanı Mevl&uuml;t &Ccedil;avuşoğlu, İngiltere&#039;nin T&uuml;rkiye&#039;ye ihra&ccedil; kısıtlamalarını kaldırdığını duyurdu. Kanada da benzer bir adım atmak &uuml;zere." href="#">
+						<img alt="" title="İngiltere ve Kanada&#039;nın T&uuml;rkiye&#039;ye uyguladığı savunma sanayi ambargoları kalkıyor" width="100%" src="assets/img/Bf5qq_1649409584_5702_w678_h381.jpg">
 					</a>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6">
-					<a title="Tarım Kredi&rsquo;den Ramazan kampanyası! Y&uuml;zde 10 daha ucuza satacak"
-						data-image="assets/img/EkkIU_1648800485_0123_w750_h500.jpg"
-						data-description="Tarım Kredi Kooperatif Market, Ramazan ayında 5 litrelik ay&ccedil;i&ccedil;ek yağını 129 TL&#039;ye, Et ve S&uuml;t Kurumu&#039;nun konserve kuşbaşı 800 gramını 55.50 TL&#039;ye ve konserve kıyma 800 gramını 45.50 TL&#039;ye satacak."
-						href="#">
-						<img alt="Tarım Kredi&rsquo;den Ramazan kampanyası! Y&uuml;zde 10 daha ucuza satacak"
-							title="Tarım Kredi&rsquo;den Ramazan kampanyası! Y&uuml;zde 10 daha ucuza satacak"
-							width="100%" src="assets/img/EkkIU_1648800485_0123_w750_h500.jpg">
+					<a title="Tarım Kredi&rsquo;den Ramazan kampanyası! Y&uuml;zde 10 daha ucuza satacak" data-image="assets/img/EkkIU_1648800485_0123_w750_h500.jpg" data-description="Tarım Kredi Kooperatif Market, Ramazan ayında 5 litrelik ay&ccedil;i&ccedil;ek yağını 129 TL&#039;ye, Et ve S&uuml;t Kurumu&#039;nun konserve kuşbaşı 800 gramını 55.50 TL&#039;ye ve konserve kıyma 800 gramını 45.50 TL&#039;ye satacak." href="#">
+						<img alt="Tarım Kredi&rsquo;den Ramazan kampanyası! Y&uuml;zde 10 daha ucuza satacak" title="Tarım Kredi&rsquo;den Ramazan kampanyası! Y&uuml;zde 10 daha ucuza satacak" width="100%" src="assets/img/EkkIU_1648800485_0123_w750_h500.jpg">
 					</a>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6">
-					<a title="&quot;2022 T&uuml;rk D&uuml;nyası K&uuml;lt&uuml;r Başkenti&quot; Bursa&#039;da m&uuml;thiş a&ccedil;ılış t&ouml;reni"
-						data-image="assets/img/2022_turk_dunyasi_kultur_baskenti_bursada_muthis_acilis_toreni_1648665528_8697_w750_h500.jpg"
-						data-description="Bursa&rsquo;nın 2022 T&uuml;rk D&uuml;nyası K&uuml;lt&uuml;r Başkenti se&ccedil;ilmesiyle yıl boyunca d&uuml;zenlenecek etkinlikler kortej y&uuml;r&uuml;y&uuml;ş&uuml;yle başladı."
-						href="#">
-						<img alt="&quot;2022 T&uuml;rk D&uuml;nyası K&uuml;lt&uuml;r Başkenti&quot; Bursa&#039;da m&uuml;thiş a&ccedil;ılış t&ouml;reni"
-							title="&quot;2022 T&uuml;rk D&uuml;nyası K&uuml;lt&uuml;r Başkenti&quot; Bursa&#039;da m&uuml;thiş a&ccedil;ılış t&ouml;reni"
-							width="100%"
-							src="assets/img/2022_turk_dunyasi_kultur_baskenti_bursada_muthis_acilis_toreni_1648665528_8697_w750_h500.jpg">
+					<a title="&quot;2022 T&uuml;rk D&uuml;nyası K&uuml;lt&uuml;r Başkenti&quot; Bursa&#039;da m&uuml;thiş a&ccedil;ılış t&ouml;reni" data-image="assets/img/2022_turk_dunyasi_kultur_baskenti_bursada_muthis_acilis_toreni_1648665528_8697_w750_h500.jpg" data-description="Bursa&rsquo;nın 2022 T&uuml;rk D&uuml;nyası K&uuml;lt&uuml;r Başkenti se&ccedil;ilmesiyle yıl boyunca d&uuml;zenlenecek etkinlikler kortej y&uuml;r&uuml;y&uuml;ş&uuml;yle başladı." href="#">
+						<img alt="&quot;2022 T&uuml;rk D&uuml;nyası K&uuml;lt&uuml;r Başkenti&quot; Bursa&#039;da m&uuml;thiş a&ccedil;ılış t&ouml;reni" title="&quot;2022 T&uuml;rk D&uuml;nyası K&uuml;lt&uuml;r Başkenti&quot; Bursa&#039;da m&uuml;thiş a&ccedil;ılış t&ouml;reni" width="100%" src="assets/img/2022_turk_dunyasi_kultur_baskenti_bursada_muthis_acilis_toreni_1648665528_8697_w750_h500.jpg">
 					</a>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6">
-					<a title="Milli savaş u&ccedil;ağının motoru yerli olacak"
-						data-image="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/1FXHY_1648302169_7016_w750_h750.jpg"
-						data-description="T&uuml;rk Havacılık ve Uzay Sanayii AŞ (TUSAŞ) Genel M&uuml;d&uuml;r&uuml; Temel Kotil, Milli Muharip U&ccedil;ağın (MMU) neredeyse t&uuml;m par&ccedil;alarının tasarımının bittiğini, u&ccedil;ağı yerli motorla teslim etmeyi hedeflediklerini belirtti."
-						href="#">
-						<img alt="Milli savaş u&ccedil;ağının motoru yerli olacak"
-							title="Milli savaş u&ccedil;ağının motoru yerli olacak" width="100%"
-							src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/1FXHY_1648302169_7016_w750_h750.jpg">
+					<a title="Milli savaş u&ccedil;ağının motoru yerli olacak" data-image="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/1FXHY_1648302169_7016_w750_h750.jpg" data-description="T&uuml;rk Havacılık ve Uzay Sanayii AŞ (TUSAŞ) Genel M&uuml;d&uuml;r&uuml; Temel Kotil, Milli Muharip U&ccedil;ağın (MMU) neredeyse t&uuml;m par&ccedil;alarının tasarımının bittiğini, u&ccedil;ağı yerli motorla teslim etmeyi hedeflediklerini belirtti." href="#">
+						<img alt="Milli savaş u&ccedil;ağının motoru yerli olacak" title="Milli savaş u&ccedil;ağının motoru yerli olacak" width="100%" src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/1FXHY_1648302169_7016_w750_h750.jpg">
 					</a>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6">
-					<a title="Avrupa&#039;dan &#039;Rusya&#039; kararı: Doğru yoldayız, T&uuml;rkiye yerini alabilir"
-						data-image="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/p5qHz_1648283771_5614_w731_h412.JPG"
-						data-description="Alman Konrad Adenauer Vakfı (KAS) tarafından yapılan ve kamuoyuna a&ccedil;ık olamayan bir analizde &quot;T&uuml;rkiye gelecekte Avrupa&#039;nın petrol ve gaz tedariki i&ccedil;in hayati bir işlev g&ouml;rebilir ve Rusya&#039;nın yerini alabilir&quot; ifadeleri yer aldı.
+					<a title="Avrupa&#039;dan &#039;Rusya&#039; kararı: Doğru yoldayız, T&uuml;rkiye yerini alabilir" data-image="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/p5qHz_1648283771_5614_w731_h412.JPG" data-description="Alman Konrad Adenauer Vakfı (KAS) tarafından yapılan ve kamuoyuna a&ccedil;ık olamayan bir analizde &quot;T&uuml;rkiye gelecekte Avrupa&#039;nın petrol ve gaz tedariki i&ccedil;in hayati bir işlev g&ouml;rebilir ve Rusya&#039;nın yerini alabilir&quot; ifadeleri yer aldı.
 " href="#">
-						<img alt="Avrupa&#039;dan &#039;Rusya&#039; kararı: Doğru yoldayız, T&uuml;rkiye yerini alabilir"
-							title="Avrupa&#039;dan &#039;Rusya&#039; kararı: Doğru yoldayız, T&uuml;rkiye yerini alabilir"
-							width="100%"
-							src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/p5qHz_1648283771_5614_w731_h412.JPG">
+						<img alt="Avrupa&#039;dan &#039;Rusya&#039; kararı: Doğru yoldayız, T&uuml;rkiye yerini alabilir" title="Avrupa&#039;dan &#039;Rusya&#039; kararı: Doğru yoldayız, T&uuml;rkiye yerini alabilir" width="100%" src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/p5qHz_1648283771_5614_w731_h412.JPG">
 					</a>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6">
-					<a title="Savaşın Ukrayna i&ccedil;in bir aylık bilan&ccedil;osu a&ccedil;ıklandı... B&uuml;y&uuml;k yıkım!"
-						data-image="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/savasin_ukrayna_icin_bir_aylik_bilancosu_aciklandi_buyuk_yikim_1648238749_3838_w750_h421.jpg"
-						data-description="Ukraynalı analistler, Rusya&#039;nın başlattığı savaşın Ukrayna&#039;nın altyapısına verdiği zararın yaklaşık 63 milyar dolar değerinde olabileceğini bildirdi."
-						href="#">
-						<img alt="Savaşın Ukrayna i&ccedil;in bir aylık bilan&ccedil;osu a&ccedil;ıklandı... B&uuml;y&uuml;k yıkım!"
-							title="Savaşın Ukrayna i&ccedil;in bir aylık bilan&ccedil;osu a&ccedil;ıklandı... B&uuml;y&uuml;k yıkım!"
-							width="100%"
-							src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/savasin_ukrayna_icin_bir_aylik_bilancosu_aciklandi_buyuk_yikim_1648238749_3838_w750_h421.jpg">
+					<a title="Savaşın Ukrayna i&ccedil;in bir aylık bilan&ccedil;osu a&ccedil;ıklandı... B&uuml;y&uuml;k yıkım!" data-image="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/savasin_ukrayna_icin_bir_aylik_bilancosu_aciklandi_buyuk_yikim_1648238749_3838_w750_h421.jpg" data-description="Ukraynalı analistler, Rusya&#039;nın başlattığı savaşın Ukrayna&#039;nın altyapısına verdiği zararın yaklaşık 63 milyar dolar değerinde olabileceğini bildirdi." href="#">
+						<img alt="Savaşın Ukrayna i&ccedil;in bir aylık bilan&ccedil;osu a&ccedil;ıklandı... B&uuml;y&uuml;k yıkım!" title="Savaşın Ukrayna i&ccedil;in bir aylık bilan&ccedil;osu a&ccedil;ıklandı... B&uuml;y&uuml;k yıkım!" width="100%" src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs2/2022/12/savasin_ukrayna_icin_bir_aylik_bilancosu_aciklandi_buyuk_yikim_1648238749_3838_w750_h421.jpg">
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- gallery images start  -->
+	<div class="category">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>en son eklenen galeriler</h2>
+				</div>
+			</div>
 
-	<!-- gallery images end  -->
+			<div class="galleries">
+				<div class="row g-4">
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="UEFA en formda takımları a&ccedil;ıkladı! Fenerbah&ccedil;e zirveyi zorladı" href="https://spor.haber7.com/foto-galeri/76546-uefa-en-formda-takimlari-acikladi-fenerbahce-zirveyi-zorladi">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/SZJpr_1667314850_5312_w750_h499.jpg" width="100%" alt="UEFA en formda takımları a&ccedil;ıkladı! Fenerbah&ccedil;e zirveyi zorladı" />
+								<i class="play"></i>
+							</span>
+							<strong>UEFA en formda takımları açıkladı! Fenerbahçe zirveyi zorladı</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="&lsquo;Savulun Battal Gazi Geliyor&rsquo; filmindeki hata yıllar sonra ortaya &ccedil;ıktı" href="https://www.haber7.com/foto-galeri/76544-savulun-battal-gazi-geliyor-filmindeki-hata-yillar-sonra-ortaya-cikti">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/TLZ00_1667307304_035_w620_h360.jpg" width="100%" alt="&lsquo;Savulun Battal Gazi Geliyor&rsquo; filmindeki hata yıllar sonra ortaya &ccedil;ıktı" />
+								<i class="play"></i>
+							</span>
+							<strong>‘Savulun Battal Gazi Geliyor’ filmindeki hata yıllar sonra ortaya çıktı</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Ukrayna&rsquo;daki cepheden T&uuml;rkiye&rsquo;deki Ukraynalılara f&uuml;ze hediyesi: Desteğiniz i&ccedil;in minnettarız" href="https://www.haber7.com/foto-galeri/76545-ukraynadaki-cepheden-turkiyedeki-ukraynalilara-fuze-hediyesi-desteginiz-icin-minnettariz">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/ukraynadaki_cepheden_turkiyedeki_ukraynalilara_fuze_hediyesi_desteginiz_icin_minnettariz_1667308772_0141_w750_h383.jpg" width="100%" alt="Ukrayna&rsquo;daki cepheden T&uuml;rkiye&rsquo;deki Ukraynalılara f&uuml;ze hediyesi: Desteğiniz i&ccedil;in minnettarız" />
+								<i class="play"></i>
+							</span>
+							<strong>Ukrayna’daki cepheden Türkiye’deki Ukraynalılara füze hediyesi: Desteğiniz için minnettarız</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Toyota Corolla Cross Hybrid&#039;i T&uuml;rkiye&#039;de satışa &ccedil;ıktı! İşte &ouml;zellikleri ve fiyatı" href="https://otomobil.haber7.com/foto-galeri/76543-toyota-corolla-cross-hybridi-turkiyede-satisa-cikti-iste-ozellikleri-ve-fiyati">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/dfnIq_1667295954_3489_w750_h562.jpg" width="100%" alt="Toyota Corolla Cross Hybrid&#039;i T&uuml;rkiye&#039;de satışa &ccedil;ıktı! İşte &ouml;zellikleri ve fiyatı" />
+								<i class="play"></i>
+							</span>
+							<strong>Toyota Corolla Cross Hybrid'i Türkiye'de satışa çıktı! İşte özellikleri ve fiyatı</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Kamuya en az ilkokul mezunu 1.253 memur ve personel alımı! G&uuml;ncel Kasım ayı kamu iş ilanları" href="https://www.haber7.com/foto-galeri/76539-kamuya-en-az-ilkokul-mezunu-1253-memur-ve-personel-alimi-guncel-kasim-ayi-kamu-is-ilanlari">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/hnFFg_1667287301_2961_w750_h421.jpg" width="100%" alt="Kamuya en az ilkokul mezunu 1.253 memur ve personel alımı! G&uuml;ncel Kasım ayı kamu iş ilanları" />
+								<i class="play"></i>
+							</span>
+							<strong>Kamuya en az ilkokul mezunu 1.253 memur ve personel alımı! Güncel Kasım ayı kamu iş ilanları</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Tahıl koridoru i&ccedil;in gelen gemiler İstanbul &ccedil;evresinde bekliyor!" href="https://www.haber7.com/foto-galeri/76541-tahil-koridoru-icin-gelen-gemiler-istanbul-cevresinde-bekliyor">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/WIBml_1667293654_6023_w960_h658.jpg" width="100%" alt="Tahıl koridoru i&ccedil;in gelen gemiler İstanbul &ccedil;evresinde bekliyor!" />
+								<i class="play"></i>
+							</span>
+							<strong>Tahıl koridoru için gelen gemiler İstanbul çevresinde bekliyor!</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="BİM Akt&uuml;el &Uuml;r&uuml;nler Kataloğu İncelemesi! (4 Kasım 2022)" href="https://www.haber7.com/foto-galeri/76542-bim-aktuel-urunler-katalogu-incelemesi-4-kasim-2022">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/eAqRW_1667293268_4328_w750_h371.JPG" width="100%" alt="BİM Akt&uuml;el &Uuml;r&uuml;nler Kataloğu İncelemesi! (4 Kasım 2022)" />
+								<i class="play"></i>
+							</span>
+							<strong>BİM Aktüel Ürünler Kataloğu İncelemesi! (4 Kasım 2022)</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Tarım Kredi Kooperatif Market yeni indirimli &uuml;r&uuml;nler listesini yayınladı (1-15 Kasım g&uuml;ncel liste)" href="https://ekonomi.haber7.com/foto-galeri/76536-tarim-kredi-kooperatif-market-yeni-indirimli-urunler-listesini-yayinladi-1-15-kasim-guncel-liste">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/BBp5E_1667280093_9501_w750_h562.jpg" width="100%" alt="Tarım Kredi Kooperatif Market yeni indirimli &uuml;r&uuml;nler listesini yayınladı (1-15 Kasım g&uuml;ncel liste)" />
+								<i class="play"></i>
+							</span>
+							<strong>Tarım Kredi Kooperatif Market yeni indirimli ürünler listesini yayınladı (1-15 Kasım güncel liste)</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Doğal gazda tasarruf yaptıracak altın &ouml;neriler!" href="https://ekonomi.haber7.com/foto-galeri/76540-dogal-gazda-tasarruf-yaptiracak-altin-oneriler">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/KslZ4_1667287866_0521_w960_h640.jpg" width="100%" alt="Doğal gazda tasarruf yaptıracak altın &ouml;neriler!" />
+								<i class="play"></i>
+							</span>
+							<strong>Doğal gazda tasarruf yaptıracak altın öneriler!</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="İstanbul sis altında! İşte sıra dışı manzaralar..." href="https://www.haber7.com/foto-galeri/76538-istanbul-sis-altinda-iste-sira-disi-manzaralar">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/1ZG5l_1667286918_2119_w960_h540.jpg" width="100%" alt="İstanbul sis altında! İşte sıra dışı manzaralar..." />
+								<i class="play"></i>
+							</span>
+							<strong>İstanbul sis altında! İşte sıra dışı manzaralar...</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Dolandırıcıların son kurbanı Bilge Ersel! 1 milyon doları kendi eliyle verdi" href="https://www.haber7.com/foto-galeri/76537-dolandiricilarin-son-kurbani-bilge-ersel-1-milyon-dolari-kendi-eliyle-verdi">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/D7iHO_1667283911_7009_w700_h324.jpg" width="100%" alt="Dolandırıcıların son kurbanı Bilge Ersel! 1 milyon doları kendi eliyle verdi" />
+								<i class="play"></i>
+							</span>
+							<strong>Dolandırıcıların son kurbanı Bilge Ersel! 1 milyon doları kendi eliyle verdi</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="1 Kasım Salı gazete manşetleri - D&uuml;nya panikte T&uuml;rkiye devrede!" href="https://www.haber7.com/foto-galeri/76535-1-kasim-sali-gazete-mansetleri-dunya-panikte-turkiye-devrede">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/Fcinf_1667279829_5528_w750_h1124.jpg" width="100%" alt="1 Kasım Salı gazete manşetleri - D&uuml;nya panikte T&uuml;rkiye devrede!" />
+								<i class="play"></i>
+							</span>
+							<strong>1 Kasım Salı gazete manşetleri - Dünya panikte Türkiye devrede!</strong>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="category">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>spor<a class="more" title="Spor kategorisindeki galeriler" href="/foto-galeri/c1352">daha fazla</a></h2>
+				</div>
+			</div>
+
+			<div class="galleries">
+				<div class="row g-4">
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="UEFA en formda takımları a&ccedil;ıkladı! Fenerbah&ccedil;e zirveyi zorladı" href="https://spor.haber7.com/foto-galeri/76546-uefa-en-formda-takimlari-acikladi-fenerbahce-zirveyi-zorladi">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/SZJpr_1667314850_5312_w750_h499.jpg" width="100%" alt="UEFA en formda takımları a&ccedil;ıkladı! Fenerbah&ccedil;e zirveyi zorladı" />
+								<i class="play"></i>
+							</span>
+							<strong>UEFA en formda takımları açıkladı! Fenerbahçe zirveyi zorladı</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Avrupa&#039;nın en g&uuml;r&uuml;lt&uuml;l&uuml; 15 stadyumu belli oldu" href="https://spor.haber7.com/foto-galeri/76533-avrupanin-en-gurultulu-15-stadyumu-belli-oldu">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/44/avrupanin_en_gurultulu_15_stadyumu_belli_oldu_1667217022_0898_w640_h411.jpg" width="100%" alt="Avrupa&#039;nın en g&uuml;r&uuml;lt&uuml;l&uuml; 15 stadyumu belli oldu" />
+								<i class="play"></i>
+							</span>
+							<strong>Avrupa'nın en gürültülü 15 stadyumu belli oldu</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="S&uuml;per Lig&#039;in en değerli oyuncuları belli oldu!" href="https://spor.haber7.com/foto-galeri/76496-super-ligin-en-degerli-oyunculari-belli-oldu">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/43/super_ligin_en_degerli_oyunculari_belli_oldu_1667030008_5271_w750_h421.jpg" width="100%" alt="S&uuml;per Lig&#039;in en değerli oyuncuları belli oldu!" />
+								<i class="play"></i>
+							</span>
+							<strong>Süper Lig'in en değerli oyuncuları belli oldu!</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Sporda g&uuml;n&uuml;n manşetleri" href="https://spor.haber7.com/foto-galeri/76472-sporda-gunun-mansetleri">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/43/LX2IV_1666939134_9446_w750_h1318.jpg" width="100%" alt="Sporda g&uuml;n&uuml;n manşetleri" />
+								<i class="play"></i>
+							</span>
+							<strong>Sporda günün manşetleri</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Futbol camiasının şaşırtan kıyafet se&ccedil;imleri" href="https://spor.haber7.com/foto-galeri/76447-futbol-camiasinin-sasirtan-kiyafet-secimleri">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/43/f9q1q_1666766674_2138_w750_h501.jpg" width="100%" alt="Futbol camiasının şaşırtan kıyafet se&ccedil;imleri" />
+								<i class="play"></i>
+							</span>
+							<strong>Futbol camiasının şaşırtan kıyafet seçimleri</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="İlklerin adamı Halit Kıvan&ccedil;&#039;ın başarılarla dolu hayatı" href="https://spor.haber7.com/foto-galeri/76443-ilklerin-adami-halit-kivancin-basarilarla-dolu-hayati">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/43/ofIW1_1666727886_0969_w750_h1055.jpg" width="100%" alt="İlklerin adamı Halit Kıvan&ccedil;&#039;ın başarılarla dolu hayatı" />
+								<i class="play"></i>
+							</span>
+							<strong>İlklerin adamı Halit Kıvanç'ın başarılarla dolu hayatı</strong>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="category">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>hayvanlar alemi<a class="more" title="Hayvanlar alemi kategorisindeki galeriler" href="/foto-galeri/c1374">daha fazla</a></h2>
+				</div>
+			</div>
+
+			<div class="galleries">
+				<div class="row g-4">
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Norve&ccedil;&#039;te 600 kiloluk deniz aygırı Freya&#039;nın halk g&uuml;venliği nedeniyle uyutulması tepki &ccedil;ekti" href="https://www.haber7.com/foto-galeri/75364-norvecte-600-kiloluk-deniz-aygiri-freyanin-halk-guvenligi-nedeniyle-uyutulmasi-tepki-cekti">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/32/LMDYm_1660509866_8027_w680_h408.jpg" width="100%" alt="Norve&ccedil;&#039;te 600 kiloluk deniz aygırı Freya&#039;nın halk g&uuml;venliği nedeniyle uyutulması tepki &ccedil;ekti" />
+								<i class="play"></i>
+							</span>
+							<strong>Norveç'te 600 kiloluk deniz aygırı Freya'nın halk güvenliği nedeniyle uyutulması tepki çekti</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Berivanların sıcak havada zorlu s&uuml;t mesaisi" href="https://www.haber7.com/foto-galeri/75102-berivanlarin-sicak-havada-zorlu-sut-mesaisi">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/30/p9gXm_1659174019_6824_w750_h421.jpg" width="100%" alt="Berivanların sıcak havada zorlu s&uuml;t mesaisi" />
+								<i class="play"></i>
+							</span>
+							<strong>Berivanların sıcak havada zorlu süt mesaisi</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Vahşi doğadan &ccedil;arpıcı g&ouml;r&uuml;nt&uuml;ler!" href="https://www.haber7.com/foto-galeri/73764-vahsi-dogadan-carpici-goruntuler">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/16/8fwZO_1650803505_1462_w960_h617.jpg" width="100%" alt="Vahşi doğadan &ccedil;arpıcı g&ouml;r&uuml;nt&uuml;ler!" />
+								<i class="play"></i>
+							</span>
+							<strong>Vahşi doğadan çarpıcı görüntüler!</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Kaplan ve ayı ormanda birbirine girdi" href="https://www.haber7.com/foto-galeri/73135-kaplan-ve-ayi-ormanda-birbirine-girdi">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/10/kaplan_ve_ayi_ormanda_birbirine_girdi_1646830099_2269_w750_h623.jpg" width="100%" alt="Kaplan ve ayı ormanda birbirine girdi" />
+								<i class="play"></i>
+							</span>
+							<strong>Kaplan ve ayı ormanda birbirine girdi</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Timsah sert kayaya &ccedil;arptı!" href="https://www.haber7.com/foto-galeri/72097-timsah-sert-kayaya-carpti">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/01/CuaZq_1641373145_5262_w700_h467.jpg" width="100%" alt="Timsah sert kayaya &ccedil;arptı!" />
+								<i class="play"></i>
+							</span>
+							<strong>Timsah sert kayaya çarptı!</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="D&uuml;nyanın hayran olduğu İran ve Van kedileri g&uuml;zellikte birbirleriyle yarışıyor" href="https://www.haber7.com/foto-galeri/71854-dunyanin-hayran-oldugu-iran-ve-van-kedileri-guzellikte-birbirleriyle-yarisiyor">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2021/51/NyCjW_1640268668_6704_w750_h508.jpg" width="100%" alt="D&uuml;nyanın hayran olduğu İran ve Van kedileri g&uuml;zellikte birbirleriyle yarışıyor" />
+								<i class="play"></i>
+							</span>
+							<strong>Dünyanın hayran olduğu İran ve Van kedileri güzellikte birbirleriyle yarışıyor</strong>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="category">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>yaşam <a class="more" title="Yaşam kategorisindeki galeriler" href="/foto-galeri/c1351">daha fazla</a></h2>
+				</div>
+			</div>
+
+			<div class="galleries">
+				<div class="row g-4">
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Daha &ouml;nce hi&ccedil; bu kadar yakından g&ouml;rmediniz! Sosyal medyada viral oldu" href="https://www.haber7.com/foto-galeri/76419-daha-once-hic-bu-kadar-yakindan-gormediniz-sosyal-medyada-viral-oldu">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/43/2uJoK_1666619720_4814_w750_h750.jpg" width="100%" alt="Daha &ouml;nce hi&ccedil; bu kadar yakından g&ouml;rmediniz! Sosyal medyada viral oldu" />
+								<i class="play"></i>
+							</span>
+							<strong>Daha önce hiç bu kadar yakından görmediniz! Sosyal medyada viral oldu</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Yavruyken sahiplenilen kedi &#039;Pamuk&#039; kahvehanenin maskotu oldu" href="https://www.haber7.com/foto-galeri/76391-yavruyken-sahiplenilen-kedi-pamuk-kahvehanenin-maskotu-oldu">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/42/RFUSv_1666509691_842_w750_h500.jpg" width="100%" alt="Yavruyken sahiplenilen kedi &#039;Pamuk&#039; kahvehanenin maskotu oldu" />
+								<i class="play"></i>
+							</span>
+							<strong>Yavruyken sahiplenilen kedi 'Pamuk' kahvehanenin maskotu oldu</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="Ayasofya Camii&#039;nde hafta sonu yoğunluğu" href="https://www.haber7.com/foto-galeri/76386-ayasofya-camiinde-hafta-sonu-yogunlugu">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/42/34NfM_1666458818_5975_w750_h416.jpg" width="100%" alt="Ayasofya Camii&#039;nde hafta sonu yoğunluğu" />
+								<i class="play"></i>
+							</span>
+							<strong>Ayasofya Camii'nde hafta sonu yoğunluğu</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="A101 27 Ekim 2022 Akt&uuml;el &Uuml;r&uuml;nler Kataloğu! " href="https://www.haber7.com/foto-galeri/76376-a101-27-ekim-2022-aktuel-urunler-katalogu">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/42/a101_27_ekim_2022_aktuel_urunler_katalogu_1666427965_2644_w750_h421.JPG" width="100%" alt="A101 27 Ekim 2022 Akt&uuml;el &Uuml;r&uuml;nler Kataloğu! " />
+								<i class="play"></i>
+							</span>
+							<strong>A101 27 Ekim 2022 Aktüel Ürünler Kataloğu! </strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="M&uuml;tefekkir Osman Y&uuml;ksel Serdenge&ccedil;ti&#039;nin ahşap dolabında &ccedil;ıkan yazı şaşkına &ccedil;evirdi" href="https://www.haber7.com/foto-galeri/76371-mutefekkir-osman-yuksel-serdengectinin-ahsap-dolabinda-cikan-yazi-saskina-cevirdi">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/42/LQqpp_1666422132_1846_w750_h455.jpg" width="100%" alt="M&uuml;tefekkir Osman Y&uuml;ksel Serdenge&ccedil;ti&#039;nin ahşap dolabında &ccedil;ıkan yazı şaşkına &ccedil;evirdi" />
+								<i class="play"></i>
+							</span>
+							<strong>Mütefekkir Osman Yüksel Serdengeçti'nin ahşap dolabında çıkan yazı şaşkına çevirdi</strong>
+						</a>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-2">
+						<a title="&#039;Yalı&ccedil;apkını&#039;nı fotoğraflamak i&ccedil;in 7 ay bekledi" href="https://www.haber7.com/foto-galeri/76306-yalicapkinini-fotograflamak-icin-7-ay-bekledi">
+							<span class="holder">
+								<img src="https://i12.haber7.net//fotogaleri/haber7/album/thumbs/2022/42/8Y3GM_1665992905_5328_w960_h691.jpg" width="100%" alt="&#039;Yalı&ccedil;apkını&#039;nı fotoğraflamak i&ccedil;in 7 ay bekledi" />
+								<i class="play"></i>
+							</span>
+							<strong>'Yalıçapkını'nı fotoğraflamak için 7 ay bekledi</strong>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Footer -->
 	<div class="site-footer">
@@ -901,9 +1181,7 @@
 
 					<!-- Logo -->
 					<a href="#" title="Haber7" class="site-footer-logo">
-						<img src="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.svg"
-							data-svg-fallback="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.png"
-							alt="Haber7">
+						<img src="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.svg" data-svg-fallback="https://s.haber7.net/assets/v3/common/images/haber7-logo-gray.png" alt="Haber7">
 					</a>
 
 				</div>
@@ -975,12 +1253,10 @@
 					<h4>UYGULAMALAR</h4>
 
 					<!-- App Store -->
-					<a href="#" title="Haber7 App Store'da" target="_blank" class="mobile-buttons-item appstore"
-						rel="nofollow"></a>
+					<a href="#" title="Haber7 App Store'da" target="_blank" class="mobile-buttons-item appstore" rel="nofollow"></a>
 
 					<!-- Play Store -->
-					<a href="#" title="Haber7 Google Play'de" target="_blank" class="mobile-buttons-item googleplay"
-						rel="nofollow"></a>
+					<a href="#" title="Haber7 Google Play'de" target="_blank" class="mobile-buttons-item googleplay" rel="nofollow"></a>
 				</div>
 
 			</div>
