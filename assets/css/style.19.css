@@ -201,7 +201,7 @@
 }
 .black .description {
 	float: left;
-	width: 355px;
+	width: min(400px, 100%);
 	padding-right: 20px;
 	padding-top: 45px
 }
@@ -226,7 +226,7 @@
 }
 @media (min-width:992px) and (max-width:1199px) {
 	.black .description {
-		width: 240px
+		width: min(300px, 100%);
 	}
 	.black .description h3 {
 		display: none

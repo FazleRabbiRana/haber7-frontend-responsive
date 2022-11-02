@@ -26,9 +26,34 @@
 	<script async="async" src="assets/js/makroo-hb.js"></script>
 
 	<style>
+		.black .description h3 {
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 16px;
+		}
+
+		.black .row.hero a img,
+		.black .row.galleries a img {
+			width: 100%;
+			height: auto;
+			aspect-ratio: 173/121;
+			object-fit: cover;
+		}
+
+		.black .row.hero a img {
+			aspect-ratio: 440/240;
+		}
+
 		@media (max-width: 991px) and (min-width: 768px) {
 			.populars ul.populars-filters li {
 				margin-left: 0;
+			}
+
+			.black .description h2 {
+				font-size: 22px;
+			}
+
+			.black .description h3 {
+				display: none;
 			}
 		}
 
@@ -52,6 +77,7 @@
 			.populars .row.galleries {
 					margin-inline: 0;
 			}
+
 			.populars .row.galleries>[class|="col"] {
 					padding-inline: 0;
 			}
@@ -223,7 +249,7 @@
 
 					<div class="collapse navbar-collapse" id="mainNavMenuContent">
 						<div class="mobile-main-menu-wrapper">
-							<button type="button" class="navbar-toggler nav-closer" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#mainNavMenuContent" aria-controls="mainNavMenuContent" aria-expanded="false" aria-label="Close navigation">
+							<button type="button" class="navbar-toggler nav-closer" data-bs-toggle="collapse" data-bs-target="#mainNavMenuContent" aria-controls="mainNavMenuContent" aria-expanded="false" aria-label="Close navigation">
 								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="toggler-icon">
 									<path d="M9.207 8.5l6.646 6.646-.707.707L8.5 9.207l-6.646 6.646-.707-.707L7.793 8.5 1.146 1.854l.707-.707L8.5 7.793l6.646-6.646.707.707L9.207 8.5z" fill="currentColor"></path>
 								</svg>
@@ -261,7 +287,7 @@
 						</div>
 
 						<div class="mobile-menu-backdrop">
-							<button type="button" class="navbar-toggler nav-closer" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#mainNavMenuContent" aria-controls="mainNavMenuContent" aria-expanded="false" aria-label="Close navigation"></button>
+							<button type="button" class="navbar-toggler nav-closer" data-bs-toggle="collapse" data-bs-target="#mainNavMenuContent" aria-controls="mainNavMenuContent" aria-expanded="false" aria-label="Close navigation"></button>
 						</div>
 					</div>
 				</div>
