@@ -2469,7 +2469,7 @@ div[id^=dfp-] {
 
 @media (max-width: 575px) {
     .newspaper-headline li a {
-        margin-inline: auto;
+        width: 100%;
     }
 }
 
